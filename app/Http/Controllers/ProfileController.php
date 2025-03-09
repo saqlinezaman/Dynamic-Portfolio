@@ -6,6 +6,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\GD\Driver;
 
 class ProfileController extends Controller
 {
@@ -58,6 +60,7 @@ class ProfileController extends Controller
     }
     // image------------------------------------------------------------
     public function image_update(Request $request){
+        // $manager =new ImageManager(new Driver());
         $request->validate([
             'image' => 'required|image',
         ]);
