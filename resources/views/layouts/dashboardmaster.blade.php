@@ -64,16 +64,16 @@
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="" data-bs-toggle="collapse" class="menu-link waves-effect" aria-expanded="true">
-                            <span class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></span>
+                        <a href="#menuExpages" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
+                            <span class="menu-icon"><i class="bx bx-file"></i></span>
                             <span class="menu-text"> Category </span>
                             <span class="menu-arrow"></span>
                         </a>
-                        <div class="collapse show" id="menuExpages" style="">
+                        <div class="collapse" id="menuExpages">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a class="menu-link" href="">
-                                        <span class="menu-text">Show category</span>
+                                    <a class='menu-link' href='{{ route('category.index') }}'>
+                                        <span class="menu-text">Show Categories</span>
                                     </a>
                                 </li>
                             </ul>

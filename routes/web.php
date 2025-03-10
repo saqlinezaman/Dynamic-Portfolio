@@ -26,4 +26,4 @@ Route::post('/profile/password/update',[ProfileController::class,'password_updat
 Route::post('/profile/image/update',[ProfileController::class,'image_update'])->name('profile.image');
 
 // Category----------------------------------------------------------------
-Route::get('./category',[CategoryController::class,'index'])->name('category.index');
+Route::get('/category',[CategoryController::class,'index'])->name('category.index');
