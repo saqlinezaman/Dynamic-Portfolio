@@ -88,8 +88,9 @@
                         @error("image")
                             <p class="text-danger"> {{$message }} </p>
                         @enderror
-                        <button  style="background-color: #2D9596" class="btn btn-primary mt-4" type="submit">Update</button>
+
                     </div>
+                    <button  style="background-color: #2D9596" class="btn btn-primary mt-4" type="submit">Update</button>
                 </form>
             </div>
         </div>
@@ -140,13 +141,33 @@
 }).showToast();
 </script>
 @endif
-{{-- password---------------------------------------------------------------------- --}}
+{{--password-------------------------------------------------------------}}
 
 @if (session('password_update'))
 
 <script>
    Toastify({
   text: "{{session('password_update')}}",
+  duration: 4000,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "right", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+  onClick: function(){} // Callback after click
+}).showToast();
+</script>
+@endif
+{{--image----------------------------------------------------------------}}
+
+@if (session('image_update'))
+
+<script>
+   Toastify({
+  text: "{{session('image_update')}}",
   duration: 4000,
   newWindow: true,
   close: true,

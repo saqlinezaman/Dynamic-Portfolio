@@ -64,7 +64,7 @@
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="#menuExpages" data-bs-toggle="collapse" class="menu-link waves-effect" aria-expanded="true">
+                        <a href="" data-bs-toggle="collapse" class="menu-link waves-effect" aria-expanded="true">
                             <span class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></span>
                             <span class="menu-text"> Category </span>
                             <span class="menu-arrow"></span>
@@ -72,8 +72,8 @@
                         <div class="collapse show" id="menuExpages" style="">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a class="menu-link" href="pages-starter.html">
-                                        <span class="menu-text">Starter</span>
+                                    <a class="menu-link" href="">
+                                        <span class="menu-text">Show category</span>
                                     </a>
                                 </li>
                             </ul>
@@ -309,11 +309,14 @@
                         <li class="dropdown">
                             <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
 {{----default image-----------------------------------------------  --}}
-                                @if (auth()->user()->image == 'default.png')
-                                <img src="{{ asset('uploads/default') }}/{{ auth()->user()->image }}" alt="user-image" class="rounded-circle">
-                                @else
-                                <img src="{{ asset('uploads/profile') }}/{{ auth()->user()->image }}" alt="user-image" class="rounded-circle">
-                                @endif
+                    @if (auth()->user()->image == 'default.png')
+                                <img src="{{ asset('uploads/default/' . auth()->user()->image) }}" alt="user-image" class="rounded-circle">
+
+                            @else
+
+                                <img src="{{ asset('uploads/profile/' . auth()->user()->image) }}" alt="user-image" class="rounded-circle">
+
+                            @endif
                                 <span class="ms-1 d-none d-md-inline-block">
                                     {{Auth::user()->name}} <i class="mdi mdi-chevron-down"></i>
                                 </span>
