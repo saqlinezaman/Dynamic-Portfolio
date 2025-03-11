@@ -4,6 +4,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     return view('welcome');
@@ -27,3 +28,6 @@ Route::post('/profile/image/update',[ProfileController::class,'image_update'])->
 
 // Category----------------------------------------------------------------
 Route::get('/category',[CategoryController::class,'index'])->name('category.index');
+// store
+Route::post('/category/store',[CategoryController::class,'store'])->name('category.store');
+
