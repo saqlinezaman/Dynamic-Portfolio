@@ -36,3 +36,5 @@ Route::get('/category/edit/{slug}',[CategoryController::class,'edit'])->name('ca
 Route::post('/category/update/{slug}',[CategoryController::class,'update'])->name('category.update');
 // catagory delete
 Route::get('/category/destroy/{slug}',[CategoryController::class,'destroy'])->name('category.destroy');
+// status
+Route::post('/category/status/{id}',[CategoryController::class,'status'])->name('category.status');

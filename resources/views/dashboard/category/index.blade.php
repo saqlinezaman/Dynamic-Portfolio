@@ -16,7 +16,7 @@
                       </tr>
                     </thead>
                     <tbody class="text-center">
-                      @foreach ($categories as $category)
+                      @forelse ($categories as $category)
                         <tr>
                           {{-- image --}}
                           <td>
@@ -34,7 +34,13 @@
                             <p class="text-muted mb-0"> {{$category->slug}}</p>
                           </td>
                           <td>
-                            <span class="badge bg-success rounded-pill d-inline">Active</span>
+                            <form id="halamadrid" action="{{route('category.status',$category->id)}}" method="POST">
+                                @csrf
+                            <div class="form-check form-switch">
+                                <input onchange="document.querySelector('#halamadrid').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" {{$category->status == 'active' ? 'checked' : ''}}>
+                                <label class="form-check-label" for="flexSwitchCheckDefault"> {{$category->status}} </label>
+                              </div>
+                            </form>
                           </td>
                           <td>
                             <a href="{{route('category.edit',$category->slug)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
@@ -45,7 +51,13 @@
                             </a>
                             </td>
                         </tr>
-                      @endforeach
+                        @empty
+                        <tr>
+                            <td class="text-danger text-center" colspan="4">
+                                You don't create any category
+                            </td>
+                        </tr>
+                      @endforelse
                     </tbody>
                   </table>
             </div>
