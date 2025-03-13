@@ -88,12 +88,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/fab-image.webp">
+    <link rel="shortcut icon" href="{{asset('dashboard')}}/assets/images/fab-image.webp">
 
     <!-- App css -->
-    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
-    <script src="assets/js/config.js"></script>
+    <link href="{{asset('dashboard')}}/assets/css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard')}}/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <script src="{{asset('dashboard')}}/assets/js/config.js"></script>
 </head>
 
 <body>
@@ -212,8 +212,8 @@
     <!-- end page -->
 
     <!-- App js -->
-    <script src="assets/js/vendor.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/vendor.min.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/app.js"></script>
 
 </body>
 

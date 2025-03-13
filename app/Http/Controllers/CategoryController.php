@@ -13,9 +13,10 @@ class CategoryController extends Controller
 {
     public function index(){
         $categories = Category::all();
-
         return view('dashboard.category.index',compact('categories'));
     }
+
+
     public function store(Request $request){
 
         $manager = new ImageManager(new Driver());
@@ -58,5 +59,12 @@ class CategoryController extends Controller
         return back()->withErrors(['image'=>"Image field is require"])->withInput();
        }
 
+    }
+    // edit-----------------------------------------------------------------------------------
+    public function edit($slug){
+        $category = Category::where('slug',$slug)->first();
+        return view('dashboard.category.edit',[
+            'realmadrid' => $category,
+        ]);
     }
 }

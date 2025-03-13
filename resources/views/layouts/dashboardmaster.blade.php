@@ -14,20 +14,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/fab-image.webp">
+    <link rel="shortcut icon" href="{{asset('dashboard')}}/assets/images/fab-image.webp">
 
-    <link href="assets/libs/morris.js/morris.css" rel="stylesheet" type="text/css" />
+    <link href="{{asset('dashboard')}}/assets/libs/morris.js/morris.css" rel="stylesheet" type="text/css" />
 
     {{-- tostify --}}
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
     <!-- App css -->
-    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard')}}/assets/css/style.min.css" rel="stylesheet" type="text/css">
     {{-- font awsome cdn --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard')}}/assets/css/icons.min.css" rel="stylesheet" type="text/css">
     {{-- font awsome  --}}
-    <script src="assets/js/config.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/config.js"></script>
 </head>
 
 <body>
@@ -99,14 +99,14 @@
                         <div class="logo-box">
                             <!-- Brand Logo Light -->
                             <a class='logo-light' href='index.html'>
-                                <img src="assets/images/logo-light.png" alt="logo" class="logo-lg" height="20">
-                                <img src="assets/images/logo-sm.png" alt="small logo" class="logo-sm" height="20">
+                                <img src="{{asset('dashboard')}}/assets/images/logo-light.png" alt="logo" class="logo-lg" height="20">
+                                <img src="{{asset('dashboard')}}/assets/images/logo-sm.png" alt="small logo" class="logo-sm" height="20">
                             </a>
 
                             <!-- Brand Logo Dark -->
                             <a class='logo-dark' href='index.html'>
-                                <img src="assets/images/logo-dark.png" alt="dark logo" class="logo-lg" height="20">
-                                <img src="assets/images/logo-sm.png" alt="small logo" class="logo-sm" height="20">
+                                <img src="{{asset('dashboard')}}/assets/images/logo-dark.png" alt="dark logo" class="logo-lg" height="20">
+                                <img src="{{asset('dashboard')}}/assets/images/logo-sm.png" alt="small logo" class="logo-sm" height="20">
                             </a>
                         </div>
 
@@ -141,28 +141,28 @@
 
                         <li class="dropdown d-none d-md-inline-block">
                             <a class="nav-link dropdown-toggle waves-effect waves-dark arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <img src="assets/images/flags/us.jpg" alt="user-image" class="me-0 me-sm-1" height="18">
+                                <img src="{{asset('dashboard')}}/assets/images/flags/us.jpg" alt="user-image" class="me-0 me-sm-1" height="18">
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated">
 
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item">
-                                    <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
+                                    <img src="{{asset('dashboard')}}/assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
                                 </a>
 
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item">
-                                    <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
+                                    <img src="{{asset('dashboard')}}/assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
                                 </a>
 
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item">
-                                    <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
+                                    <img src="{{asset('dashboard')}}/assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
                                 </a>
 
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item">
-                                    <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
+                                    <img src="{{asset('dashboard')}}/assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
                                 </a>
 
                             </div>
@@ -237,7 +237,7 @@
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-shrink-0">
                                                     <div class="notify-icon">
-                                                        <img src="assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle" alt="" />
+                                                        <img src="{{asset('dashboard')}}/assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1 text-truncate ms-2">
@@ -277,7 +277,7 @@
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-shrink-0">
                                                     <div class="notify-icon">
-                                                        <img src="assets/images/users/avatar-4.jpg" class="img-fluid rounded-circle" alt="" />
+                                                        <img src="{{asset('dashboard')}}/assets/images/users/avatar-4.jpg" class="img-fluid rounded-circle" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1 text-truncate ms-2">
@@ -422,23 +422,23 @@
     <!-- END wrapper -->
 
     <!-- App js -->
-    <script src="assets/js/vendor.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/vendor.min.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/app.js"></script>
 
     <!-- Jquery Sparkline Chart  -->
-    <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="{{asset('dashboard')}}/assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
 
     <!-- Jquery-knob Chart Js-->
-    <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
+    <script src="{{asset('dashboard')}}/assets/libs/jquery-knob/jquery.knob.min.js"></script>
 
 
     <!-- Morris Chart Js-->
-    <script src="assets/libs/morris.js/morris.min.js"></script>
+    <script src="{{asset('dashboard')}}/assets/libs/morris.js/morris.min.js"></script>
 
-    <script src="assets/libs/raphael/raphael.min.js"></script>
+    <script src="{{asset('dashboard')}}/assets/libs/raphael/raphael.min.js"></script>
 
     <!-- Dashboard init-->
-    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="{{asset('dashboard')}}/assets/js/pages/dashboard.js"></script>
 
     {{-- tostify --}}
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>

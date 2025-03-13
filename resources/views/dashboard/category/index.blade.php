@@ -37,9 +37,9 @@
                             <span class="badge bg-success rounded-pill d-inline">Active</span>
                           </td>
                           <td>
-                            <button type="button" class="btn btn-link btn-sm btn-rounded">
-                              Edit
-                            </button>
+                            <a href="{{route('category.edit',$category->slug)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
+                                <i class="fa-solid fa-pen-to-square text-info"></i>
+                            </a>
                         </tr>
                       @endforeach
                     </tbody>
