@@ -7,7 +7,7 @@
         <div class="card">
             <div class="card-body">
                 <table class="table align-middle mb-0 bg-white " >
-                    <thead class="bg-light">
+                    <thead class="bg-light text-center">
                       <tr>
                         <th>Category image</th>
                         <th>Title</th>
@@ -15,7 +15,7 @@
                         <th>Actions</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="text-center">
                       @foreach ($categories as $category)
                         <tr>
                           {{-- image --}}
@@ -40,6 +40,10 @@
                             <a href="{{route('category.edit',$category->slug)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-pen-to-square text-info"></i>
                             </a>
+                            <a href="{{route('category.destroy',$category->slug)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
+                                <i class="fa-solid fa-trash-can text-danger"></i>
+                            </a>
+                            </td>
                         </tr>
                       @endforeach
                     </tbody>

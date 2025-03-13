@@ -138,4 +138,19 @@ class CategoryController extends Controller
             }
         }
     }
+    public function destroy($slug){
+        $category = Category::where('slug',$slug)->first();
+
+        if($category->image){
+
+            $oldpath = base_path('public/uploads/category/'.$category->image);
+
+            if(file_exists($oldpath)){
+                unlink($oldpath);
+
+            }
+        }
+        Category::find($category->id)->delete();
+        return redirect()->route('category.index')->with('cat_success' , "Category delete successfully");
+    }
 }
