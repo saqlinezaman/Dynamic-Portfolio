@@ -9,6 +9,8 @@ use Illuminate\Http\Request;
  use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
 
+use function PHPUnit\Framework\fileExists;
+
 class CategoryController extends Controller
 {
     public function index(){
@@ -66,5 +68,74 @@ class CategoryController extends Controller
         return view('dashboard.category.edit',[
             'realmadrid' => $category,
         ]);
+    }
+
+    // edit update-----------------------------------------------------------------------------
+    public function update( Request $request , $slug){
+        $category = Category::where('slug',$slug)->first();
+        $manager = new ImageManager(new Driver());
+        $request->validate([
+            'title' => 'required',
+        ]);
+        if($request->hasFile('image')){
+
+            // delete old image
+            if($category->image){
+                $oldpath = base_path('public/uploads/category/'.$category->image);
+                if(file_exists($oldpath)){
+                    unlink($oldpath);
+                }
+            }
+
+            $newname = auth()->id().'-'.str::random(6).'.'.$request->file('image')->getClientOriginalExtension();
+            $image = $manager->read($request->file('image'));
+            $image->toPng()->save(base_path('public/uploads/category/'.$newname));
+        // update query
+        if($request->slug){
+
+            Category::find($category->id)->update([
+
+                'title' =>Str::ucfirst($request->title),
+                'slug' =>Str::slug($request->slug,'-'),
+                'image' =>$newname,
+                'updated_at' => now(),
+
+            ]);
+            return back()->with('cat_success' , "Category updated successfully");
+
+        }else{
+            Category::find($category->id)->update([
+
+                'title' =>Str::ucfirst($request->title),
+                'slug' =>Str::slug($request->title,'-'),
+                'image' =>$newname,
+                'updated_at' => now(),
+
+            ]);
+            return redirect()->route('category.index')->with('cat_success' , "Category updated successfully");
+        }
+        }else{
+            if($request->slug){
+
+                Category::find($category->id)->update([
+
+                    'title' =>Str::ucfirst($request->title),
+                    'slug' =>Str::slug($request->slug,'-'),
+                    'updated_at' => now(),
+
+                ]);
+                return redirect()->route('category.index')->with('cat_success' , "Category updated successfully");
+
+            }else{
+                Category::find($category->id)->update([
+
+                    'title' =>Str::ucfirst($request->title),
+                    'slug' =>Str::slug($request->title,'-'),
+                    'updated_at' => now(),
+
+                ]);
+                return redirect()->route('category.index')->with('cat_success' , "Category updated successfully");
+            }
+        }
     }
 }

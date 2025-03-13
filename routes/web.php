@@ -32,4 +32,5 @@ Route::get('/category',[CategoryController::class,'index'])->name('category.inde
 Route::post('/category/store',[CategoryController::class,'store'])->name('category.store');
 // edit
 Route::get('/category/edit/{slug}',[CategoryController::class,'edit'])->name('category.edit');
-
+// edit update
+Route::post('/category/update/{slug}',[CategoryController::class,'update'])->name('category.update');

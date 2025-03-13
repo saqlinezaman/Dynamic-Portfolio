@@ -6,7 +6,7 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="header-title">Category edit</h4>
-                <form action="" method="POST" enctype="multipart/form-data" role="form">
+                <form action="{{route('category.update',$realmadrid->slug)}}" method="POST" enctype="multipart/form-data" role="form">
                     @csrf
                     {{-- titel --}}
                     <div class="mb-3">
@@ -32,7 +32,7 @@
                             <p class="text-danger"> {{$message}} </p>
                         @enderror
                     </div>
-                    <button  style="background-color: #2D9596" class="btn btn-primary mt-4" type="submit">insert</button>
+                    <button  style="background-color: #2D9596" class="btn btn-primary mt-4" type="submit">Update</button>
                 </form>
             </div>
         </div>
