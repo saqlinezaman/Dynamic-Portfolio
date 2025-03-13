@@ -167,7 +167,7 @@ class CategoryController extends Controller
                 'status' =>'active',
                 'updated_at' => now(),
             ]);
-            return redirect()->route('category.index')->with('cat_success' , "ategory status changed successfully");
+            return redirect()->route('category.index')->with('cat_success' , "Category status changed successfully");
         }
     }
 }
