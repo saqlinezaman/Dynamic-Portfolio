@@ -138,6 +138,7 @@ class CategoryController extends Controller
             }
         }
     }
+    // delete catagory
     public function destroy($slug){
         $category = Category::where('slug',$slug)->first();
 
@@ -156,18 +157,21 @@ class CategoryController extends Controller
     // status
     public function status($id){
         $category = Category::where('id',$id)->first();
+
         if($category->status == 'active'){
             Category::find($category->id)->update([
-                'status' =>'deactive',
+                'status' => 'deactive',
                 'updated_at' => now(),
             ]);
-            return redirect()->route('category.index')->with('cat_success' , "Category status changed successfully");
+        return redirect()->route('category.index')->with('cat_success' , "Category Status Change Successfull");
+
         }else{
             Category::find($category->id)->update([
-                'status' =>'active',
+                'status' => 'active',
                 'updated_at' => now(),
             ]);
-            return redirect()->route('category.index')->with('cat_success' , "Category status changed successfully");
+        return redirect()->route('category.index')->with('cat_success' , "Category Status Change Successfull");
+
         }
     }
 }

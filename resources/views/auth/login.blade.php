@@ -194,7 +194,7 @@
                                                     <a class='text-muted font-weight-medium ms-1' href='pages-recoverpw.html'>Forgot your password?</a>
                                                 </p>
                                                 <p class="text-muted mb-0">Don't have an account?
-                                                    <a class='text-muted font-weight-medium ms-1' href='{{route('register')}}'><b>Sign Up</b></a>
+                                                    <a class='text-muted font-weight-medium ms-1' href='javascript:void(0)'><b>Sign Up</b></a>
                                                 </p>
                                             </div> <!-- end col -->
                                         </div>

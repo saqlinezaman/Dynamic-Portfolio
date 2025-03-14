@@ -34,11 +34,17 @@
                             <p class="text-muted mb-0"> {{$category->slug}}</p>
                           </td>
                           <td>
-                            <form id="halamadrid" action="{{route('category.status',$category->id)}}" method="POST">
+                            {{-- <form id="halamadrid{{$category->id}}" action="{{route('category.status',$category->id)}}" method="POST">
                                 @csrf
                             <div class="form-check form-switch">
-                                <input onchange="document.querySelector('#halamadrid').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" {{$category->status == 'active' ? 'checked' : ''}}>
+                                <input onchange="document.querySelector('#halamadrid{{$category->id}}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" {{$category->status == 'active' ? 'checked' : ''}}>
                                 <label class="form-check-label" for="flexSwitchCheckDefault"> {{$category->status}} </label>
+                              </div>
+                            </form> --}}
+                            <form id="halamadrid{{ $category->id }}" action="{{ route('category.status',$category->id) }}" method="POST">
+                                @csrf
+                            <div class="form-check form-switch">
+                                <input onchange="document.querySelector('#halamadrid{{ $category->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $category->status == 'active' ? 'checked' : '' }}>
                               </div>
                             </form>
                           </td>
