@@ -48,7 +48,15 @@
                 <ul class="app-menu">
 
                     <li class="menu-title">Menu</li>
-
+                    {{-- view website --}}
+                    <li class="menu-item">
+                        <a class='menu-link waves-effect' href='{{route('home.index')}}'>
+                            <span class="menu-icon"><i class="fa-solid fa-eye"></i></i></span>
+                            <span class="menu-text"> View Website </span>
+                            <span class="badge bg-info rounded-pill ms-auto">3</span>
+                        </a>
+                    </li>
+                    {{-- dashboard --}}
                     <li class="menu-item">
                         <a class='menu-link waves-effect' href='{{route('home')}}'>
                             <span class="menu-icon"><i data-lucide="airplay "></i></span>
@@ -56,6 +64,24 @@
                             <span class="badge bg-info rounded-pill ms-auto">3</span>
                         </a>
                     </li>
+                    {{-- Manaement --}}
+                    <li class="menu-item">
+                        <a href="#menuExpages" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
+                            <span class="menu-icon"><i class="bx bxs-certification"></i></span>
+                            <span class="menu-text"> Management Role & <br> Permission </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="menuExpages">
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a class='menu-link' href='{{ route('management.index') }}'>
+                                        <span class="menu-text">Assgin roll & register</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    {{-- profile --}}
                     <li class="menu-item">
                         <a class='menu-link waves-effect' href='{{route("profile.index")}}'>
                             <span class="menu-icon"><i class="fa-regular fa-id-badge"></i></span>
@@ -63,6 +89,7 @@
                             <span class="badge bg-info rounded-pill ms-auto">3</span>
                         </a>
                     </li>
+                    {{-- category --}}
                     <li class="menu-item">
                         <a href="#menuExpages" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
                             <span class="menu-icon"><i class="bx bx-file"></i></span>

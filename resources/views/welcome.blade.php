@@ -1,17 +1,14 @@
 
 <!doctype html>
 <html lang="zxx">
-
-
-<!-- Mirrored from miller.bslthemes.com/arter-demo/onepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Mar 2025 09:39:03 GMT -->
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- color of address bar in mobile browser -->
+{{-- color for mobile --}}
   <meta name="theme-color" content="#2B2B35">
   <!-- favicon  -->
-  <link rel="shortcut icon" href="{{asset('website/asset')}}/{{asset('website/asset')}}/img/thumbnail.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="{{asset('dashboard')}}/assets/images/fab-image.webp">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="{{asset('website/asset')}}//css/plugins/bootstrap.min.css">
   <!-- font awesome css -->
@@ -23,7 +20,7 @@
   <!-- main css -->
   <link rel="stylesheet" href="{{asset('website/asset')}}//css/style.css">
 
-  <title>Saqline Moaj</title>
+  <title>Saqline Zaman | Full stack laravel web developer | Wordpress and Ecommerce Expert</title>
 </head>
 
 <body>
@@ -274,7 +271,6 @@
 
           </div>
           <!-- menu bar frame end -->
-
         </div>
         <!-- info bar end -->
 
@@ -285,7 +281,7 @@
           <div class="art-curtain"></div>
 
           <!-- top background -->
-          <div class="art-top-bg" style="background-image: url({{asset('website/asset')}}/img/bg.jpg)">
+          <div class="art-top-bg" style="background-image: url({{asset('website/asset/img/works/bg-image.webp')}})">
             <!-- overlay -->
             <div class="art-top-bg-overlay"></div>
             <!-- overlay end -->
@@ -306,23 +302,23 @@
                   <!-- col -->
                   <div class="col-lg-12">
 
-                    <!-- banner -->
-                    <div class="art-a art-banner" style="background-image: url({{asset('website/asset')}}/img/bg.jpg)">
-                      <!-- banner back -->
+                    <!-- Hero -->
+                    <div class="art-a art-banner" style="background-image: url({{asset('website/asset/img/works/bg-image.webp')}})">
+                      <!-- Hero back -->
                       <div class="art-banner-back"></div>
-                      <!-- banner dec -->
+                      {{-- Hero decoration --}}
                       <div class="art-banner-dec"></div>
-                      <!-- banner overlay -->
+                      <!-- Hero overlay -->
                       <div class="art-banner-overlay">
-                        <!-- main title -->
+                        {{-- main title --}}
                         <div class="art-banner-title">
                           <!-- title -->
                           <h1 class="mb-15">Hey I'm<br>Junior elephant!</h1>
-                          <!-- suptitle -->
+                          {{-- suptitle --}}
                           <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; I build <span class="txt-rotate" data-period="2000"
                               data-rotate='[ "Wordpress Website", "Web aplication", "Laravel Website" ]'></span>&lt;/<i>code</i>&gt;</div>
                           <div class="art-buttons-frame">
-                            <!-- button -->
+                            {{-- button --}}
                             <a href="#." class="art-btn art-btn-md"><span>Explore now</span></a>
                             <!-- button -->
                             <a href="#." class="art-link art-white-link art-w-chevron">Hire me</a>

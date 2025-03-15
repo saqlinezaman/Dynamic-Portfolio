@@ -74,12 +74,12 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="header-title">Category insert</h4>
-                <form action="{{route('category.store')}}" method="POST" enctype="multipart/form-data" role="form">
+                <form action="{{route('category.store')}}" method="POST" enctype="multipart/form-data" >
                     @csrf
                     {{-- titel --}}
                     <div class="mb-3">
                         <label for="validationCustom01" class="form-label"> Category title</label>
-                        <input type="text" class="form-control" id="validationCustom01" placeholder="Input your category titel " value="" name="title">
+                        <input type="text" class="form-control @error('title') is_invalid @enderror" id="validationCustom01" placeholder="Input your category titel " value="" name="title">
                         @error('title')
                             <p class="text-danger"> {{$message}} </p>
                         @enderror
@@ -100,6 +100,7 @@
                             <p class="text-danger"> {{$message}} </p>
                         @enderror
                     </div>
+
                     <button  style="background-color: #2D9596" class="btn btn-primary mt-4" type="submit">insert</button>
                 </form>
             </div>

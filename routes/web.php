@@ -3,6 +3,8 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\ManagementController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -13,6 +15,13 @@ Route::get('/', function () {
 Auth::routes(['register'=>false]);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+// management-------------------------------------------------------------------------------
+
+Route::get('/management', [ ManagementController::class, 'index'])->name('management.index');
+Route::post('/management/user/register', [ ManagementController::class, 'store_register'])->name('management.store');
+
+
+
 
 // profile----------------------------------------------------------------
 
@@ -38,3 +47,5 @@ Route::post('/category/update/{slug}',[CategoryController::class,'update'])->nam
 Route::get('/category/destroy/{slug}',[CategoryController::class,'destroy'])->name('category.destroy');
 // status
 Route::post('/category/status/{id}',[CategoryController::class,'status'])->name('category.status');
+// front end website---------------------------------------------------------------------
+Route::get('/homeWebsite',[FrontendController::class,'index'])->name('home.index');
