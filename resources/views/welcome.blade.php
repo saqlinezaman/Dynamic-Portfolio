@@ -245,10 +245,10 @@
               </div>
 
               {{-- register and log in --}}
-              <div class="d-flex justify-content-around">
-
-                <a href="{{route('login')}}">Login</a>
+              <div class="">
+                <a style="font-size: 16px; font-weight: bold;" href="{{route('login')}}">Login Here</a>
               </div>
+
               <!-- links frame end -->
 
             </div>

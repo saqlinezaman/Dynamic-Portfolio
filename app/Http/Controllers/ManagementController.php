@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Session;
 
 class ManagementController extends Controller
 {
+    // from register for user role
     public function index(){
         $managers = User::where('role','manager')->get();
         return view('dashboard.manegement.auth.register',compact('managers'));
@@ -36,5 +37,19 @@ class ManagementController extends Controller
 
 
     }
+    // data table status
+    public function manager_down($id){
+        $manager = User::where('id',$id)->first();
+
+        if($manager->role == 'manager'){
+            User::find($manager->id)->update([
+                'role' => 'user',
+                'updated_at' => now(),
+            ]);
+            return back()->with('register_complete' , "Manager Dimoted Successfully");
+
+        }
+    }
+
 
 }

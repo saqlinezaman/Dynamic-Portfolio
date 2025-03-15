@@ -65,6 +65,8 @@
                         </a>
                     </li>
                     {{-- Manaement --}}
+                    @if (Auth::user()->role == 'admin' || Auth::user()->role == 'manager' )
+
                     <li class="menu-item">
                         <a href="#menuExpages" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
                             <span class="menu-icon"><i class="bx bxs-certification"></i></span>
@@ -81,6 +83,7 @@
                             </ul>
                         </div>
                     </li>
+                    @endif
                     {{-- profile --}}
                     <li class="menu-item">
                         <a class='menu-link waves-effect' href='{{route("profile.index")}}'>

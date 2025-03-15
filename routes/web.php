@@ -18,7 +18,11 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 // management-------------------------------------------------------------------------------
 
 Route::get('/management', [ ManagementController::class, 'index'])->name('management.index');
+// regiter form
 Route::post('/management/user/register', [ ManagementController::class, 'store_register'])->name('management.store');
+// make role manager or user or blogger
+Route::post('/management/user/manager/down/{id}', [ ManagementController::class, 'manager_down'])->name('management.down');
+
 
 
 

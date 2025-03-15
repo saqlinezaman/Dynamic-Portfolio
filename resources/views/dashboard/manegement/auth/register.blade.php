@@ -53,8 +53,75 @@
             </div>
         </div>
     </div>
+{{-- table --}}
+<div class="col-sm-4 col-lg-6">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="mb-4 text-success bg-dark px-full py-2 rounded-2 text-center">Manaers role table</h4>
+            <table class="table align-middle mb-0 bg-white item-center " >
+                <thead class="bg-light ">
+                  <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    @if (Auth::user()->role == 'admin')
+                    <th>Status</th>
+                    <th>Actions</th>
+                    @endif
+                  </tr>
+                </thead>
+                <tbody class=" items-center">
+                  @forelse ($managers as $manager)
+                    <tr>
+                      {{-- image --}}
+                      <td>
+                        <div class="d-flex align-items-center">
+                         {{$manager->name}}
+                        </div>
+                      </td>
+                      <td>
+                          <p class="fw-normal mb-1 fw-bold"> {{$manager->role}} </p>
+                        </td>
+                        @if (Auth::user()->role == 'admin')
+
+                        <td>
+
+                            <form id="madrid{{ $manager->id }}" action="{{route('management.down' , $manager->id)}}" method="POST">
+                            @csrf
+                        <div class="form-check form-switch">
+
+                            <input onchange="document.querySelector('#madrid{{ $manager->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $manager->role == $manager->role ? 'checked' : '' }}>
+                          </div>
+                        </form>
+                      </td>
+                      <td>
+                        <a href=""  type="button" class="btn btn-link btn-sm btn-rounded">
+                            <i class="fa-solid fa-pen-to-square text-info"></i>
+                        </a>
+                        <a href=""  type="button" class="btn btn-link btn-sm btn-rounded">
+                            <i class="fa-solid fa-trash-can text-danger"></i>
+                        </a>
+                        </td>
+                        @endif
+                    </tr>
+                    @empty
+                    <tr>
+                        <td class="text-danger text-center" colspan="4">
+                            You don't create any category
+                        </td>
+                    </tr>
+                  @endforelse
+                </tbody>
+              </table>
+        </div>
+    </div>
 </div>
 
+</div>
+</div>
+
+{{-- table --}}
+
+</div>
 
 @endsection
 
