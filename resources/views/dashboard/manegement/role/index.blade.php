@@ -7,43 +7,31 @@
         <div class="col-lg-8 ">
             <div class="card  p-5">
                 <div class="card-body">
-                    <h4 class="header-title">Roll & user ragistration</h4>
+                    <h4 class="header-title">Exist role management</h4>
                     <form action="{{route('management.store')}}" method="POST" enctype="multipart/form-data" >
                         @csrf
-                        {{-- name --}}
-                        <div class="mb-3">
-                            <label for="validationCustom01" class="form-label">Name</label>
-                            <input type="text" class="form-control @error('name') is_invalid @enderror" id="validationCustom01" placeholder="name" value="" name="name">
-                            @error('name')
-                                <p class="text-danger"> {{$message}} </p>
-                            @enderror
-                        </div>
-                        {{-- email --}}
-                        <div class="mb-3">
-                            <label for="validationCustom01" class="form-label">Email</label>
-                            <input type="text" class="form-control @error('email') is_invalid @enderror" id="validationCustom01" placeholder="Email" value="" name="email">
-                            @error('email')
-                                <p class="text-danger"> {{$message}} </p>
-                            @enderror
-                        </div>
-                        {{-- Password --}}
-                        <div class="mb-3">
-                            <label for="validationCustom01" class="form-label">Password</label>
-                            <input type="text" class="form-control @error('password') is_invalid @enderror" id="validationCustom01" value="" name="password" placeholder="Password">
-                            @error('password')
-                                <p class="text-danger"> {{$message}} </p>
-                            @enderror
-                        </div>
                         {{-- role --}}
-
                         <div class="mb-3">
                             <label for="validationCustom01" class="form-label">Role</label>
 
                             <select name="role" class="form-select">
                                 <option value="">Select role</option>
-                                <option value="manager">Manager</option>
-                                <option value="blogger">Blogger</option>
-                                <option value="user">User</option>
+                                @foreach ($bloggers as $blogger)
+                                    <option value=" {{$blogger->id}} "> {{$blogger->name}} </option>
+                                @endforeach
+                            </select>
+                            @error('role')
+                                <p class="text-danger"> {{$message}} </p>
+                            @enderror
+                        </div>
+                        {{-- role  users  --}}
+                        <div class="mb-3">
+                            <label for="validationCustom01" class="form-label">Manage users</label>
+                            <select name="user_id" class="form-select">
+                                <option value="">Select role</option>
+                                @foreach ($users as $user)
+                                    <option value=" {{$user->id}} "> {{$user->name}} </option>
+                                @endforeach
                             </select>
                             @error('role')
                                 <p class="text-danger"> {{$message}} </p>
@@ -62,7 +50,7 @@
     <div class="col-sm-4 col-lg-6">
         <div class="card">
             <div class="card-body">
-                <h4 class="mb-4 text-success bg-dark px-full py-2 rounded-2 text-center">Manaers role table</h4>
+                <h4 class="mb-4 text-success bg-dark px-full py-2 rounded-2 text-center">Bloggers role table</h4>
                 <table class="table align-middle mb-0 bg-white item-center " >
                     <thead class="bg-light ">
                       <tr>
@@ -75,26 +63,26 @@
                       </tr>
                     </thead>
                     <tbody class=" items-center">
-                      @forelse ($managers as $manager)
+                      @forelse ($bloggers as $blogger)
                         <tr>
                           {{-- image --}}
                           <td>
                             <div class="d-flex align-items-center">
-                             {{$manager->name}}
+                             {{$blogger->name}}
                             </div>
                           </td>
                           <td>
-                              <p class="fw-normal mb-1 fw-bold"> {{$manager->role}} </p>
+                              <p class="fw-normal mb-1 fw-bold"> {{$blogger->role}} </p>
                             </td>
                             @if (Auth::user()->role == 'admin')
 
                             <td>
 
-                                <form id="madrid{{ $manager->id }}" action="{{route('management.down' , $manager->id)}}" method="POST">
+                                <form id="madrid{{ $blogger->id }}" action="{{route('management.down' , $blogger->id)}}" method="POST">
                                 @csrf
                             <div class="form-check form-switch">
 
-                                <input onchange="document.querySelector('#madrid{{ $manager->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $manager->role == $manager->role ? 'checked' : '' }}>
+                                <input onchange="document.querySelector('#madrid{{ $blogger->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $blogger->role == $blogger->role ? 'checked' : '' }}>
                               </div>
                             </form>
                           </td>
@@ -124,7 +112,7 @@
     <div class="col-sm-4 col-lg-6">
         <div class="card">
             <div class="card-body">
-                <h4 class="mb-4 text-success bg-dark px-full py-2 rounded-2 text-center">Manaers role table</h4>
+                <h4 class="mb-4 text-success bg-dark px-full py-2 rounded-2 text-center">Users role table</h4>
                 <table class="table align-middle mb-0 bg-white item-center " >
                     <thead class="bg-light ">
                       <tr>
@@ -137,26 +125,26 @@
                       </tr>
                     </thead>
                     <tbody class=" items-center">
-                      @forelse ($managers as $manager)
+                      @forelse ($users as $user)
                         <tr>
                           {{-- image --}}
                           <td>
                             <div class="d-flex align-items-center">
-                             {{$manager->name}}
+                             {{$user->name}}
                             </div>
                           </td>
                           <td>
-                              <p class="fw-normal mb-1 fw-bold"> {{$manager->role}} </p>
+                              <p class="fw-normal mb-1 fw-bold"> {{$user->role}} </p>
                             </td>
                             @if (Auth::user()->role == 'admin')
 
                             <td>
 
-                                <form id="madrid{{ $manager->id }}" action="{{route('management.down' , $manager->id)}}" method="POST">
+                                <form id="madrid{{ $user->id }}" action="{{route('management.down' , $user->id)}}" method="POST">
                                 @csrf
                             <div class="form-check form-switch">
 
-                                <input onchange="document.querySelector('#madrid{{ $manager->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $manager->role == $manager->role ? 'checked' : '' }}>
+                                <input onchange="document.querySelector('#madrid{{ $user->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $user->role == $user->role ? 'checked' : '' }}>
                               </div>
                             </form>
                           </td>
@@ -183,4 +171,5 @@
         </div>
     </div>
 </div>
+
 @endsection

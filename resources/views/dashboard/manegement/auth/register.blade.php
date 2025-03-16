@@ -57,7 +57,7 @@
 <div class="col-sm-4 col-lg-6">
     <div class="card">
         <div class="card-body">
-            <h4 class="mb-4 text-success bg-dark px-full py-2 rounded-2 text-center">Manaers role table</h4>
+            <h4 class="mb-4 text-success bg-dark px-full py-2 rounded-2 text-center">Managers role table</h4>
             <table class="table align-middle mb-0 bg-white item-center " >
                 <thead class="bg-light ">
                   <tr>

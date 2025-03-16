@@ -53,7 +53,12 @@ class ManagementController extends Controller
 // role existing
 
 public function role_index(){
-    return view('dashboard.manegement.role.index');
+    // user
+    $users = User::where('role','user')->get();
+    // blogger
+    $bloggers = User::where('role','blogger')->get();
+
+    return view('dashboard.manegement.role.index',compact('users','bloggers'));
 }
 
 }
