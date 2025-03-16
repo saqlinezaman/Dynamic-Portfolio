@@ -10,7 +10,7 @@ class ManagementController extends Controller
 {
     // from register for user role
     public function index(){
-        $managers = User::where('role','manager')->get();
+        $managers = User::where('role','manager','user')->get();
         return view('dashboard.manegement.auth.register',compact('managers'));
     }
 
@@ -50,6 +50,10 @@ class ManagementController extends Controller
 
         }
     }
+// role existing
 
+public function role_index(){
+    return view('dashboard.manegement.role.index');
+}
 
 }

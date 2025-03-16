@@ -15,16 +15,21 @@ Route::get('/', function () {
 Auth::routes(['register'=>false]);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-// management-------------------------------------------------------------------------------
-
-Route::get('/management', [ ManagementController::class, 'index'])->name('management.index');
-// regiter form
-Route::post('/management/user/register', [ ManagementController::class, 'store_register'])->name('management.store');
-// make role manager or user or blogger
-Route::post('/management/user/manager/down/{id}', [ ManagementController::class, 'manager_down'])->name('management.down');
 
 
+// management------------------------------------------------------------------------------
 
+route::middleware(['rolecheck'])->group(function(){
+
+    Route::get('/management', [ ManagementController::class, 'index'])->name('management.index');
+    // regiter form
+    Route::post('/management/user/register', [ ManagementController::class, 'store_register'])->name('management.store');
+    // make role manager or user or blogger
+    Route::post('/management/user/manager/down/{id}', [ ManagementController::class, 'manager_down'])->name('management.down');
+    // management existing role
+    Route::get('/management/role', [ ManagementController::class, 'role_index'])->name('management.role.index');
+
+});
 
 
 // profile----------------------------------------------------------------
@@ -39,6 +44,8 @@ Route::post('/profile/password/update',[ProfileController::class,'password_updat
 // image
 Route::post('/profile/image/update',[ProfileController::class,'image_update'])->name('profile.image');
 
+
+
 // Category----------------------------------------------------------------
 Route::get('/category',[CategoryController::class,'index'])->name('category.index');
 // store
@@ -51,5 +58,8 @@ Route::post('/category/update/{slug}',[CategoryController::class,'update'])->nam
 Route::get('/category/destroy/{slug}',[CategoryController::class,'destroy'])->name('category.destroy');
 // status
 Route::post('/category/status/{id}',[CategoryController::class,'status'])->name('category.status');
+
+
+
 // front end website---------------------------------------------------------------------
 Route::get('/homeWebsite',[FrontendController::class,'index'])->name('home.index');

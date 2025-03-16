@@ -69,15 +69,22 @@
 
                     <li class="menu-item">
                         <a href="#menuExpages" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
-                            <span class="menu-icon"><i class="bx bxs-certification"></i></span>
+                            <span class="menu-icon"><i class="fa-solid fa-people-roof"></i></span>
                             <span class="menu-text"> Management Role & <br> Permission </span>
                             <span class="menu-arrow"></span>
                         </a>
                         <div class="collapse" id="menuExpages">
                             <ul class="sub-menu">
+                                {{-- regiser --}}
                                 <li class="menu-item">
                                     <a class='menu-link' href='{{ route('management.index') }}'>
                                         <span class="menu-text">Assgin roll & register</span>
+                                    </a>
+                                </li>
+                                {{-- role exosting--}}
+                                <li class="menu-item">
+                                    <a class='menu-link' href='{{ route('management.role.index') }}'>
+                                        <span class="menu-text">Assgin exosting user roll</span>
                                     </a>
                                 </li>
                             </ul>
