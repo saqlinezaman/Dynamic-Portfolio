@@ -51,10 +51,9 @@ class ManagementController extends Controller
         }
     }
 // role existing
-
 public function role_index(){
     // user
-    $users = User::where('role','user')->get();
+    $users = User::where('role','user')->where('block',false)->get();
     // blogger
     $bloggers = User::where('role','blogger')->get();
 
@@ -75,6 +74,34 @@ public function role_index(){
             'role' =>$request->role,
             'updated_at'=> now(),
         ]);
-        return back()->with('register_complete' , "Successfull");
+        return back()->with('role_assign',"Role assign successfull");
+    }
+
+// blogger down
+
+    public function blogger_down($id){
+
+        $user = User::where('id', $id)->first();
+
+        if($user->role == 'blogger'){
+         User::find($user->id)->update([
+            'role' =>'user',
+            'updated_at'=> now(),
+        ]);
+         return back()->with('role_blogger_down',"Blogger down successfull");
+        }
+    }
+
+    public function user_down($id){
+
+        $user = User::where('id', $id)->first();
+
+        if($user->role == 'user'){
+         User::find($user->id)->update([
+            'block' =>true,
+            'updated_at'=> now(),
+        ]);
+         return back()->with('role_blogger_down',"Blogger down successfull");
+        }
     }
 }

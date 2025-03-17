@@ -32,6 +32,10 @@
                                 @foreach ($rodrigo as $users)
                                     <option value=" {{$users->id}} "> {{$users->name}}</option>
                                 @endforeach
+                                @foreach ($bloggers as $blogger)
+                                    <option value=" {{$blogger->id}} "> {{$blogger->name}}</option>
+                                @endforeach
+
                             </select>
                             @error('role')
                                 <p class="text-danger"> {{$message}} </p>
@@ -78,7 +82,7 @@
 
                             <td>
 
-                                <form id="madrid{{ $blogger->id }}" action="{{route('management.down' , $blogger->id)}}" method="POST">
+                                <form id="madrid{{ $blogger->id }}" action="{{route('management.role.blogger.down' , $blogger->id)}}" method="POST">
                                 @csrf
                             <div class="form-check form-switch">
 
@@ -140,7 +144,7 @@
 
                             <td>
 
-                                <form id="madrid{{ $users->id }}" action="{{route('management.down' , $users->id)}}" method="POST">
+                                <form id="madrid{{ $users->id }}" action="{{route('management.role.user.down' , $users->id)}}" method="POST">
                                 @csrf
                             <div class="form-check form-switch">
 
@@ -172,4 +176,44 @@
     </div>
 </div>
 
+@endsection
+@section('script')
+
+@if (session('role_assign'))
+
+<script>
+   Toastify({
+  text: "{{session('role_assign')}}",
+  duration: 4000,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "right", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+  onClick: function(){} // Callback after click
+}).showToast();
+</script>
+@endif
+
+@if (session('role_blogger_down'))
+
+<script>
+   Toastify({
+  text: "{{session('role_blogger_down')}}",
+  duration: 4000,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "right", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+  onClick: function(){} // Callback after click
+}).showToast();
+</script>
+@endif
 @endsection

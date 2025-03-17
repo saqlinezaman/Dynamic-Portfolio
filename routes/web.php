@@ -30,6 +30,14 @@ route::middleware(['rolecheck'])->group(function(){
     Route::get('/management/role', [ ManagementController::class, 'role_index'])->name('management.role.index');
     // role assign
     Route::post('/management/role/assign', [ ManagementController::class, 'role_assign'])->name('management.role.assign');
+    // blogger grade down
+    Route::post('/management/role/undo/blogger/{id}', [ ManagementController::class, 'blogger_down'])->name('management.role.blogger.down');
+    // blogger grade down
+    Route::post('/management/role/undo/user/{id}', [ ManagementController::class, 'user_down'])->name('management.role.user.down');
+
+
+
+
 
 
 });
