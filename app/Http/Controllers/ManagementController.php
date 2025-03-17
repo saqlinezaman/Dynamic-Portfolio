@@ -58,7 +58,23 @@ public function role_index(){
     // blogger
     $bloggers = User::where('role','blogger')->get();
 
-    return view('dashboard.manegement.role.index',compact('users','bloggers'));
+    return view('dashboard.manegement.role.index',[
+        'rodrigo' => $users,
+            'bloggers' => $bloggers,
+    ]);
 }
 
+    // role assign
+    public function role_assign(Request $request){
+
+        $request->validate([
+            'role'=>'required|in:manager,blogger,user',
+        ]);
+        $user = User::where('id',$request->user_id)->first();
+        User::find($user->id)->update([
+            'role' =>$request->role,
+            'updated_at'=> now(),
+        ]);
+        return back()->with('register_complete' , "Successfull");
+    }
 }

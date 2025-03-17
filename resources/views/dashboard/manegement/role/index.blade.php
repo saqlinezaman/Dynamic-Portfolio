@@ -8,7 +8,7 @@
             <div class="card  p-5">
                 <div class="card-body">
                     <h4 class="header-title">Exist role management</h4>
-                    <form action="{{route('management.store')}}" method="POST" enctype="multipart/form-data" >
+                    <form action="{{route('management.role.assign')}}" method="POST" enctype="multipart/form-data" >
                         @csrf
                         {{-- role --}}
                         <div class="mb-3">
@@ -16,9 +16,9 @@
 
                             <select name="role" class="form-select">
                                 <option value="">Select role</option>
-                                @foreach ($bloggers as $blogger)
-                                    <option value=" {{$blogger->id}} "> {{$blogger->name}} </option>
-                                @endforeach
+                                <option value="manager">Manager</option>
+                                <option value="blogger">Blogger</option>
+                                <option value="user">User</option>
                             </select>
                             @error('role')
                                 <p class="text-danger"> {{$message}} </p>
@@ -29,8 +29,8 @@
                             <label for="validationCustom01" class="form-label">Manage users</label>
                             <select name="user_id" class="form-select">
                                 <option value="">Select role</option>
-                                @foreach ($users as $user)
-                                    <option value=" {{$user->id}} "> {{$user->name}} </option>
+                                @foreach ($rodrigo as $users)
+                                    <option value=" {{$users->id}} "> {{$users->name}}</option>
                                 @endforeach
                             </select>
                             @error('role')
@@ -125,26 +125,26 @@
                       </tr>
                     </thead>
                     <tbody class=" items-center">
-                      @forelse ($users as $user)
+                      @forelse ($rodrigo as $users)
                         <tr>
                           {{-- image --}}
                           <td>
                             <div class="d-flex align-items-center">
-                             {{$user->name}}
+                             {{$users->name}}
                             </div>
                           </td>
                           <td>
-                              <p class="fw-normal mb-1 fw-bold"> {{$user->role}} </p>
+                              <p class="fw-normal mb-1 fw-bold"> {{$users->role}} </p>
                             </td>
                             @if (Auth::user()->role == 'admin')
 
                             <td>
 
-                                <form id="madrid{{ $user->id }}" action="{{route('management.down' , $user->id)}}" method="POST">
+                                <form id="madrid{{ $users->id }}" action="{{route('management.down' , $users->id)}}" method="POST">
                                 @csrf
                             <div class="form-check form-switch">
 
-                                <input onchange="document.querySelector('#madrid{{ $user->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $user->role == $user->role ? 'checked' : '' }}>
+                                <input onchange="document.querySelector('#madrid{{ $users->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $users->role == $users->role ? 'checked' : '' }}>
                               </div>
                             </form>
                           </td>

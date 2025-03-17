@@ -28,6 +28,9 @@ route::middleware(['rolecheck'])->group(function(){
     Route::post('/management/user/manager/down/{id}', [ ManagementController::class, 'manager_down'])->name('management.down');
     // management existing role
     Route::get('/management/role', [ ManagementController::class, 'role_index'])->name('management.role.index');
+    // role assign
+    Route::post('/management/role/assign', [ ManagementController::class, 'role_assign'])->name('management.role.assign');
+
 
 });
 
