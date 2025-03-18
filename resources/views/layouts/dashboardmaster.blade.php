@@ -68,12 +68,12 @@
                     @if (Auth::user()->role == 'admin' || Auth::user()->role == 'manager' )
 
                     <li class="menu-item">
-                        <a href="#menuExpages" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
+                        <a href="#menumanage" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
                             <span class="menu-icon"><i class="fa-solid fa-people-roof"></i></span>
                             <span class="menu-text"> Management Role & <br> Permission </span>
                             <span class="menu-arrow"></span>
                         </a>
-                        <div class="collapse" id="menuExpages">
+                        <div class="collapse" id="menumanage">
                             <ul class="sub-menu">
                                 {{-- regiser --}}
                                 <li class="menu-item">
@@ -101,16 +101,38 @@
                     </li>
                     {{-- category --}}
                     <li class="menu-item">
-                        <a href="#menuExpages" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
+                        <a href="#menucat" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
                             <span class="menu-icon"><i class="bx bx-file"></i></span>
                             <span class="menu-text"> Category </span>
                             <span class="menu-arrow"></span>
                         </a>
-                        <div class="collapse" id="menuExpages">
+                        <div class="collapse" id="menucat">
                             <ul class="sub-menu">
                                 <li class="menu-item">
                                     <a class='menu-link' href='{{ route('category.index') }}'>
                                         <span class="menu-text">Show Categories</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    {{-- blogs --}}
+                    <li class="menu-item">
+                        <a href="#menublog" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
+                            <span class="menu-icon"><i class="fa-solid fa-book-open"></i></span>
+                            <span class="menu-text"> Blog </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="menublog">
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a class='menu-link' href='{{ route('blog.index') }}'>
+                                        <span class="menu-text">Show blogs</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class='menu-link' href='{{ route('blog.create') }}'>
+                                        <span class="menu-text">Create blogs</span>
                                     </a>
                                 </li>
                             </ul>
@@ -408,22 +430,6 @@
                 <!-- Start Content-->
                 <div class="container-fluid">
 
-                    <!-- start page title----- -->
-                    <div class="py-3 py-lg-4">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h4 class="page-title mb-0">Dashboard</h4>
-                            </div>
-                            <div class="col-lg-6">
-                               <div class="d-none d-lg-block">
-                                <ol class="breadcrumb m-0 float-end">
-                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Moaj</a></li>
-                                    <li class="breadcrumb-item active">Dashboard</li>
-                                </ol>
-                               </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div> <!-- container -->
 
