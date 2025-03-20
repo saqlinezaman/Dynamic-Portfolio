@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Http\Requests\StoreBlogRequest;
 use App\Http\Requests\UpdateBlogRequest;
+use App\Models\Category;
 
 class BlogController extends Controller
 {
@@ -21,8 +22,10 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view('dashboard.blog.create');
+        $categories = Category::where('status','active')->latest()->get();
+        return view('dashboard.blog.create',compact('categories'));
     }
+
 
     /**
      * Store a newly created resource in storage.

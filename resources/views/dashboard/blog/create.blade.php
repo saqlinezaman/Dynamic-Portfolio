@@ -22,6 +22,21 @@
                         <label for="validationCustom01" class="form-label"> Blog slug</label>
                         <input type="text" class="form-control" id="validationCustom01" placeholder="Input your Blog slug " value="" name="slug">
                     </div>
+                    {{-- categories --}}
+                    <div class="mb-3">
+                        <label for="validationCustom01" class="form-label">categories</label>
+                        <select name="user_id" class="form-select">
+                            <option value="">Select role</option>
+                            @foreach ($categories as $category)
+                                <option value=" {{$category->id}} "> {{$category->title}}</option>
+                            @endforeach
+
+
+                        </select>
+                        @error('role')
+                            <p class="text-danger"> {{$message}} </p>
+                        @enderror
+                    </div>
                     {{-- img --}}
                     <div class="row my-5 justify-content-center align-items-center d-flex">
                         <img id="masudMama" src="{{asset('uploads/default/default.png')}}" alt="" style="width; full" height="400px; object-fit-contain;" class="">
