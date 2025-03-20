@@ -1,4 +1,4 @@
 @extends('layouts.dashboardmaster')
-@section('contents')
+@section('content')
 
 @endsection

@@ -15,5 +15,8 @@
         "sass": "^1.56.1",
         "tailwindcss": "^4.0.0",
         "vite": "^6.0.11"
+    },
+    "dependencies": {
+        "vercel": "^41.4.1"
     }
 }
