@@ -486,6 +486,9 @@
     {{-- tostify --}}
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
+    {{-- tiny for long text description --}}
+    <script src="https://cdn.tiny.cloud/1/b0vka1a0o2pmw8tslxinbmomkz7k45idtfea9zr5j7o05o6l/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+
     @yield('script')
 
 </body>

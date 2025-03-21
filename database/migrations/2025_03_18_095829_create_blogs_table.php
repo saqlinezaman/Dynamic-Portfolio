@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('titel');
             $table->string('slug');
             $table->string('thumbnail');
-            $table->string('short_description')->max('300');
+            $table->longText('short_description')->max('300');
             $table->longText('description');
             $table->string('status')->default('deactive');
             $table->timestamps();
