@@ -7,17 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {{-- color for mobile --}}
   <meta name="theme-color" content="#2B2B35">
-  <!-- favicon  -->
+ {{-- favicon --}}
   <link rel="shortcut icon" href="{{asset('dashboard')}}/assets/images/fab-image.webp">
-  <!-- bootstrap css -->
+  {{-- bootstrap css --}}
   <link rel="stylesheet" href="{{asset('website/asset')}}//css/plugins/bootstrap.min.css">
-  <!-- font awesome css -->
+  {{-- font awesome --}}
   <link rel="stylesheet" href="{{asset('website/asset')}}//css/plugins/font-awesome.min.css">
-  <!-- swiper css -->
+  {{-- swiper css --}}
   <link rel="stylesheet" href="{{asset('website/asset')}}//css/plugins/swiper.min.css">
-  <!-- fancybox css -->
+  {{-- fancybox css --}}
   <link rel="stylesheet" href="{{asset('website/asset')}}//css/plugins/fancybox.min.css">
-  <!-- main css -->
+  {{-- main css --}}
   <link rel="stylesheet" href="{{asset('website/asset')}}//css/style.css">
 
   <title>Saqline Zaman | Full stack laravel web developer | Wordpress and Ecommerce Expert</title>
@@ -58,7 +58,7 @@
             <div class="art-header">
               <!-- avatar -->
               <div class="art-avatar">
-                <a data-fancybox="avatar" data-no-swup href="{{asset('website/asset')}}/img/face-1.jpg" class="art-avatar-curtain">
+                <a data-fancybox="avatar" data-no-swup href="{{asset('website/asset/img/01728108888.jpg')}}" class="art-avatar-curtain">
                   <img src="{{asset('website/asset/img/01728108888.jpg')}}" alt="avatar">
                   <i class="fas fa-expand"></i>
                 </a>
@@ -79,21 +79,21 @@
             <!-- scroll frame -->
             <div id="scrollbar2" class="art-scroll-frame">
 
-              <!-- info bar about -->
+              {{-- info about --}}
               <div class="art-table p-15-15">
-                <!-- about text -->
+                {{-- about text --}}
                 <ul>
-                  <!-- country -->
+                  {{-- country --}}
                   <li>
-                    <h6>Residence:</h6><span>Canada</span>
+                    <h6>Residence:</h6><span>Bangladesh</span>
                   </li>
-                  <!-- city -->
+                  {{-- city --}}
                   <li>
-                    <h6>City:</h6><span>Toronto</span>
+                    <h6>City:</h6><span>Kishoreganj</span>
                   </li>
-                  <!-- age -->
+                  {{-- age --}}
                   <li>
-                    <h6>Age:</h6><span>26</span>
+                    <h6>Age:</h6><span>21</span>
                   </li>
                 </ul>
               </div>
@@ -109,7 +109,7 @@
                 <div class="art-lang-skills-item">
                   <div id="circleprog1" class="art-cirkle-progress"></div>
                   <!-- title -->
-                  <h6>French</h6>
+                  <h6>Bangla</h6>
                 </div>
                 <!-- skill end -->
 
@@ -125,7 +125,7 @@
                 <div class="art-lang-skills-item">
                   <div id="circleprog3" class="art-cirkle-progress"></div>
                   <!-- title -->
-                  <h6>Spanish</h6>
+                  <h6>Hindi</h6>
                 </div>
                 <!-- skill end -->
 
@@ -223,13 +223,11 @@
               <!-- knowledge list -->
               <ul class="art-knowledge-list p-15-0">
                 <!-- list item -->
-                <li>Bootstrap, Materialize</li>
+                <li>Bootstrap, Tailwind Css</li>
                 <!-- list item -->
-                <li>Stylus, Sass, Less</li>
+                <li>Vue js , React js</li>
                 <!-- list item -->
-                <li>Gulp, Webpack, Grunt</li>
-                <!-- list item -->
-                <li>GIT knowledge</li>
+                <li>Git & Git hub</li>
               </ul>
               <!-- knowledge list end -->
 
@@ -240,7 +238,7 @@
               <div class="art-links-frame p-15-15">
 
                 <!-- download cv button -->
-                <a href="files/cv.txt" class="art-link" download data-no-swup>Download cv <i class="fas fa-download"></i></a>
+                <a href="{{asset('website/asset/files/Md Saqline zaman moaj new cv.pdf')}}" class="art-link" download data-no-swup>Download cv <i class="fas fa-download"></i></a>
 
               </div>
 
@@ -257,15 +255,15 @@
             <!-- sidebar social -->
             <div class="art-ls-social">
               <!-- social link -->
-              <a href="#." target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/saqlinezamanmoaz/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
               <!-- social link -->
-              <a href="#." target="_blank"><i class="fab fa-dribbble"></i></a>
+              <a href="https://dribbble.com/saqlinezaman" target="_blank"><i class="fab fa-dribbble"></i></a>
               <!-- social link -->
-              <a href="#." target="_blank"><i class="fab fa-behance"></i></a>
+              <a href="https://www.behance.net/saqline-zaman" target="_blank"><i class="fab fa-behance"></i></a>
               <!-- social link -->
-              <a href="#." target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/saqlinezaman" target="_blank"><i class="fab fa-github"></i></a>
               <!-- social link -->
-              <a href="#." target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.facebook.com/saqline.zaman.3" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
             <!-- sidebar social end -->
 
@@ -321,7 +319,7 @@
                             {{-- button --}}
                             <a href="#." class="art-btn art-btn-md"><span>Explore now</span></a>
                             <!-- button -->
-                            <a href="#." class="art-link art-white-link art-w-chevron">Hire me</a>
+                            <a href="https://www.fiverr.com/saqlinezaman" class="art-link art-white-link art-w-chevron">Hire me</a>
                           </div>
                         </div>
                         <!-- main title end -->

@@ -82,11 +82,11 @@
 
 @section('script')
 
-@if (session('succsess'))
+@if (session('success'))
 
 <script>
    Toastify({
-  text: "{{session('succsess')}}",
+  text: "{{session('success')}}",
   duration: 4000,
   newWindow: true,
   close: true,
