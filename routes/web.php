@@ -72,4 +72,5 @@ Route::resource('/blog',BlogController::class);
 
 
 // front end website---------------------------------------------------------------------
-Route::get('/homeWebsite',[FrontendController::class,'index'])->name('home.index');
+Route::get('/homeWebsite/',[FrontendController::class,'index'])->name('home.index');
+

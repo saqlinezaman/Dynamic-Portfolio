@@ -18,7 +18,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('dashboard.blog.index');
+        $blogs = Blog::latest()->get();
+        return view('dashboard.blog.index',compact('blogs'));
     }
 
     /**
