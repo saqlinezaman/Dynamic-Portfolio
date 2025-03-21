@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->integer('user_id');
             $table->integer('category_id');
-            $table->string('titel');
+            $table->string('title');
             $table->string('slug');
             $table->string('thumbnail');
-            $table->longText('short_description')->max('300');
+            $table->longText('short_description');
             $table->longText('description');
             $table->string('status')->default('deactive');
             $table->timestamps();

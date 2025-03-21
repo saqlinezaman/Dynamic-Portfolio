@@ -65,7 +65,7 @@
                         </a>
                     </li>
                     {{-- Manaement --}}
-                    @if (Auth::user()->role == 'admin' || Auth::user()->role == 'manager' )
+                    @if (Auth::user()->role =='admin' || Auth::user()->role =='manager' )
 
                     <li class="menu-item">
                         <a href="#menumanage" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">

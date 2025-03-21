@@ -1,7 +1,14 @@
 @extends('layouts.dashboardmaster')
 @section('content')
 
+
+
+
+
 @endsection
+
+
+
 @section('script')
 
 @if (session('succsess'))

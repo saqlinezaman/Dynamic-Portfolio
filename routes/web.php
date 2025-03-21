@@ -36,11 +36,6 @@ route::middleware(['rolecheck'])->group(function(){
     // blogger grade down
     Route::post('/management/role/undo/user/{id}', [ ManagementController::class, 'user_down'])->name('management.role.user.down');
 
-
-
-
-
-
 });
 
 

@@ -37,48 +37,50 @@ class BlogController extends Controller
     public function store(StoreBlogRequest $request)
     {
         $request->validate([
-            'title' => 'required',
-            'thumbnail' => 'required',
-            'short_description' => 'required|max:300',
-            'description' => 'required',
-            'categgory_id'=>'required',
+            "category_id" => 'required',
+            "title" => 'required',
+            "thumbnail" => 'required',
+            "short_description" => 'required',
+            "description" => 'required',
         ]);
+
         if($request->hasFile('thumbnail')){
-        $manager = new ImageManager(new Driver());
+            $manager = new ImageManager(new Driver());
+            $newname = Auth::user()->id.'-'.Str::random(4) .".".$request->file('thumbnail')->getClientOriginalExtension();
+            $image = $manager->read($request->file('thumbnail'));
+            $image->toPng()->save(base_path('public/uploads/blog/'.$newname));
 
-        $newname = Auth::user()->id.'-'.Str::random(100).'.'.$request->file('thumbnail')->getClientOriginalExtension();
+            if($request->slug){
+                Blog::create([
+                    'user_id' => Auth::user()->id,
+                    "category_id" => $request->category_id,
+                    "title" => $request->title,
+                    "slug" => Str::slug($request->slug,'-'),
+                    "thumbnail" => $newname,
+                    "short_description" => $request->short_description,
+                    "description" => $request->description,
+                    'created_at' => now(),
+                ]);
+                return redirect()->route('blog.index')->with('success','Blog Insert Successfull');
+            }else{
+                Blog::create([
+                    'user_id' => Auth::user()->id,
+                    "category_id" => $request->category_id,
+                    "title" => $request->title,
+                    "slug" => Str::slug($request->title,'-'),
+                    "thumbnail" => $newname,
+                    "short_description" => $request->short_description,
+                    "description" => $request->description,
+                    'created_at' => now(),
+                ]);
+                return redirect()->route('blog.index')->with('success','Blog Insert Successfull');
+            }
 
-        $image = $manager->read($request->file('thumbnail'));
-        $image->toPng()->save(base_path('public/uploads/blog/'.$newname));
 
-        if($request->slug){
-            Blog::create([
-                'user_id'=>Auth::user()->id,
-                'category_id'=> $request->category_id,
-                'titel'=> $request->titel,
-                'slug'=> Str::slug($request->slug,'-'),
-                'thumbnail'=> $newname,
-                'short_description'=> $request->short_description,
-                'description'=> $request->description,
-                'created_at' =>now(),
-            ]);
 
-            return redirect()->route('blog.index');
-        }else{
-            Blog::create([
-                'user_id'=>Auth::user()->id,
-                'category_id'=> $request->category_id,
-                'titel'=> $request->titel,
-                'slug'=> Str::slug($request->title ,'-'),
-                'thumbnail'=> $newname,
-                'short_description'=> $request->short_description,
-                'description'=> $request->description,
-                'created_at' =>now(),
-            ]);
-            return redirect()->route('blog.index');
         }
 
-        }
+
     }
 
     /**
