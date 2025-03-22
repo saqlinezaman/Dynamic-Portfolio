@@ -10,7 +10,7 @@
                       <tr>
                         <th>blog image</th>
                         <th>Title</th>
-                        <th>Short description</th>
+                        <th>Category</th>
                         <th>Status</th>
                         <th>Actions</th>
                       </tr>
@@ -34,8 +34,9 @@
                             <p class="fw-normal mb-1 fw-bold"> {{$blog->title}} </p>
                             <p class="text-muted mb-0"> {{$blog->slug}}</p>
                           </td>
+                          {{-- category --}}
                           <td>
-                            <p class="fw-normal mb-1 fw-bold"> {!!$blog->short_description!!} </p>
+                            <p class="fw-normal mb-1 fw-bold"> {{$blog->onecategory->title}} </p>
                           </td>
 
                           <td>
@@ -53,8 +54,9 @@
                               </div>
                             </form>
                           </td>
+                          {{-- edit --}}
                           <td>
-                            <a href="{{route('category.edit',$blog->slug)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
+                            <a href="{{route('blog.edit',$blog->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-pen-to-square text-info"></i>
                             </a>
                             <a href="{{route('category.destroy',$blog->slug)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
@@ -71,6 +73,10 @@
                       @endforelse
                     </tbody>
                   </table>
+                  {{-- pagination --}}
+                  <div class="pt-5 d-flex justify-content-center">
+                    {{$blogs->links()}}
+                  </div>
             </div>
         </div>
     </div>

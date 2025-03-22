@@ -1349,7 +1349,7 @@
                                 <div class="art-post-description">
                                   {{-- title --}}
                                   <a href="#.">
-                                    <h5 class="mb-15" >dshjfgasd</h5>
+                                    <h5 class="mb-15" >fhsf</h5>
                                   </a>
                                   {{-- text --}}
                                   <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!</div>

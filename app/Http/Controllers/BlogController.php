@@ -18,7 +18,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::latest()->get();
+        $blogs = Blog::latest()->paginate(5);
         return view('dashboard.blog.index',compact('blogs'));
     }
 
@@ -97,7 +97,7 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-        //
+        return view('dashboard.blog.edit');
     }
 
     /**
