@@ -62,8 +62,30 @@
                             <a href="{{route('category.destroy',$blog->slug)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-trash-can text-danger"></i>
                             </a>
+                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#want_to_show{{$blog->id}}"  type="button" class="btn btn-link btn-sm btn-rounded">
+                                <i style="color: rgb(27, 180, 27)" class="fa-regular fa-eye"></i>
+                            </a>
                             </td>
                         </tr>
+                        <!-- show blog -->
+                            <div class="modal fade" id="want_to_show{{$blog->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"> {{$blog->title}} </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Slug : {{$blog->slug}} <br>
+                                    Category : {{$blog->onecategory->title}} <br>
+                                    Description : {!!$blog->description!!} <br>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
                         @empty
                         <tr>
                             <td class="text-danger text-center" colspan="4">
