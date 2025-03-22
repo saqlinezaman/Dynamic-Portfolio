@@ -109,7 +109,7 @@ class BlogController extends Controller
         $request->validate([
             "category_id" => 'required',
             "title" => 'required',
-            "short_description" => 'required',
+            "short_description" => 'required|',
             "description" => 'required',
         ]);
 

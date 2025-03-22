@@ -13,6 +13,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// front end website---------------------------------------------------------------------
+Route::get('/',[HomeController::class,'index'])->name('home.index');
+// auth
+
 Auth::routes(['register'=>false]);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
@@ -71,6 +75,5 @@ Route::resource('/blog',BlogController::class);
 
 
 
-// front end website---------------------------------------------------------------------
-Route::get('/homeWebsite/',[FrontendController::class,'index'])->name('home.index');
+
 
