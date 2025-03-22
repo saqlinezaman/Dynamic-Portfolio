@@ -1235,7 +1235,8 @@ menu bar
 .art-menu-bar {
   /* ----- main menu  ----- */
   /* ----- language change  ----- */
-  /* ----- current page title ----- */ }
+  /* ----- current page title ----- */
+ }
   /* line 8, ../scss/_menu-bar.scss */
   .art-menu-bar nav {
     display: -webkit-box;

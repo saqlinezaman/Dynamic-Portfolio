@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="zxx">
 <head>
-  <!-- Required meta tags -->
+  {{-- Required meta tags --}}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {{-- color for mobile --}}
@@ -25,58 +25,58 @@
 
 <body>
 
-  <!-- app -->
+  {{-- app --}}
   <div class="art-app art-app-onepage">
 
-    <!-- mobile top bar -->
+    {{-- mobile top bar --}}
     <div class="art-mobile-top-bar"></div>
 
-    <!-- app wrapper -->
+    {{-- app wrapper --}}
     <div class="art-app-wrapper">
 
-      <!-- app container end -->
+      {{-- app container end --}}
       <div class="art-app-container">
 
-        <!-- info bar -->
+        {{-- info bar --}}
         <div class="art-info-bar">
 
-          <!-- menu bar frame -->
+          {{-- menu bar frame --}}
           <div class="art-info-bar-frame">
 
-            <!-- info bar header -->
+            {{-- info bar header --}}
             <div class="art-info-bar-header">
-              <!-- info bar button -->
+              {{-- info bar button --}}
               <div class="art-info-bar-btn">
-                <!-- icon -->
+                {{-- icon --}}
                 <i class="fas fa-ellipsis-v"></i>
               </div>
-              <!-- info bar button end -->
+              {{-- info bar button end --}}
             </div>
-            <!-- info bar header end -->
+            {{-- info bar header end --}}
 
-            <!-- info bar header -->
+            {{-- info bar header --}}
             <div class="art-header">
-              <!-- avatar -->
+              {{-- avatar --}}
               <div class="art-avatar">
                 <a data-fancybox="avatar" data-no-swup href="{{asset('website/asset/img/01728108888.jpg')}}" class="art-avatar-curtain">
                   <img src="{{asset('website/asset/img/01728108888.jpg')}}" alt="avatar">
                   <i class="fas fa-expand"></i>
                 </a>
-                <!-- available -->
+                {{-- available --}}
                 <div class="art-lamp-light">
-                  <!-- add class 'art-not-available' if not available-->
+                  {{-- add class 'art-not-available' if not available--}}
                   <div class="art-available-lamp"></div>
                 </div>
               </div>
-              <!-- avatar end -->
-              <!-- name -->
+              {{-- avatar end --}}
+              {{-- name --}}
               <h5 class="art-name mb-10">Saqline Zaman</h5>
-              <!-- post -->
+              {{-- post --}}
               <div class="art-sm-text">Full Stack Laravel Developer <br> Wordpress and Ecommerce expert, </div>
             </div>
-            <!-- info bar header end -->
+            {{-- info bar header end --}}
 
-            <!-- scroll frame -->
+            {{-- scroll frame --}}
             <div id="scrollbar2" class="art-scroll-frame">
 
               {{-- info about --}}
@@ -97,147 +97,147 @@
                   </li>
                 </ul>
               </div>
-              <!-- info bar about end -->
+              {{-- info bar about end --}}
 
-              <!-- divider -->
+              {{-- divider --}}
               <div class="art-ls-divider"></div>
 
-              <!-- language skills -->
+              {{-- language skills --}}
               <div class="art-lang-skills p-30-15">
 
-                <!-- skill -->
+                {{-- skill --}}
                 <div class="art-lang-skills-item">
                   <div id="circleprog1" class="art-cirkle-progress"></div>
-                  <!-- title -->
+                  {{-- title --}}
                   <h6>Bangla</h6>
                 </div>
-                <!-- skill end -->
+                {{-- skill end --}}
 
-                <!-- skill -->
+                {{-- skill --}}
                 <div class="art-lang-skills-item">
                   <div id="circleprog2" class="art-cirkle-progress"></div>
-                  <!-- title -->
+                  {{-- title --}}
                   <h6>English</h6>
                 </div>
-                <!-- skill end -->
+                {{-- skill end --}}
 
-                <!-- skill -->
+                {{-- skill --}}
                 <div class="art-lang-skills-item">
                   <div id="circleprog3" class="art-cirkle-progress"></div>
-                  <!-- title -->
+                  {{-- title --}}
                   <h6>Hindi</h6>
                 </div>
-                <!-- skill end -->
+                {{-- skill end --}}
 
               </div>
-              <!-- language skills end -->
+              {{-- language skills end --}}
 
-              <!-- divider -->
+              {{-- divider --}}
               <div class="art-ls-divider"></div>
 
-              <!-- hard skills -->
+              {{-- hard skills --}}
               <div class="art-hard-skills p-30-15">
 
-                <!-- skill -->
+                {{-- skill --}}
                 <div class="art-hard-skills-item">
                   <div class="art-skill-heading">
-                    <!-- title -->
+                    {{-- title --}}
                     <h6>html/Css</h6>
                   </div>
-                  <!-- progressbar frame -->
+                  {{-- progressbar frame --}}
                   <div class="art-line-progress">
-                    <!-- progressbar -->
+                    {{-- progressbar --}}
                     <div id="lineprog1"></div>
                   </div>
-                  <!-- progressbar frame end -->
+                  {{-- progressbar frame end --}}
                 </div>
-                <!-- skill end -->
+                {{-- skill end --}}
 
-                <!-- skill -->
+                {{-- skill --}}
                 <div class="art-hard-skills-item">
                   <div class="art-skill-heading">
-                    <!-- title -->
+                    {{-- title --}}
                     <h6>Laravel</h6>
                   </div>
-                  <!-- progressbar frame -->
+                  {{-- progressbar frame --}}
                   <div class="art-line-progress">
-                    <!-- progressbar -->
+                    {{-- progressbar --}}
                     <div id="lineprog2"></div>
                   </div>
-                  <!-- progressbar frame end -->
+                  {{-- progressbar frame end --}}
                 </div>
-                <!-- skill end -->
+                {{-- skill end --}}
 
-                <!-- skill -->
+                {{-- skill --}}
                 <div class="art-hard-skills-item">
                   <div class="art-skill-heading">
-                    <!-- title -->
+                    {{-- title --}}
                     <h6>Js</h6>
                   </div>
-                  <!-- progressbar frame -->
+                  {{-- progressbar frame --}}
                   <div class="art-line-progress">
-                    <!-- progressbar -->
+                    {{-- progressbar --}}
                     <div id="lineprog3"></div>
                   </div>
-                  <!-- progressbar frame end -->
+                  {{-- progressbar frame end --}}
                 </div>
-                <!-- skill end -->
+                {{-- skill end --}}
 
-                <!-- skill -->
+                {{-- skill --}}
                 <div class="art-hard-skills-item">
                   <div class="art-skill-heading">
-                    <!-- title -->
+                    {{-- title --}}
                     <h6>PHP</h6>
                   </div>
-                  <!-- progressbar frame -->
+                  {{-- progressbar frame --}}
                   <div class="art-line-progress">
-                    <!-- progressbar -->
+                    {{-- progressbar --}}
                     <div id="lineprog4"></div>
                   </div>
-                  <!-- progressbar frame end -->
+                  {{-- progressbar frame end --}}
                 </div>
 
-                <!-- skill end -->
+                {{-- skill end --}}
 
-                <!-- skill -->
+                {{-- skill --}}
                 <div class="art-hard-skills-item">
                   <div class="art-skill-heading">
-                    <!-- title -->
+                    {{-- title --}}
                     <h6>Wordpress</h6>
                   </div>
-                  <!-- progressbar frame -->
+                  {{-- progressbar frame --}}
                   <div class="art-line-progress">
-                    <!-- progressbar -->
+                    {{-- progressbar --}}
                     <div id="lineprog5"></div>
                   </div>
-                  <!-- progressbar frame end -->
+                  {{-- progressbar frame end --}}
                 </div>
-                <!-- skill end -->
+                {{-- skill end --}}
 
               </div>
-              <!-- language skills end -->
+              {{-- language skills end --}}
 
-              <!-- divider -->
+              {{-- divider --}}
               <div class="art-ls-divider"></div>
 
-              <!-- knowledge list -->
+              {{-- knowledge list --}}
               <ul class="art-knowledge-list p-15-0">
-                <!-- list item -->
+                {{-- list item --}}
                 <li>Bootstrap, Tailwind Css</li>
-                <!-- list item -->
+                {{-- list item --}}
                 <li>Vue js , React js</li>
-                <!-- list item -->
+                {{-- list item --}}
                 <li>Git & Git hub</li>
               </ul>
-              <!-- knowledge list end -->
+              {{-- knowledge list end --}}
 
-              <!-- divider -->
+              {{-- divider --}}
               <div class="art-ls-divider"></div>
 
-              <!-- links frame -->
+              {{-- links frame --}}
               <div class="art-links-frame p-15-15">
 
-                <!-- download cv button -->
+                {{-- download cv button --}}
                 <a href="{{asset('website/asset/files/Md Saqline zaman moaj new cv.pdf')}}" class="art-link" download data-no-swup>Download cv <i class="fas fa-download"></i></a>
 
               </div>
@@ -247,70 +247,70 @@
                 <a style="font-size: 16px; font-weight: bold;" href="{{route('login')}}">Login Here</a>
               </div>
 
-              <!-- links frame end -->
+              {{-- links frame end --}}
 
             </div>
-            <!-- scroll frame end -->
+            {{-- scroll frame end --}}
 
-            <!-- sidebar social -->
+            {{-- sidebar social --}}
             <div class="art-ls-social">
-              <!-- social link -->
+              {{-- social link --}}
               <a href="https://www.linkedin.com/in/saqlinezamanmoaz/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              <!-- social link -->
+              {{-- social link --}}
               <a href="https://dribbble.com/saqlinezaman" target="_blank"><i class="fab fa-dribbble"></i></a>
-              <!-- social link -->
+              {{-- social link --}}
               <a href="https://www.behance.net/saqline-zaman" target="_blank"><i class="fab fa-behance"></i></a>
-              <!-- social link -->
+              {{-- social link --}}
               <a href="https://github.com/saqlinezaman" target="_blank"><i class="fab fa-github"></i></a>
-              <!-- social link -->
+              {{-- social link --}}
               <a href="https://www.facebook.com/saqline.zaman.3" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
-            <!-- sidebar social end -->
+            {{-- sidebar social end --}}
 
           </div>
-          <!-- menu bar frame end -->
+          {{-- menu bar frame end --}}
         </div>
-        <!-- info bar end -->
+        {{-- info bar end --}}
 
-        <!-- content -->
+        {{-- content --}}
         <div class="art-content">
 
-          <!-- curtain -->
+          {{-- curtain --}}
           <div class="art-curtain"></div>
 
-          <!-- top background -->
+          {{-- top background --}}
           <div class="art-top-bg" style="background-image: url({{asset('website/asset/img/works/bg-image.webp')}})">
-            <!-- overlay -->
+            {{-- overlay --}}
             <div class="art-top-bg-overlay"></div>
-            <!-- overlay end -->
+            {{-- overlay end --}}
           </div>
-          <!-- top background end -->
+          {{-- top background end --}}
 
-          <!-- swup container -->
+          {{-- swup container --}}
           <div class="transition-fade" id="swup">
 
-            <!-- scroll frame -->
+            {{-- scroll frame --}}
             <div id="scrollbar" class="art-scroll-frame">
 
-              <!-- container -->
+              {{-- container --}}
               <div class="container-fluid">
 
-                <!-- row -->
+                {{-- row --}}
                 <div class="row p-60-0 p-lg-30-0 p-md-15-0">
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- Hero -->
+                    {{-- Hero --}}
                     <div class="art-a art-banner" style="background-image: url({{asset('website/asset/img/works/bg-image.webp')}})">
-                      <!-- Hero back -->
+                      {{-- Hero back --}}
                       <div class="art-banner-back"></div>
                       {{-- Hero decoration --}}
                       <div class="art-banner-dec"></div>
-                      <!-- Hero overlay -->
+                      {{-- Hero overlay --}}
                       <div class="art-banner-overlay">
                         {{-- main title --}}
                         <div class="art-banner-title">
-                          <!-- title -->
+                          {{-- title --}}
                           <h1 class="mb-15">Hey I'm<br>Junior elephant!</h1>
                           {{-- suptitle --}}
                           <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; I build <span class="txt-rotate" data-period="2000"
@@ -318,440 +318,440 @@
                           <div class="art-buttons-frame">
                             {{-- button --}}
                             <a href="#." class="art-btn art-btn-md"><span>Explore now</span></a>
-                            <!-- button -->
+                            {{-- button --}}
                             <a href="https://www.fiverr.com/saqlinezaman" class="art-link art-white-link art-w-chevron">Hire me</a>
                           </div>
                         </div>
-                        <!-- main title end -->
-                        <!-- photo -->
+                        {{-- main title end --}}
+                        {{-- photo --}}
                         <img src="{{asset('website/asset')}}/img/banner-moaj.png" class="art-banner-photo" alt="Your Name">
                       </div>
-                      <!-- banner overlay end -->
+                      {{-- banner overlay end --}}
                     </div>
-                    <!-- banner end -->
+                    {{-- banner end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
                 </div>
-                <!-- row end -->
+                {{-- row end --}}
 
               </div>
-              <!-- container end -->
+              {{-- container end --}}
 
-              <!-- container -->
+              {{-- container --}}
               <div class="container-fluid">
 
-                <!-- row -->
+                {{-- row --}}
                 <div class="row p-30-0">
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-md-3 col-6">
 
-                    <!-- couner frame -->
+                    {{-- couner frame --}}
                     <div class="art-counter-frame">
-                      <!-- counter -->
+                      {{-- counter --}}
                       <div class="art-counter-box">
-                        <!-- counter number -->
+                        {{-- counter number --}}
                         <span class="art-counter">10</span><span class="art-counter-plus">+</span>
                       </div>
-                      <!-- counter end -->
-                      <!-- title -->
+                      {{-- counter end --}}
+                      {{-- title --}}
                       <h6>Years Experience</h6>
                     </div>
-                    <!-- couner frame end -->
+                    {{-- couner frame end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-md-3 col-6">
 
-                    <!-- couner frame -->
+                    {{-- couner frame --}}
                     <div class="art-counter-frame">
-                      <!-- counter -->
+                      {{-- counter --}}
                       <div class="art-counter-box">
-                        <!-- counter number -->
+                        {{-- counter number --}}
                         <span class="art-counter">143</span>
                       </div>
-                      <!-- counter end -->
-                      <!-- title -->
+                      {{-- counter end --}}
+                      {{-- title --}}
                       <h6>Completed Projects</h6>
                     </div>
-                    <!-- couner frame end -->
+                    {{-- couner frame end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-md-3 col-6">
 
-                    <!-- couner frame -->
+                    {{-- couner frame --}}
                     <div class="art-counter-frame">
-                      <!-- counter -->
+                      {{-- counter --}}
                       <div class="art-counter-box">
-                        <!-- counter number -->
+                        {{-- counter number --}}
                         <span class="art-counter">114</span>
                       </div>
-                      <!-- counter end -->
-                      <!-- title -->
+                      {{-- counter end --}}
+                      {{-- title --}}
                       <h6>Happy Customers</h6>
                     </div>
-                    <!-- couner frame end -->
+                    {{-- couner frame end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-md-3 col-6">
 
-                    <!-- couner frame -->
+                    {{-- couner frame --}}
                     <div class="art-counter-frame">
-                      <!-- counter -->
+                      {{-- counter --}}
                       <div class="art-counter-box">
-                        <!-- counter number -->
+                        {{-- counter number --}}
                         <span class="art-counter">20</span><span class="art-counter-plus">+</span>
                       </div>
-                      <!-- counter end -->
-                      <!-- title -->
+                      {{-- counter end --}}
+                      {{-- title --}}
                       <h6>Honors and Awards</h6>
                     </div>
-                    <!-- couner frame end -->
+                    {{-- couner frame end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
                 </div>
-                <!-- row end -->
+                {{-- row end --}}
 
               </div>
-              <!-- container end -->
+              {{-- container end --}}
 
-              <!-- container -->
+              {{-- container --}}
               <div class="container-fluid">
 
-                <!-- row -->
+                {{-- row --}}
                 <div class="row">
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- section title -->
+                    {{-- section title --}}
                     <div class="art-section-title">
-                      <!-- title frame -->
+                      {{-- title frame --}}
                       <div class="art-title-frame">
-                        <!-- title -->
+                        {{-- title --}}
                         <h4>My Services</h4>
                       </div>
-                      <!-- title frame end -->
+                      {{-- title frame end --}}
                     </div>
-                    <!-- section title end -->
+                    {{-- section title end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-4 col-md-6">
 
-                    <!-- service -->
+                    {{-- service --}}
                     <div class="art-a art-service-icon-box">
-                      <!-- service content -->
+                      {{-- service content --}}
                       <div class="art-service-ib-content">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Web Development</h5>
-                        <!-- text -->
+                        {{-- text --}}
                         <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-                        <!-- button -->
+                        {{-- button --}}
                         <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
                       </div>
-                      <!-- service content end -->
+                      {{-- service content end --}}
                     </div>
-                    <!-- service end -->
+                    {{-- service end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-4 col-md-6">
 
-                    <!-- service -->
+                    {{-- service --}}
                     <div class="art-a art-service-icon-box">
-                      <!-- service content -->
+                      {{-- service content --}}
                       <div class="art-service-ib-content">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">UI/UX Design</h5>
-                        <!-- text -->
+                        {{-- text --}}
                         <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-                        <!-- button -->
+                        {{-- button --}}
                         <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
                       </div>
-                      <!-- service content end -->
+                      {{-- service content end --}}
                     </div>
-                    <!-- service end -->
+                    {{-- service end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-4 col-md-6">
 
-                    <!-- service -->
+                    {{-- service --}}
                     <div class="art-a art-service-icon-box">
-                      <!-- service content -->
+                      {{-- service content --}}
                       <div class="art-service-ib-content">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Sound Design</h5>
-                        <!-- text -->
+                        {{-- text --}}
                         <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-                        <!-- button -->
+                        {{-- button --}}
                         <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
                       </div>
-                      <!-- service content end -->
+                      {{-- service content end --}}
                     </div>
-                    <!-- service end -->
+                    {{-- service end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-4 col-md-6">
 
-                    <!-- service -->
+                    {{-- service --}}
                     <div class="art-a art-service-icon-box">
-                      <!-- service content -->
+                      {{-- service content --}}
                       <div class="art-service-ib-content">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Game Design</h5>
-                        <!-- text -->
+                        {{-- text --}}
                         <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-                        <!-- button -->
+                        {{-- button --}}
                         <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
                       </div>
-                      <!-- service content end -->
+                      {{-- service content end --}}
                     </div>
-                    <!-- service end -->
+                    {{-- service end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-4 col-md-6">
 
-                    <!-- service -->
+                    {{-- service --}}
                     <div class="art-a art-service-icon-box">
-                      <!-- service content -->
+                      {{-- service content --}}
                       <div class="art-service-ib-content">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Advertising</h5>
-                        <!-- text -->
+                        {{-- text --}}
                         <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-                        <!-- button -->
+                        {{-- button --}}
                         <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
                       </div>
-                      <!-- service content end -->
+                      {{-- service content end --}}
                     </div>
-                    <!-- service end -->
+                    {{-- service end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
                 </div>
-                <!-- row end -->
+                {{-- row end --}}
 
               </div>
-              <!-- container end -->
+              {{-- container end --}}
 
-              <!-- container -->
+              {{-- container --}}
               <div class="container-fluid">
 
-                <!-- row -->
+                {{-- row --}}
                 <div class="row p-0-0">
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- section title -->
+                    {{-- section title --}}
                     <div class="art-section-title">
-                      <!-- title frame -->
+                      {{-- title frame --}}
                       <div class="art-title-frame">
-                        <!-- title -->
+                        {{-- title --}}
                         <h4>Price Plans</h4>
                       </div>
-                      <!-- title frame end -->
+                      {{-- title frame end --}}
                     </div>
-                    <!-- section title end -->
+                    {{-- section title end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-4">
 
-                    <!-- price -->
+                    {{-- price --}}
                     <div class="art-a art-price">
-                      <!-- price body -->
+                      {{-- price body --}}
                       <div class="art-price-body">
                         <h5 class="mb-30">Starter Price</h5>
-                        <!-- price cost -->
+                        {{-- price cost --}}
                         <div class="art-price-cost">
                           <div class="art-number">FREE<sup>*</sup></div>
                         </div>
-                        <!-- price cost end -->
-                        <!-- price list -->
+                        {{-- price cost end --}}
+                        {{-- price list --}}
                         <ul class="art-price-list">
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li>Ui Design</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li>Web Development</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li class="art-empty-item">Logo design</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li class="art-empty-item">SEO optimization</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li class="art-empty-item">Wordpress integration</li>
                         </ul>
-                        <!-- price list end -->
-                        <!-- button -->
+                        {{-- price list end --}}
+                        {{-- button --}}
                         <a href="#." class="art-link art-color-link art-w-chevron">Order now</a>
                         <div class="art-asterisk"><sup>*</sup>Free only when ordering paid services</div>
                       </div>
-                      <!-- price body end -->
+                      {{-- price body end --}}
                     </div>
-                    <!-- price end -->
+                    {{-- price end --}}
 
                   </div>
-                  <!-- grid -->
+                  {{-- grid --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-4">
 
-                    <!-- price -->
+                    {{-- price --}}
                     <div class="art-a art-price art-popular-price">
-                      <!-- price body -->
+                      {{-- price body --}}
                       <div class="art-price-body">
                         <h5 class="mb-30">Hourly payment</h5>
-                        <!-- price cost -->
+                        {{-- price cost --}}
                         <div class="art-price-cost">
                           <div class="art-number"><span>$</span>29<span>h</span></div>
                         </div>
-                        <!-- price cost end -->
-                        <!-- price list -->
+                        {{-- price cost end --}}
+                        {{-- price list --}}
                         <ul class="art-price-list">
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li>Ui Design</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li>Web Development</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li>Logo design</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li class="art-empty-item">SEO optimization</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li class="art-empty-item">Wordpress integration</li>
                         </ul>
-                        <!-- price list end -->
-                        <!-- button -->
+                        {{-- price list end --}}
+                        {{-- button --}}
                         <a href="#." class="art-link art-color-link art-w-chevron">Order now</a>
                       </div>
-                      <!-- price body end -->
+                      {{-- price body end --}}
                     </div>
-                    <!-- price end -->
+                    {{-- price end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-4">
 
-                    <!-- price -->
+                    {{-- price --}}
                     <div class="art-a art-price">
-                      <!-- price body -->
+                      {{-- price body --}}
                       <div class="art-price-body">
                         <h5 class="mb-30"> Full time</h5>
-                        <!-- price cost -->
+                        {{-- price cost --}}
                         <div class="art-price-cost">
                           <div class="art-number"><span>$</span>2999<span>m</span></div>
                         </div>
-                        <!-- price cost end -->
-                        <!-- price list -->
+                        {{-- price cost end --}}
+                        {{-- price list --}}
                         <ul class="art-price-list">
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li>Ui Design</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li>Web Development</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li>Logo design</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li>SEO optimization</li>
-                          <!-- list item -->
+                          {{-- list item --}}
                           <li>Wordpress integration</li>
                         </ul>
-                        <!-- price list end -->
-                        <!-- button -->
+                        {{-- price list end --}}
+                        {{-- button --}}
                         <a href="#." class="art-link art-color-link art-w-chevron">Order now</a>
                       </div>
-                      <!-- price body end -->
+                      {{-- price body end --}}
                     </div>
-                    <!-- price end -->
+                    {{-- price end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
                 </div>
-                <!-- row end -->
+                {{-- row end --}}
 
               </div>
-              <!-- container end -->
+              {{-- container end --}}
 
-              <!-- container -->
+              {{-- container --}}
               <div class="container-fluid">
 
-                <!-- row -->
+                {{-- row --}}
                 <div class="row">
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- section title -->
+                    {{-- section title --}}
                     <div class="art-section-title">
-                      <!-- title frame -->
+                      {{-- title frame --}}
                       <div class="art-title-frame">
-                        <!-- title -->
+                        {{-- title --}}
                         <h4>Recommendations</h4>
                       </div>
-                      <!-- title frame end -->
+                      {{-- title frame end --}}
                     </div>
-                    <!-- section title end -->
+                    {{-- section title end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- slider container -->
+                    {{-- slider container --}}
                     <div class="swiper-container art-testimonial-slider" style="overflow: visible">
-                      <!-- slider wrapper -->
+                      {{-- slider wrapper --}}
                       <div class="swiper-wrapper">
-                        <!-- slide -->
+                        {{-- slide --}}
                         <div class="swiper-slide">
 
-                          <!-- testimonial -->
+                          {{-- testimonial --}}
                           <div class="art-a art-testimonial">
-                            <!-- testimonial body -->
+                            {{-- testimonial body --}}
                             <div class="testimonial-body">
-                              <!-- photo -->
+                              {{-- photo --}}
                               <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-1.jpg" alt="face">
-                              <!-- name -->
+                              {{-- name --}}
                               <h5>Paul Trueman</h5>
                               <div class="art-el-suptitle mb-15">Template author</div>
-                              <!-- text -->
+                              {{-- text --}}
                               <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
                                 This is easily a 5 star freelancer.</div>
                             </div>
-                            <!-- testimonial body end -->
-                            <!-- testimonial footer -->
+                            {{-- testimonial body end --}}
+                            {{-- testimonial footer --}}
                             <div class="art-testimonial-footer">
                               <div class="art-left-side">
-                                <!-- star rate -->
+                                {{-- star rate --}}
                                 <ul class="art-star-rate">
                                   <li><i class="fas fa-star"></i></li>
                                   <li><i class="fas fa-star"></i></li>
@@ -759,40 +759,40 @@
                                   <li><i class="fas fa-star"></i></li>
                                   <li><i class="fas fa-star"></i></li>
                                 </ul>
-                                <!-- star rate end -->
+                                {{-- star rate end --}}
                               </div>
                               <div class="art-right-side">
 
                               </div>
                             </div>
-                            <!-- testimonial footer end -->
+                            {{-- testimonial footer end --}}
                           </div>
-                          <!-- testimonial end -->
+                          {{-- testimonial end --}}
 
                         </div>
-                        <!-- slide end -->
+                        {{-- slide end --}}
 
-                        <!-- slide -->
+                        {{-- slide --}}
                         <div class="swiper-slide">
 
-                          <!-- testimonial -->
+                          {{-- testimonial --}}
                           <div class="art-a art-testimonial">
-                            <!-- testimonial body -->
+                            {{-- testimonial body --}}
                             <div class="testimonial-body">
-                              <!-- photo -->
+                              {{-- photo --}}
                               <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-2.jpg" alt="face">
-                              <!-- name -->
+                              {{-- name --}}
                               <h5>Paul Trueman</h5>
                               <div class="art-el-suptitle mb-15">Template author</div>
-                              <!-- text -->
+                              {{-- text --}}
                               <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
                                 This is easily a 5 star freelancer.</div>
                             </div>
-                            <!-- testimonial body end -->
-                            <!-- testimonial footer -->
+                            {{-- testimonial body end --}}
+                            {{-- testimonial footer --}}
                             <div class="art-testimonial-footer">
                               <div class="art-left-side">
-                                <!-- star rate -->
+                                {{-- star rate --}}
                                 <ul class="art-star-rate">
                                   <li><i class="fas fa-star"></i></li>
                                   <li><i class="fas fa-star"></i></li>
@@ -800,40 +800,40 @@
                                   <li><i class="fas fa-star"></i></li>
                                   <li class="art-empty-item"><i class="fas fa-star"></i></li>
                                 </ul>
-                                <!-- star rate end -->
+                                {{-- star rate end --}}
                               </div>
                               <div class="art-right-side">
 
                               </div>
                             </div>
-                            <!-- testimonial footer end -->
+                            {{-- testimonial footer end --}}
                           </div>
-                          <!-- testimonial end -->
+                          {{-- testimonial end --}}
 
                         </div>
-                        <!-- slide end -->
+                        {{-- slide end --}}
 
-                        <!-- slide -->
+                        {{-- slide --}}
                         <div class="swiper-slide">
 
-                          <!-- testimonial -->
+                          {{-- testimonial --}}
                           <div class="art-a art-testimonial">
-                            <!-- testimonial body -->
+                            {{-- testimonial body --}}
                             <div class="testimonial-body">
-                              <!-- photo -->
+                              {{-- photo --}}
                               <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-3.jpg" alt="face">
-                              <!-- name -->
+                              {{-- name --}}
                               <h5>Paul Trueman</h5>
                               <div class="art-el-suptitle mb-15">Template author</div>
-                              <!-- text -->
+                              {{-- text --}}
                               <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
                                 This is easily a 5 star freelancer.</div>
                             </div>
-                            <!-- testimonial body end -->
-                            <!-- testimonial footer -->
+                            {{-- testimonial body end --}}
+                            {{-- testimonial footer --}}
                             <div class="art-testimonial-footer">
                               <div class="art-left-side">
-                                <!-- star rate -->
+                                {{-- star rate --}}
                                 <ul class="art-star-rate">
                                   <li><i class="fas fa-star"></i></li>
                                   <li><i class="fas fa-star"></i></li>
@@ -841,40 +841,40 @@
                                   <li><i class="fas fa-star"></i></li>
                                   <li><i class="fas fa-star"></i></li>
                                 </ul>
-                                <!-- star rate end -->
+                                {{-- star rate end --}}
                               </div>
                               <div class="art-right-side">
 
                               </div>
                             </div>
-                            <!-- testimonial footer end -->
+                            {{-- testimonial footer end --}}
                           </div>
-                          <!-- testimonial end -->
+                          {{-- testimonial end --}}
 
                         </div>
-                        <!-- slide end -->
+                        {{-- slide end --}}
 
-                        <!-- slide -->
+                        {{-- slide --}}
                         <div class="swiper-slide">
 
-                          <!-- testimonial -->
+                          {{-- testimonial --}}
                           <div class="art-a art-testimonial">
-                            <!-- testimonial body -->
+                            {{-- testimonial body --}}
                             <div class="testimonial-body">
-                              <!-- photo -->
+                              {{-- photo --}}
                               <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-4.jpg" alt="face">
-                              <!-- name -->
+                              {{-- name --}}
                               <h5>Paul Trueman</h5>
                               <div class="art-el-suptitle mb-15">Template author</div>
-                              <!-- text -->
+                              {{-- text --}}
                               <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
                                 This is easily a 5 star freelancer.</div>
                             </div>
-                            <!-- testimonial body end -->
-                            <!-- testimonial footer -->
+                            {{-- testimonial body end --}}
+                            {{-- testimonial footer --}}
                             <div class="art-testimonial-footer">
                               <div class="art-left-side">
-                                <!-- star rate -->
+                                {{-- star rate --}}
                                 <ul class="art-star-rate">
                                   <li><i class="fas fa-star"></i></li>
                                   <li><i class="fas fa-star"></i></li>
@@ -882,323 +882,320 @@
                                   <li><i class="fas fa-star"></i></li>
                                   <li><i class="fas fa-star"></i></li>
                                 </ul>
-                                <!-- star rate end -->
+                                {{-- star rate end --}}
                               </div>
                               <div class="art-right-side">
 
                               </div>
                             </div>
-                            <!-- testimonial footer end -->
+                            {{-- testimonial footer end --}}
                           </div>
-                          <!-- testimonial end -->
+                          {{-- testimonial end --}}
 
                         </div>
-                        <!-- slide end -->
+                        {{-- slide end --}}
 
                       </div>
-                      <!-- slider wrapper end -->
+                      {{-- slider wrapper end --}}
                     </div>
-                    <!-- slider container end -->
+                    {{-- slider container end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- slider navigation -->
+                    {{-- slider navigation --}}
                     <div class="art-slider-navigation">
 
-                      <!-- left side -->
+                      {{-- left side --}}
                       <div class="art-sn-left">
 
-                        <!-- slider pagination -->
+                        {{-- slider pagination --}}
                         <div class="swiper-pagination"></div>
 
                       </div>
-                      <!-- left side end -->
+                      {{-- left side end --}}
 
-                      <!-- right side -->
+                      {{-- right side --}}
                       <div class="art-sn-right">
 
-                        <!-- slider navigation -->
+                        {{-- slider navigation --}}
                         <div class="art-slider-nav-frame">
-                          <!-- prev -->
+                          {{-- prev --}}
                           <div class="art-slider-nav art-testi-swiper-prev"><i class="fas fa-chevron-left"></i></div>
-                          <!-- next -->
+                          {{-- next --}}
                           <div class="art-slider-nav art-testi-swiper-next"><i class="fas fa-chevron-right"></i></div>
                         </div>
-                        <!-- slider navigation -->
+                        {{-- slider navigation --}}
 
                       </div>
-                      <!-- right side end -->
+                      {{-- right side end --}}
 
                     </div>
-                    <!-- slider navigation end -->
+                    {{-- slider navigation end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
                 </div>
-                <!-- row end -->
+                {{-- row end --}}
 
               </div>
-              <!-- container end -->
+              {{-- container end --}}
 
-              <!-- container -->
+              {{-- container --}}
               <div class="container-fluid">
 
-                <!-- row -->
+                {{-- row --}}
                 <div class="row p-30-0">
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- section title -->
+                    {{-- section title --}}
                     <div class="art-section-title">
-                      <!-- title frame -->
+                      {{-- title frame --}}
                       <div class="art-title-frame">
-                        <!-- title -->
+                        {{-- title --}}
                         <h4>Works</h4>
                       </div>
-                      <!-- title frame end -->
-                      <!-- right frame -->
+                      {{-- title frame end --}}
+                      {{-- right frame --}}
                       <div class="art-right-frame">
-                        <!-- filter -->
+                        {{-- filter --}}
                         <div class="art-filter">
-                          <!-- filter link -->
+                          {{-- filter link --}}
                           <a href="#" data-filter="*" class="art-link art-current">All Categories</a>
-                          <!-- filter link -->
+                          {{-- filter link --}}
                           <a href="#" data-filter=".webTemplates" class="art-link">Web Templates</a>
-                          <!-- filter link -->
+                          {{-- filter link --}}
                           <a href="#" data-filter=".logos" class="art-link">Logos</a>
-                          <!-- filter link -->
+                          {{-- filter link --}}
                           <a href="#" data-filter=".drawings" class="art-link">Drawings</a>
-                          <!-- filter link -->
+                          {{-- filter link --}}
                           <a href="#" data-filter=".ui" class="art-link">UI Elements</a>
                         </div>
-                        <!-- filter end -->
+                        {{-- filter end --}}
                       </div>
-                      <!-- right frame end -->
+                      {{-- right frame end --}}
                     </div>
-                    <!-- section title end -->
+                    {{-- section title end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
                   <div class="art-grid art-grid-3-col art-gallery">
 
-                    <!-- grid item -->
+                    {{-- grid item --}}
                     <div class="art-grid-item webTemplates">
-                      <!-- grid item frame -->
+                      {{-- grid item frame --}}
                       <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/1.jpg" class="art-a art-portfolio-item-frame art-horizontal">
-                        <!-- img -->
+                        {{-- img --}}
                         <img src="{{asset('website/asset')}}/img/works/thumbnail/1.jpg" alt="item">
-                        <!-- zoom icon -->
+                        {{-- zoom icon --}}
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
-                      <!-- grid item frame end -->
-                      <!-- description -->
+                      {{-- grid item frame end --}}
+                      {{-- description --}}
                       <div class="art-item-description">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Project title</h5>
-                        <!-- button -->
+                        {{-- button --}}
                         <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
                       </div>
-                      <!-- description end -->
+                      {{-- description end --}}
 
                     </div>
-                    <!-- grid item end -->
+                    {{-- grid item end --}}
 
-                    <!-- grid item -->
+                    {{-- grid item --}}
                     <div class="art-grid-item logos">
-                      <!-- grid item frame -->
+                      {{-- grid item frame --}}
                       <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/2.jpg" class="art-a art-portfolio-item-frame art-vertical">
-                        <!-- img -->
+                        {{-- img --}}
                         <img src="{{asset('website/asset')}}/img/works/thumbnail/2.jpg" alt="item">
-                        <!-- zoom icon -->
+                        {{-- zoom icon --}}
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
-                      <!-- grid item frame end -->
-                      <!-- description -->
+                      {{-- grid item frame end --}}
+                      {{-- description --}}
                       <div class="art-item-description">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Project title</h5>
                         <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        <!-- button -->
+                        {{-- button --}}
                         <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
                       </div>
-                      <!-- description end -->
+                      {{-- description end --}}
 
                     </div>
-                    <!-- grid item end -->
+                    {{-- grid item end --}}
 
-                    <!-- grid item -->
+                    {{-- grid item --}}
                     <div class="art-grid-item drawings">
-                      <!-- grid item frame -->
+                      {{-- grid item frame --}}
                       <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/3.jpg" class="art-a art-portfolio-item-frame art-square">
-                        <!-- img -->
+                        {{-- img --}}
                         <img src="{{asset('website/asset')}}/img/works/thumbnail/3.jpg" alt="item">
-                        <!-- zoom icon -->
+                        {{-- zoom icon --}}
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
-                      <!-- grid item frame end -->
-                      <!-- description -->
+                      {{-- grid item frame end --}}
+                      {{-- description --}}
                       <div class="art-item-description">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Project title</h5>
                         <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        <!-- button -->
+                        {{-- button --}}
                         <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
                       </div>
-                      <!-- description end -->
+                      {{-- description end --}}
 
                     </div>
-                    <!-- grid item end -->
+                    {{-- grid item end --}}
 
-                    <!-- grid item -->
+                    {{-- grid item --}}
                     <div class="art-grid-item ui">
-                      <!-- grid item frame -->
+                      {{-- grid item frame --}}
                       <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/4.jpg" class="art-a art-portfolio-item-frame art-vertical">
-                        <!-- img -->
+                        {{-- img --}}
                         <img src="{{asset('website/asset')}}/img/works/thumbnail/4.jpg" alt="item">
-                        <!-- zoom icon -->
+                        {{-- zoom icon --}}
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
-                      <!-- grid item frame end -->
-                      <!-- description -->
+                      {{-- grid item frame end --}}
+                      {{-- description --}}
                       <div class="art-item-description">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Project title</h5>
                         <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        <!-- button -->
+                        {{-- button --}}
                         <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
                       </div>
-                      <!-- description end -->
+                      {{-- description end --}}
 
                     </div>
-                    <!-- grid item end -->
+                    {{-- grid item end --}}
 
-                    <!-- grid item -->
+                    {{-- grid item --}}
                     <div class="art-grid-item webTemplates">
-                      <!-- grid item frame -->
+                      {{-- grid item frame --}}
                       <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/5.jpg" class="art-a art-portfolio-item-frame art-square">
-                        <!-- img -->
+                        {{-- img --}}
                         <img src="{{asset('website/asset')}}/img/works/thumbnail/5.jpg" alt="item">
-                        <!-- zoom icon -->
+                        {{-- zoom icon --}}
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
-                      <!-- grid item frame end -->
-                      <!-- description -->
+                      {{-- grid item frame end --}}
+                      {{-- description --}}
                       <div class="art-item-description">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Project title</h5>
                         <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        <!-- button -->
+                        {{-- button --}}
                         <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
                       </div>
-                      <!-- description end -->
+                      {{-- description end --}}
 
                     </div>
-                    <!-- grid item end -->
+                    {{-- grid item end --}}
 
-                    <!-- grid item -->
+                    {{-- grid item --}}
                     <div class="art-grid-item logos">
-                      <!-- grid item frame -->
+                      {{-- grid item frame --}}
                       <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/6.jpg" class="art-a art-portfolio-item-frame art-vertical">
-                        <!-- img -->
+                        {{-- img --}}
                         <img src="{{asset('website/asset')}}/img/works/thumbnail/6.jpg" alt="item">
-                        <!-- zoom icon -->
+                        {{-- zoom icon --}}
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
-                      <!-- grid item frame end -->
-                      <!-- description -->
+                      {{-- grid item frame end --}}
+                      {{-- description --}}
                       <div class="art-item-description">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Project title</h5>
                         <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        <!-- button -->
+                        {{-- button --}}
                         <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
                       </div>
-                      <!-- description end -->
+                      {{-- description end --}}
 
                     </div>
-                    <!-- grid item end -->
+                    {{-- grid item end --}}
 
-                    <!-- grid item -->
+                    {{-- grid item --}}
                     <div class="art-grid-item drawings">
-                      <!-- grid item frame -->
+                      {{-- grid item frame --}}
                       <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/7.jpg" class="art-a art-portfolio-item-frame art-square">
-                        <!-- img -->
+                        {{-- img --}}
                         <img src="{{asset('website/asset')}}/img/works/thumbnail/7.jpg" alt="item">
-                        <!-- zoom icon -->
+                        {{-- zoom icon --}}
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
-                      <!-- grid item frame end -->
-                      <!-- description -->
+                      {{-- grid item frame end --}}
+                      {{-- description --}}
                       <div class="art-item-description">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Project title</h5>
                         <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        <!-- button -->
+                        {{-- button --}}
                         <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
                       </div>
-                      <!-- description end -->
+                      {{-- description end --}}
 
                     </div>
-                    <!-- grid item end -->
+                    {{-- grid item end --}}
 
-                    <!-- grid item -->
+                    {{-- grid item --}}
                     <div class="art-grid-item ui">
-                      <!-- grid item frame -->
+                      {{-- grid item frame --}}
                       <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/8.jpg" class="art-a art-portfolio-item-frame art-horizontal">
-                        <!-- img -->
+                        {{-- img --}}
                         <img src="{{asset('website/asset')}}/img/works/thumbnail/8.jpg" alt="item">
-                        <!-- zoom icon -->
+                        {{-- zoom icon --}}
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
-                      <!-- grid item frame end -->
-                      <!-- description -->
+                      {{-- grid item frame end --}}
+                      {{-- description --}}
                       <div class="art-item-description">
-                        <!-- title -->
+                        {{-- title --}}
                         <h5 class="mb-15">Project title</h5>
-                        <!-- button -->
+                        {{-- button --}}
                         <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
                       </div>
-                      <!-- description end -->
+                      {{-- description end --}}
 
                     </div>
-                    <!-- grid item end -->
+                    {{-- grid item end --}}
 
                   </div>
 
                 </div>
-                <!-- row end -->
+                {{-- row end --}}
 
               </div>
-              <!-- container end -->
+              {{-- container end --}}
 
-              <!-- container -->
+              {{-- container --}}
               <div class="container-fluid">
 
-                <!-- row -->
+                <section>
+
+                </section>
+                {{-- row --}}
                 <div class="row">
-
-                  <!-- col -->
                   <div class="col-lg-6">
-
-                    <!-- section title -->
                     <div class="art-section-title">
-                      <!-- title frame -->
                       <div class="art-title-frame">
-                        <!-- title -->
+                        {{-- title --}}
                         <h4>Education</h4>
                       </div>
-                      <!-- title frame end -->
                     </div>
-                    <!-- section title end -->
+                    {{-- section title end --}}
 
-                    <!-- timeline -->
+                    {{-- Ssc cirtificate --}}
                     <div class="art-timeline art-gallery" id="history">
                       <div class="art-timeline-item">
                         <div class="art-timeline-mark-light"></div>
@@ -1207,8 +1204,9 @@
                         <div class="art-a art-timeline-content">
                           <div class="art-card-header">
                             <div class="art-left-side">
-                              <h5>Title of section 1</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
+                              <h5>Habiganj Govt Tecnical <br>
+                                School And College</h5>
+                              <div class="art-el-suptitle mb-15">secondary school certificate</div>
                             </div>
                             <div class="art-right-side">
                               <span class="art-date">jan 2018 - may 2020</span>
@@ -1216,442 +1214,233 @@
                           </div>
 
                           <p>Dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                          <a data-fancybox="diplome" data-no-swup href="files/certificate.jpg" class="art-link art-color-link art-w-chevron">Diplome</a>
                         </div>
-                      </div>
-
-                      <div class="art-timeline-item">
-                        <div class="art-timeline-mark-light"></div>
-                        <div class="art-timeline-mark"></div>
-
-                        <div class="art-a art-timeline-content">
-                          <div class="art-card-header">
-                            <div class="art-left-side">
-                              <h5>Title of section 1</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                            </div>
-                            <div class="art-right-side">
-                              <span class="art-date">jan 2018 - may 2020</span>
-                            </div>
-                          </div>
-                          <div>Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</div>
-                        </div>
-                      </div>
-
-                      <div class="art-timeline-item">
-                        <div class="art-timeline-mark-light"></div>
-                        <div class="art-timeline-mark"></div>
-
-                        <div class="art-a art-timeline-content">
-                          <div class="art-card-header">
-                            <div class="art-left-side">
-                              <h5>Title of section 1</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                            </div>
-                            <div class="art-right-side">
-                              <span class="art-date">jan 2018 - may 2020</span>
-                            </div>
-                          </div>
-                          <p>Dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                          <a data-fancybox="diplome" data-no-swup href="files/certificate.jpg" class="art-link art-color-link art-w-chevron">Licence</a>
-                        </div>
-
-                      </div>
-
-                      <div class="art-timeline-item">
-                        <div class="art-timeline-mark-light"></div>
-                        <div class="art-timeline-mark"></div>
-
-                        <div class="art-a art-timeline-content">
-                          <div class="art-card-header">
-                            <div class="art-left-side">
-                              <h5>Title of section 1</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                            </div>
-                            <div class="art-right-side">
-                              <span class="art-date">jan 2018 - may 2020</span>
-                            </div>
-                          </div>
-                          <p>Ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-                          <a data-fancybox="diplome" data-no-swup href="files/certificate.jpg" class="art-link art-color-link art-w-chevron">Certificate</a>
-                        </div>
-
                       </div>
 
                     </div>
-                    <!-- timeline end -->
+                    {{-- Ssc cirtificate end --}}
 
+                    {{-- Diploma cirtificate --}}
+
+                    <div class="art-timeline art-gallery" id="history">
+                      <div class="art-timeline-item">
+                        <div class="art-timeline-mark-light"></div>
+                        <div class="art-timeline-mark"></div>
+
+                        <div class="art-a art-timeline-content">
+                          <div class="art-card-header">
+                            <div class="art-left-side">
+                              <h5>Kurigram Polytechnic institute</h5>
+                              <div class="art-el-suptitle mb-15">Computer science & technology</div>
+                            </div>
+                            <div class="art-right-side">
+                              <span class="art-date">Aug 2020 - mar 2025</span>
+                            </div>
+                          </div>
+
+                          <p>Dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    {{-- diploma cirtificate end--}}
                   </div>
                   <div class="col-lg-6">
 
-                    <!-- section title -->
+                    {{-- section title --}}
                     <div class="art-section-title">
-                      <!-- title frame -->
+                      {{-- title frame --}}
                       <div class="art-title-frame">
-                        <!-- title -->
+                        {{-- title --}}
                         <h4>Work History</h4>
                       </div>
-                      <!-- title frame end -->
+                      {{-- title frame end --}}
                     </div>
-                    <!-- section title end -->
+                    {{-- section title end --}}
 
-                    <!-- timeline -->
+                    {{-- timeline --}}
                     <div class="art-timeline">
 
                       <div class="art-timeline-item">
                         <div class="art-timeline-mark-light"></div>
                         <div class="art-timeline-mark"></div>
 
-
+                        {{-- web battalion --}}
                         <div class="art-a art-timeline-content">
                           <div class="art-card-header">
                             <div class="art-left-side">
-                              <h5>Title of section 1</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
+                              <h5>Web Battalion</h5>
+                              <div class="art-el-suptitle mb-15">Wordpress and ecommerce expert</div>
                             </div>
                             <div class="art-right-side">
-                              <span class="art-date">jan 2018 - may 2020</span>
+                              <span class="art-date">july 2022- Nov 2023</span>
+                            </div>
+                          </div>
+                          <p>Placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        </div>
+                        {{-- creative it --}}
+                        <div class="art-a art-timeline-content">
+                          <div class="art-card-header">
+                            <div class="art-left-side">
+                              <h5>Creative IT Institute</h5>
+                              <div class="art-el-suptitle mb-15">Intern PHP & Laravel Developer</div>
+                            </div>
+                            <div class="art-right-side">
+                              <span class="art-date">july 2024 - Oct 2024</span>
                             </div>
                           </div>
                           <p>Placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
                         </div>
                       </div>
 
-                      <div class="art-timeline-item">
-                        <div class="art-timeline-mark-light"></div>
-                        <div class="art-timeline-mark"></div>
-
-
-                        <div class="art-a art-timeline-content">
-                          <div class="art-card-header">
-                            <div class="art-left-side">
-                              <h5>Title of section 1</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                            </div>
-                            <div class="art-right-side">
-                              <span class="art-date">jan 2018 - may 2020</span>
-                            </div>
-                          </div>
-                          <p>Adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-                          <a data-fancybox="recommendation" data-no-swup href="#art-recomendation-popup-1" class="art-link art-color-link art-w-chevron">Recommendation</a>
-                        </div>
-
-                        <!-- popup -->
-                        <div class="art-recomendation-popup" style="display: none;" id="art-recomendation-popup-1">
-
-                          <!-- testimonial -->
-                          <div class="art-a art-testimonial">
-                            <!-- testimonial body -->
-                            <div class="testimonial-body">
-                              <!-- photo -->
-                              <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-3.jpg" alt="face">
-                              <!-- name -->
-                              <h5>Paul Trueman</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                              <!-- text -->
-                              <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
-                                This is easily a 5 star freelancer.</div>
-                            </div>
-                            <!-- testimonial body end -->
-                            <!-- testimonial footer -->
-                            <div class="art-testimonial-footer">
-                              <div class="art-left-side">
-                                <!-- star rate -->
-                                <ul class="art-star-rate">
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                </ul>
-                                <!-- star rate end -->
-                              </div>
-                              <div class="art-right-side">
-
-                              </div>
-                            </div>
-                            <!-- testimonial footer end -->
-                          </div>
-                          <!-- testimonial end -->
-
-                        </div>
-                        <!-- popup end -->
-
-                      </div>
-
-                      <div class="art-timeline-item">
-                        <div class="art-timeline-mark-light"></div>
-                        <div class="art-timeline-mark"></div>
-
-                        <div class="art-a art-timeline-content">
-                          <div class="art-card-header">
-                            <div class="art-left-side">
-                              <h5>Title of section 1</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                            </div>
-                            <div class="art-right-side">
-                              <span class="art-date">jan 2018 - may 2020</span>
-                            </div>
-                          </div>
-                          <p>Consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem
-                            ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam
-                            dolore
-                            possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-                          <a data-fancybox="recommendation" data-no-swup href="#art-recomendation-popup-2" class="art-link art-color-link art-w-chevron">Recommendation</a>
-                        </div>
-
-                        <!-- popup -->
-                        <div class="art-recomendation-popup" style="display: none;" id="art-recomendation-popup-2">
-
-                          <!-- testimonial -->
-                          <div class="art-a art-testimonial">
-                            <!-- testimonial body -->
-                            <div class="testimonial-body">
-                              <!-- photo -->
-                              <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-4.jpg" alt="face">
-                              <!-- name -->
-                              <h5>Paul Trueman</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                              <!-- text -->
-                              <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
-                                This is easily a 5 star freelancer.</div>
-                            </div>
-                            <!-- testimonial body end -->
-                            <!-- testimonial footer -->
-                            <div class="art-testimonial-footer">
-                              <div class="art-left-side">
-                                <!-- star rate -->
-                                <ul class="art-star-rate">
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                </ul>
-                                <!-- star rate end -->
-                              </div>
-                              <div class="art-right-side">
-
-                              </div>
-                            </div>
-                            <!-- testimonial footer end -->
-                          </div>
-                          <!-- testimonial end -->
-
-                        </div>
-                        <!-- popup end -->
-
-                      </div>
-
-                      <div class="art-timeline-item">
-                        <div class="art-timeline-mark-light"></div>
-                        <div class="art-timeline-mark"></div>
-
-                        <div class="art-a art-timeline-content">
-                          <div class="art-card-header">
-                            <div class="art-left-side">
-                              <h5>Title of section 1</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                            </div>
-                            <div class="art-right-side">
-                              <span class="art-date">jan 2018 - tonight</span>
-                            </div>
-                          </div>
-                          <p>Dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-                          <a data-fancybox="recommendation" data-no-swup href="#art-recomendation-popup-3" class="art-link art-color-link art-w-chevron">Recommendation</a>
-                        </div>
-
-                        <!-- popup -->
-                        <div class="art-recomendation-popup" style="display: none;" id="art-recomendation-popup-3">
-
-                          <!-- testimonial -->
-                          <div class="art-a art-testimonial">
-                            <!-- testimonial body -->
-                            <div class="testimonial-body">
-                              <!-- photo -->
-                              <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-2.jpg" alt="face">
-                              <!-- name -->
-                              <h5>Paul Trueman</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                              <!-- text -->
-                              <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
-                                This is easily a 5 star freelancer.</div>
-                            </div>
-                            <!-- testimonial body end -->
-                            <!-- testimonial footer -->
-                            <div class="art-testimonial-footer">
-                              <div class="art-left-side">
-                                <!-- star rate -->
-                                <ul class="art-star-rate">
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li class="art-empty-item"><i class="fas fa-star"></i></li>
-                                </ul>
-                                <!-- star rate end -->
-                              </div>
-                              <div class="art-right-side">
-
-                              </div>
-                            </div>
-                            <!-- testimonial footer end -->
-                          </div>
-                          <!-- testimonial end -->
-
-                        </div>
-                        <!-- popup end -->
-
-                      </div>
-
                     </div>
-                    <!-- timeline end -->
+                    {{-- timeline end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
                 </div>
-                <!-- row end -->
+                {{-- row end --}}
 
               </div>
-              <!-- container end -->
+              {{-- container end --}}
 
-              <!-- container -->
+              {{-- container --}}
               <div class="container-fluid">
 
-                <!-- row -->
+                {{-- row --}}
                 <div class="row">
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- section title -->
+                    {{-- section title --}}
                     <div class="art-section-title">
-                      <!-- title frame -->
+                      {{-- title frame --}}
                       <div class="art-title-frame">
-                        <!-- title -->
+                        {{-- title --}}
                         <h4>Newsletter</h4>
                       </div>
-                      <!-- title frame end -->
+                      {{-- title frame end --}}
                     </div>
-                    <!-- section title end -->
+                    {{-- section title end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- slider container -->
+                    {{-- slider container --}}
                     <div class="swiper-container art-blog-slider" style="overflow: visible">
-                      <!-- slider wrapper -->
+                      {{-- slider wrapper --}}
                       <div class="swiper-wrapper">
-                        <!-- slide -->
+                        {{-- slide --}}
                         <div class="swiper-slide">
 
                             <div class="art-a art-blog-card">
-                                <!-- post cover -->
+                                {{-- post cover --}}
                                 <a href="#." class="art-port-cover">
-                                  <!-- img -->
+                                  {{-- img --}}
                                   <img src="{{asset('website/asset')}}/img/blog/1.jpg" alt="blog post">
                                 </a>
-                                <!-- post cover end -->
-                                <!-- post description -->
+                                {{-- post cover end --}}
+                                {{-- post description --}}
                                 <div class="art-post-description">
-                                  <!-- title -->
+                                  {{-- title --}}
                                   <a href="#.">
                                     <h5 class="mb-15" >dshjfgasd</h5>
                                   </a>
-                                  <!-- text -->
+                                  {{-- text --}}
                                   <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!</div>
-                                  <!-- link -->
+                                  {{-- link --}}
                                   <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
                                 </div>
-                                <!-- post description end -->
+                                {{-- post description end --}}
                               </div>
-                              <!-- blog post card end -->
+                              {{-- blog post card end --}}
 
                             </div>
-                          <!-- blog post card -->
+                          {{-- blog post card --}}
 
-                        <!-- slide end -->
-                        <!-- slide -->
-                        <!-- slide end -->
+                        {{-- slide end --}}
+                        {{-- slide --}}
+                        {{-- slide end --}}
                       </div>
-                      <!-- slider wrapper end -->
+                      {{-- slider wrapper end --}}
                     </div>
-                    <!-- slider container end -->
+                    {{-- slider container end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- slider navigation -->
+                    {{-- slider navigation --}}
                     <div class="art-slider-navigation">
 
-                      <!-- left side -->
+                      {{-- left side --}}
                       <div class="art-sn-left">
 
-                        <!-- slider pagination -->
+                        {{-- slider pagination --}}
                         <div class="swiper-pagination"></div>
 
                       </div>
-                      <!-- left side end -->
+                      {{-- left side end --}}
 
-                      <!-- right side -->
+                      {{-- right side --}}
                       <div class="art-sn-right">
 
-                        <!-- slider navigation -->
+                        {{-- slider navigation --}}
                         <div class="art-slider-nav-frame">
-                          <!-- prev -->
+                          {{-- prev --}}
                           <div class="art-slider-nav art-blog-swiper-prev"><i class="fas fa-chevron-left"></i></div>
-                          <!-- next -->
+                          {{-- next --}}
                           <div class="art-slider-nav art-blog-swiper-next"><i class="fas fa-chevron-right"></i></div>
                         </div>
-                        <!-- slider navigation -->
+                        {{-- slider navigation --}}
 
                       </div>
-                      <!-- right side end -->
+                      {{-- right side end --}}
 
                     </div>
-                    <!-- slider navigation end -->
+                    {{-- slider navigation end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
                 </div>
-                <!-- row end -->
+                {{-- row end --}}
 
               </div>
-              <!-- container end -->
+              {{-- container end --}}
 
-              <!-- container -->
+              {{-- container --}}
               <div class="container-fluid">
 
-                <!-- row -->
+                {{-- row --}}
                 <div class="row p-30-0">
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- section title -->
+                    {{-- section title --}}
                     <div class="art-section-title">
-                      <!-- title frame -->
+                      {{-- title frame --}}
                       <div class="art-title-frame">
-                        <!-- title -->
+                        {{-- title --}}
                         <h4>Contact information</h4>
                       </div>
-                      <!-- title frame end -->
+                      {{-- title frame end --}}
                     </div>
-                    <!-- section title end -->
+                    {{-- section title end --}}
 
                   </div>
-                  <!-- col end -->
-                  <!-- col -->
+                  {{-- col end --}}
+                  {{-- col --}}
                   <div class="col-lg-4">
-                    <!-- contact card -->
+                    {{-- contact card --}}
                     <div class="art-a art-card">
                       <div class="art-table p-15-15">
                         <ul>
@@ -1668,12 +1457,12 @@
                         </ul>
                       </div>
                     </div>
-                    <!-- contact card end -->
+                    {{-- contact card end --}}
                   </div>
-                  <!-- col end -->
-                  <!-- col -->
+                  {{-- col end --}}
+                  {{-- col --}}
                   <div class="col-lg-4">
-                    <!-- contact card -->
+                    {{-- contact card --}}
                     <div class="art-a art-card">
                       <div class="art-table p-15-15">
                         <ul>
@@ -1689,12 +1478,12 @@
                         </ul>
                       </div>
                     </div>
-                    <!-- contact card end -->
+                    {{-- contact card end --}}
                   </div>
-                  <!-- col end -->
-                  <!-- col -->
+                  {{-- col end --}}
+                  {{-- col --}}
                   <div class="col-lg-4">
-                    <!-- contact card -->
+                    {{-- contact card --}}
                     <div class="art-a art-card">
                       <div class="art-table p-15-15">
                         <ul>
@@ -1710,188 +1499,187 @@
                         </ul>
                       </div>
                     </div>
-                    <!-- contact card end -->
+                    {{-- contact card end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-lg-12">
 
-                    <!-- section title -->
+                    {{-- section title --}}
                     <div class="art-section-title">
-                      <!-- title frame -->
+                      {{-- title frame --}}
                       <div class="art-title-frame">
-                        <!-- title -->
+                        {{-- title --}}
                         <h4>Get in touch</h4>
                       </div>
-                      <!-- title frame end -->
+                      {{-- title frame end --}}
                     </div>
-                    <!-- section title end -->
+                    {{-- section title end --}}
 
-                    <!-- contact form frame -->
+                    {{-- contact form frame --}}
                     <div class="art-a art-card">
 
-                      <!-- contact form -->
+                      {{-- contact form --}}
                       <form id="form" class="art-contact-form">
-                        <!-- form field -->
+                        {{-- form field --}}
                         <div class="art-form-field">
-                          <!-- name input -->
+                          {{-- name input --}}
                           <input id="name" name="name" class="art-input" type="text" placeholder="Name" required>
-                          <!-- label -->
+                          {{-- label --}}
                           <label for="name"><i class="fas fa-user"></i></label>
                         </div>
-                        <!-- form field end -->
-                        <!-- form field -->
+                        {{-- form field end --}}
+                        {{-- form field --}}
                         <div class="art-form-field">
-                          <!-- email input -->
+                          {{-- email input --}}
                           <input id="email" name="email" class="art-input" type="email" placeholder="Email" required>
-                          <!-- label -->
+                          {{-- label --}}
                           <label for="email"><i class="fas fa-at"></i></label>
                         </div>
-                        <!-- form field end -->
-                        <!-- form field -->
+                        {{-- form field end --}}
+                        {{-- form field --}}
                         <div class="art-form-field">
-                          <!-- message textarea -->
+                          {{-- message textarea --}}
                           <textarea id="message" name="text" class="art-input" placeholder="Message" required></textarea>
-                          <!-- label -->
+                          {{-- label --}}
                           <label for="message"><i class="far fa-envelope"></i></label>
                         </div>
-                        <!-- form field end -->
-                        <!-- button -->
+                        {{-- form field end --}}
+                        {{-- button --}}
                         <div class="art-submit-frame">
                           <button class="art-btn art-btn-md art-submit" type="submit"><span>Send message</span></button>
-                          <!-- success -->
+                          {{-- success --}}
                           <div class="art-success">Success <i class="fas fa-check"></i></div>
                         </div>
                       </form>
-                      <!-- contact form end -->
+                      {{-- contact form end --}}
 
                     </div>
-                    <!-- contact form frame end -->
+                    {{-- contact form frame end --}}
 
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
                 </div>
-                <!-- row end -->
+                {{-- row end --}}
 
               </div>
-              <!-- container end -->
+              {{-- container end --}}
 
-              <!-- container -->
+              {{-- container --}}
               <div class="container-fluid">
 
-                <!-- row -->
+                {{-- row --}}
                 <div class="row">
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-6 col-lg-3">
-                    <!-- brand -->
+                    {{-- brand --}}
                     <img class="art-brand" src="{{asset('website/asset')}}/img/brands/1.png" alt="brand">
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-6 col-lg-3">
-                    <!-- brand -->
+                    {{-- brand --}}
                     <img class="art-brand" src="{{asset('website/asset')}}/img/brands/2.png" alt="brand">
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-6 col-lg-3">
-                    <!-- brand -->
+                    {{-- brand --}}
                     <img class="art-brand" src="{{asset('website/asset')}}/img/brands/3.png" alt="brand">
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
-                  <!-- col -->
+                  {{-- col --}}
                   <div class="col-6 col-lg-3">
-                    <!-- brand -->
+                    {{-- brand --}}
                     <img class="art-brand" src="{{asset('website/asset')}}/img/brands/1.png" alt="brand">
                   </div>
-                  <!-- col end -->
+                  {{-- col end --}}
 
                 </div>
-                <!-- row end -->
+                {{-- row end --}}
 
               </div>
-              <!-- container end -->
+              {{-- container end --}}
 
-              <!-- container -->
+              {{-- container --}}
               <div class="container-fluid">
 
-                <!-- footer -->
+                {{-- footer --}}
                 <footer>
-                  <!-- copyright -->
-                  <div class="art-copy">© 2021 Saqline Moaj</div>
-                  <!-- author ( Please! Do not delete it. You are awesome! :) -->
-                  <div>Template author:&#160; <a href="https://themeforest.net/user/millerdigitaldesign" target="_blank" data-no-swup>Nazar Miller</a></div>
+                  {{-- copyright --}}
+                  <div class="art-copy">© 2025 Saqline Zaman</div>
+                  {{-- author ( Please! Do not delete it. You are awesome! :) --}}
                 </footer>
-                <!-- footer end -->
+                {{-- footer end --}}
 
               </div>
-              <!-- container end -->
+              {{-- container end --}}
 
             </div>
-            <!-- scroll frame end -->
+            {{-- scroll frame end --}}
 
           </div>
-          <!-- swup container end -->
+          {{-- swup container end --}}
 
         </div>
-        <!-- content end -->
+        {{-- content end --}}
 
       </div>
-      <!-- app container end -->
+      {{-- app container end --}}
 
     </div>
-    <!-- app wrapper end -->
+    {{-- app wrapper end --}}
 
-    <!-- preloader -->
+    {{-- preloader --}}
     <div class="art-preloader">
-      <!-- preloader content -->
+      {{-- preloader content --}}
       <div class="art-preloader-content">
-        <!-- title -->
-        <h4>Saqline Moaj</h4>
-        <!-- progressbar -->
+        {{-- title --}}
+        <h4>Saqline Zaman</h4>
+        {{-- progressbar --}}
         <div id="preloader" class="art-preloader-load"></div>
       </div>
-      <!-- preloader content end -->
+      {{-- preloader content end --}}
     </div>
-    <!-- preloader end -->
+    {{-- preloader end --}}
 
   </div>
-  <!-- app end -->
+  {{-- app end --}}
   <div id="swupMenu"></div>
 
-  <!-- jquery js -->
+  {{-- jquery js --}}
   <script src="{{asset('website/asset')}}/js/plugins/jquery.min.js"></script>
-  <!-- anime js -->
+  {{-- anime js --}}
   <script src="{{asset('website/asset')}}/js/plugins/anime.min.js"></script>
-  <!-- swiper js -->
+  {{-- swiper js --}}
   <script src="{{asset('website/asset')}}/js/plugins/swiper.min.js"></script>
-  <!-- progressbar js -->
+  {{-- progressbar js --}}
   <script src="{{asset('website/asset')}}/js/plugins/progressbar.min.js"></script>
-  <!-- smooth scrollbar js -->
+  {{-- smooth scrollbar js --}}
   <script src="{{asset('website/asset')}}/js/plugins/smooth-scrollbar.min.js"></script>
-  <!-- overscroll js -->
+  {{-- overscroll js --}}
   <script src="{{asset('website/asset')}}/js/plugins/overscroll.min.js"></script>
-  <!-- typing js -->
+  {{-- typing js --}}
   <script src="{{asset('website/asset')}}/js/plugins/typing.min.js"></script>
-  <!-- isotope js -->
+  {{-- isotope js --}}
   <script src="{{asset('website/asset')}}/js/plugins/isotope.min.js"></script>
-  <!-- fancybox js -->
+  {{-- fancybox js --}}
   <script src="{{asset('website/asset')}}/js/plugins/fancybox.min.js"></script>
-  <!-- swup js -->
+  {{-- swup js --}}
   <script src="{{asset('website/asset')}}/js/plugins/swup.min.js"></script>
 
-  <!-- main js -->
+  {{-- main js --}}
   <script src="{{asset('website/asset')}}/js/main.js"></script>
 
 </body>
 
 
-<!-- Mirrored from miller.bslthemes.com/arter-demo/onepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Mar 2025 09:39:28 GMT -->
+{{-- Mirrored from miller.bslthemes.com/arter-demo/onepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Mar 2025 09:39:28 GMT --}}
 </html>
