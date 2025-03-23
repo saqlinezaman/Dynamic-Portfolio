@@ -27,9 +27,14 @@ class HomeController extends Controller
     {
         $categories = Category::where('status','active')->latest()->get();
         $blogs = Blog::where('status','active')->latest()->get();
-        return view('Fronennd.welcome',[
+        return view('Frontend.welcome',[
             'categories' => $categories,
             'blogs'=> $blogs,
         ]);
+    }
+    public function see_index(){
+        $categories = Category::where('status','active')->latest()->get();
+        $blogs = Blog::where('status','active')->latest()->get();
+        return view("Frontend.blog",compact('blogs','categories'));
     }
 }

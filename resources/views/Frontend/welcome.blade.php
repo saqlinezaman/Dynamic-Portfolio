@@ -244,7 +244,7 @@
 
               {{-- register and log in --}}
               <div class="">
-                <a style="font-size: 16px; font-weight: bold;" href="{{route('login')}}">Login Here</a>
+                <a style="font-size: 16px; font-weight: bold;" href="{{route('profile.index')}}">Login Here</a>
               </div>
 
               {{-- links frame end --}}
@@ -1356,9 +1356,9 @@
                                 <h5 class="mb-15">{{$blog->title}}</h5>
                               </a>
                               <!-- text -->
-                              <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!</div>
+                              <div class="mb-15">{!!$blog->short_description!!}</div>
                               <!-- link -->
-                              <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+                              <a href="{{route('newspaper.index')}}" class="art-link art-color-link art-w-chevron">Read more</a>
                             </div>
                             <!-- post description end -->
                           </div>

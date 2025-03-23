@@ -15,6 +15,7 @@ Route::get('/', function () {
 
 // front end website---------------------------------------------------------------------
 Route::get('/',[HomeController::class,'index'])->name('home.index');
+Route::get('/blog/see',[HomeController::class,'see_index'])->name('newspaper.index');
 // auth
 
 Auth::routes(['register'=>false]);
