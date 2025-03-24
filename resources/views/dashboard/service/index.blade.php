@@ -38,7 +38,7 @@
                             <a href="{{route('service.edit',$service->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-pen-to-square text-info"></i>
                             </a>
-                            <a href=""  type="button" class="btn btn-link btn-sm btn-rounded">
+                            <a href="{{route('service.delete',$service->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-trash-can text-danger"></i>
                             </a>
                             </td>
@@ -55,10 +55,6 @@
                 <div class="pt-5 d-flex justify-content-center">
                     {{$services->links()}}
                   </div>
-                  {{-- pagination --}}
-                  {{-- <div class="pt-5 d-flex justify-content-center">
-                    {{$service->links()}}
-                  </div> --}}
             </div>
         </div>
     </div>

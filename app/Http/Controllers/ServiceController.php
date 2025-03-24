@@ -107,4 +107,12 @@ class ServiceController extends Controller
     {
         //
     }
+    public function service_delete($id){
+        $service = Service::where('id',$id)->first();
+        if($service->id == 'delete'){
+            unlink($service);
+        }
+        Service::find($service->id)->delete();
+        return back();
+    }
 }

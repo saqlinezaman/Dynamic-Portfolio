@@ -75,9 +75,13 @@ Route::post('/category/status/{id}',[CategoryController::class,'status'])->name(
 
 // blogs-----------------------------------------------------------------------------------
 Route::resource('/blog',BlogController::class);
-// services
-Route::resource('/service',ServiceController::class);
+// delete
+Route::get('/Blog/delete/{id}',[BlogController::class,'blog_delete'])->name('blog.delete');
 
+// services--------------------------------------------------------------------------------------
+Route::resource('/service',ServiceController::class);
+// delete
+Route::get('/service/delete/{id}',[ServiceController::class,'service_delete'])->name('service.delete');
 
 
 

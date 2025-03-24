@@ -59,7 +59,7 @@
                             <a href="{{route('blog.edit',$blog->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-pen-to-square text-info"></i>
                             </a>
-                            <a href="{{route('category.destroy',$blog->slug)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
+                            <a href="{{route('blog.delete',$blog->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-trash-can text-danger"></i>
                             </a>
                             <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#want_to_show{{$blog->id}}"  type="button" class="btn btn-link btn-sm btn-rounded">

@@ -177,8 +177,23 @@ class BlogController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Blog $blog)
+    public function destroy(Blog $blog )
     {
         //
+    }
+    public function blog_delete($id){
+        $blog = Blog::where('id',$id)->first();
+        if($blog->thumbnail){
+            $oldpath = base_path('public/uploads/blog/'.$blog->thumbnail);
+
+            if(file_exists($oldpath)){
+                unlink($oldpath);
+            }
+        }
+        // if($blog->id == 'delete'){
+        //     unlink($blog);
+        // }
+        Blog::find($blog->id)->delete();
+        return back();
     }
 }
