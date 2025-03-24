@@ -1320,7 +1320,7 @@
                       <!-- title frame -->
                       <div class="art-title-frame">
                         <!-- title -->
-                        <h4>Newsletter</h4>
+                        <h4>BLOGS</h4>
                       </div>
                       <!-- title frame end -->
                     </div>

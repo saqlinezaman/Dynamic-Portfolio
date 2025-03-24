@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ManagementController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -74,6 +75,8 @@ Route::post('/category/status/{id}',[CategoryController::class,'status'])->name(
 
 // blogs-----------------------------------------------------------------------------------
 Route::resource('/blog',BlogController::class);
+// services
+Route::resource('/service',ServiceController::class);
 
 
 

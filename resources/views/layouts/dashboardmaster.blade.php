@@ -138,6 +138,28 @@
                             </ul>
                         </div>
                     </li>
+                    {{-- services --}}
+                    <li class="menu-item">
+                        <a href="#menuservice" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
+                            <span class="menu-icon"><i class="fa-solid fa-book-open"></i></span>
+                            <span class="menu-text"> Services </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="menuservice">
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a class='menu-link' href='{{ route('service.index') }}'>
+                                        <span class="menu-text">Show services</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class='menu-link' href='{{ route('blog.create') }}'>
+                                        <span class="menu-text">Create Services</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
