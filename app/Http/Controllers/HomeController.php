@@ -6,6 +6,7 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Blog;
 
+
 class HomeController extends Controller
 {
     /**
@@ -32,9 +33,8 @@ class HomeController extends Controller
             'blogs'=> $blogs,
         ]);
     }
-    public function see_index(){
-        $categories = Category::where('status','active')->latest()->get();
-        $blogs = Blog::where('status','active')->latest()->get();
-        return view("Frontend.blog",compact('blogs','categories'));
+    public function see_index($slug){
+        $blog = Blog::where('slug',$slug)->first();
+        return view("Frontend.blog",compact('blog'));
     }
 }

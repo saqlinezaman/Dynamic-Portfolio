@@ -1358,7 +1358,7 @@
                               <!-- text -->
                               <div class="mb-15">{!!$blog->short_description!!}</div>
                               <!-- link -->
-                              <a href="{{route('newspaper.index')}}" class="art-link art-color-link art-w-chevron">Read more</a>
+                                <a href="{{ route('newspaper.index',$blog->slug)}}" class="art-link art-color-link art-w-chevron">Read more</a>
                             </div>
                             <!-- post description end -->
                           </div>
