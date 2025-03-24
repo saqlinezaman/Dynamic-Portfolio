@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Blog;
-
+use App\Models\Service;
 
 class HomeController extends Controller
 {
@@ -28,9 +28,11 @@ class HomeController extends Controller
     {
         $categories = Category::where('status','active')->latest()->get();
         $blogs = Blog::where('status','active')->latest()->get();
+        $services = Service::where('status','active')->latest()->get();
         return view('Frontend.welcome',[
             'categories' => $categories,
             'blogs'=> $blogs,
+            'services' => $services,
         ]);
     }
     public function see_index($slug){
@@ -40,4 +42,5 @@ class HomeController extends Controller
     public function deshboard_index(){
         return view('dashboard.home.index');
     }
+
 }

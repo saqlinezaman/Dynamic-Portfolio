@@ -450,6 +450,8 @@
                   {{-- col end --}}
 
                   {{-- col --}}
+                  @foreach ($services as $service )
+
                   <div class="col-lg-4 col-md-6">
 
                     {{-- service --}}
@@ -457,101 +459,18 @@
                       {{-- service content --}}
                       <div class="art-service-ib-content">
                         {{-- title --}}
-                        <h5 class="mb-15">Web Development</h5>
+                        <h5 class="mb-15"> {{$service->title}}</h5>
                         {{-- text --}}
-                        <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
+                        <div class="mb-15">{{$service->description}}</div>
                         {{-- button --}}
-                        <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
+                        <div class="art-buttons-frame"><a href="https://www.fiverr.com/saqlinezaman" class="art-link art-color-link art-w-chevron">Order now</a></div>
                       </div>
                       {{-- service content end --}}
                     </div>
                     {{-- service end --}}
 
                   </div>
-                  {{-- col end --}}
-
-                  {{-- col --}}
-                  <div class="col-lg-4 col-md-6">
-
-                    {{-- service --}}
-                    <div class="art-a art-service-icon-box">
-                      {{-- service content --}}
-                      <div class="art-service-ib-content">
-                        {{-- title --}}
-                        <h5 class="mb-15">UI/UX Design</h5>
-                        {{-- text --}}
-                        <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-                        {{-- button --}}
-                        <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
-                      </div>
-                      {{-- service content end --}}
-                    </div>
-                    {{-- service end --}}
-
-                  </div>
-                  {{-- col end --}}
-
-                  {{-- col --}}
-                  <div class="col-lg-4 col-md-6">
-
-                    {{-- service --}}
-                    <div class="art-a art-service-icon-box">
-                      {{-- service content --}}
-                      <div class="art-service-ib-content">
-                        {{-- title --}}
-                        <h5 class="mb-15">Sound Design</h5>
-                        {{-- text --}}
-                        <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-                        {{-- button --}}
-                        <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
-                      </div>
-                      {{-- service content end --}}
-                    </div>
-                    {{-- service end --}}
-
-                  </div>
-                  {{-- col end --}}
-
-                  {{-- col --}}
-                  <div class="col-lg-4 col-md-6">
-
-                    {{-- service --}}
-                    <div class="art-a art-service-icon-box">
-                      {{-- service content --}}
-                      <div class="art-service-ib-content">
-                        {{-- title --}}
-                        <h5 class="mb-15">Game Design</h5>
-                        {{-- text --}}
-                        <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-                        {{-- button --}}
-                        <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
-                      </div>
-                      {{-- service content end --}}
-                    </div>
-                    {{-- service end --}}
-
-                  </div>
-                  {{-- col end --}}
-
-                  {{-- col --}}
-                  <div class="col-lg-4 col-md-6">
-
-                    {{-- service --}}
-                    <div class="art-a art-service-icon-box">
-                      {{-- service content --}}
-                      <div class="art-service-ib-content">
-                        {{-- title --}}
-                        <h5 class="mb-15">Advertising</h5>
-                        {{-- text --}}
-                        <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-                        {{-- button --}}
-                        <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
-                      </div>
-                      {{-- service content end --}}
-                    </div>
-                    {{-- service end --}}
-
-                  </div>
+                  @endforeach
                   {{-- col end --}}
 
                 </div>

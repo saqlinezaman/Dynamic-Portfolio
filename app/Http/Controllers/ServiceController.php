@@ -14,7 +14,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $services = Service::latest()->paginate(4);
+        $services = Service::latest()->paginate(2);
         return view('dashboard.service.index',compact('services'));
     }
 
@@ -67,7 +67,7 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
-        //
+        return view('dashboard.service.edit',compact('service'));
     }
 
     /**
@@ -75,8 +75,30 @@ class ServiceController extends Controller
      */
     public function update(UpdateServiceRequest $request, Service $service)
     {
-        //
+        $request->validate([
+
+            "title" => 'required',
+            "description" => 'required',
+        ]);
+        if($request->title){
+            Service::find($service->id)->update([
+                'user_id' => Auth::user()->id,
+                "title" => $request->title,
+                "description" => $request->description,
+                'updated_at' => now(),
+            ]);
+            return redirect()->route('service.index')->with('service_create_success','Service update Successfull');
+        }else{
+        Service::find($service->id)->update([
+            'user_id' => Auth::user()->id,
+            "title" => $request->title,
+            "description" => $request->description,
+            'updated_at' => now(),
+        ]);
+        return redirect()->route('service.index')->with('service_create_success','Service update Successfull');
     }
+}
+
 
     /**
      * Remove the specified resource from storage.

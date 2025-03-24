@@ -55,7 +55,7 @@
                             </form>
                           </td>
                           {{-- edit --}}
-                          <td>
+                          <td class="d-flex">
                             <a href="{{route('blog.edit',$blog->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-pen-to-square text-info"></i>
                             </a>

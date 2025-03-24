@@ -10,4 +10,8 @@ class Service extends Model
     /** @use HasFactory<\Database\Factories\ServiceFactory> */
     use HasFactory;
     protected $guarded=[''];
+    public function oneCatForservice(){
+        return $this -> hasOne(Blog::class,'service_id','id');
+    }
+
 }

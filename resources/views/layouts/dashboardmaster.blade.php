@@ -141,7 +141,7 @@
                     {{-- services --}}
                     <li class="menu-item">
                         <a href="#menuservice" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
-                            <span class="menu-icon"><i class="fa-solid fa-book-open"></i></span>
+                            <span class="menu-icon"><i class="fa-solid fa-briefcase"></i></span>
                             <span class="menu-text"> Services </span>
                             <span class="menu-arrow"></span>
                         </a>
@@ -180,14 +180,14 @@
                         <div class="logo-box">
                             <!-- Brand Logo Light -->
                             <a class='logo-light' href='index.html'>
-                                <img src="{{asset('dashboard')}}/assets/images/logo-light.png" alt="logo" class="logo-lg" height="20">
-                                <img src="{{asset('dashboard')}}/assets/images/logo-sm.png" alt="small logo" class="logo-sm" height="20">
+                                <h3 alt="logo" class="logo-lg" height="20">Saqline</h3>
+                                <h3 alt="small logo" class="logo-sm" height="20">Saqline</h3>
                             </a>
 
                             <!-- Brand Logo Dark -->
                             <a class='logo-dark' href='index.html'>
-                                <img src="{{asset('dashboard')}}/assets/images/logo-dark.png" alt="dark logo" class="logo-lg" height="20">
-                                <img src="{{asset('dashboard')}}/assets/images/logo-sm.png" alt="small logo" class="logo-sm" height="20">
+                                <h3 alt="dark logo" class="logo-lg" height="20">Saqline</h3>
+                                <h3 alt="small logo" class="logo-sm" height="20">Saqline</h3>
                             </a>
                         </div>
 
