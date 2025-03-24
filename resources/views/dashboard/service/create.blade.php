@@ -2,10 +2,10 @@
 @section('content')
 
 {{-- form  --}}
-<div class="row p-4 d-flex justify-content-center" >
-    <div class="col-lg-8 col-sm-12">
+<div class="row p-4 d-flex justify-content-center " >
+    <div class="col-lg-8 col-sm-12 ">
         <div class="card">
-            <div class="card-body">
+            <div class="card-body ">
                 <h4 class="header-title">Service Create</h4>
                 <form action="{{route('service.store')}}" method="POST">
                     @csrf
@@ -21,7 +21,7 @@
                     <div class="mb-3">
                         <label for="validationCustom01" class="form-label"> Service description</label>
                         <textarea type="text" class="form-control @error('description') is_invalid @enderror" value="Input your description" id="short_description" name="description"> </textarea>
-                        @error('title')
+                        @error('description')
                             <p class="text-danger"> {{$message}} </p>
                         @enderror
                     </div>
@@ -35,3 +35,4 @@
 </div>
 
 @endsection
+

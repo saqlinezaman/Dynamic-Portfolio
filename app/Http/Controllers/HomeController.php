@@ -37,4 +37,7 @@ class HomeController extends Controller
         $blog = Blog::where('slug',$slug)->first();
         return view("Frontend.blog",compact('blog'));
     }
+    public function deshboard_index(){
+        return view('dashboard.home.index');
+    }
 }

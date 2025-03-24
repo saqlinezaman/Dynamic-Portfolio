@@ -15,7 +15,7 @@ Route::get('/', function () {
 });
 
 // front end website---------------------------------------------------------------------
-Route::get('/',[HomeController::class,'index'])->name('home.index');
+Route::get('/deshboard',[HomeController::class,'deshboard_index'])->name('deshboard.index');
 Route::get('/blog/see/{slug}',[HomeController::class,'see_index'])->name('newspaper.index');
 
 // auth

@@ -14,7 +14,8 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        return view('dashboard.service.index');
+        $services = Service::latest()->paginate(4);
+        return view('dashboard.service.index',compact('services'));
     }
 
     /**
@@ -42,7 +43,7 @@ class ServiceController extends Controller
                 "description" => $request->description,
                 'created_at' => now(),
             ]);
-            return back();
+            return redirect()->route('service.index')->with('service_create_success','Service Created Successfull');
         }else{
         Service::create([
             'user_id' => Auth::user()->id,

@@ -50,7 +50,7 @@
                     <li class="menu-title">Menu</li>
                     {{-- view website --}}
                     <li class="menu-item">
-                        <a class='menu-link waves-effect' href='{{route('home.index')}}'>
+                        <a class='menu-link waves-effect' href='{{route('home')}}'>
                             <span class="menu-icon"><i class="fa-solid fa-eye"></i></i></span>
                             <span class="menu-text"> View Website </span>
                             <span class="badge bg-info rounded-pill ms-auto">3</span>
@@ -58,13 +58,13 @@
                     </li>
                     {{-- dashboard --}}
                     <li class="menu-item">
-                        <a class='menu-link waves-effect' href='{{route('home')}}'>
+                        <a class='menu-link waves-effect' href='{{route('deshboard.index')}}'>
                             <span class="menu-icon"><i data-lucide="airplay "></i></span>
                             <span class="menu-text"> Dashboards </span>
                             <span class="badge bg-info rounded-pill ms-auto">3</span>
                         </a>
                     </li>
-                    {{-- Manaement --}}
+                    {{-- Management --}}
                     @if (Auth::user()->role =='admin' || Auth::user()->role =='manager' )
 
                     <li class="menu-item">
