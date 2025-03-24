@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Service;
 use App\Http\Requests\StoreServiceRequest;
 use App\Http\Requests\UpdateServiceRequest;
+Use Illuminate\Support\Facades\Auth;
 
 class ServiceController extends Controller
 {
@@ -21,7 +22,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.service.create');
     }
 
     /**
@@ -29,9 +30,29 @@ class ServiceController extends Controller
      */
     public function store(StoreServiceRequest $request)
     {
-        //
-    }
+        $request->validate([
 
+            "title" => 'required',
+            "description" => 'required',
+        ]);
+        if($request->title){
+            Service::create([
+                'user_id' => Auth::user()->id,
+                "title" => $request->title,
+                "description" => $request->description,
+                'created_at' => now(),
+            ]);
+            return back();
+        }else{
+        Service::create([
+            'user_id' => Auth::user()->id,
+            "title" => $request->title,
+            "description" => $request->description,
+            'created_at' => now(),
+        ]);
+        return back();
+    }
+    }
     /**
      * Display the specified resource.
      */

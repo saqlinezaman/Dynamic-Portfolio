@@ -244,7 +244,7 @@
 
               {{-- register and log in --}}
               <div class="">
-                <a style="font-size: 16px; font-weight: bold;" href="{{route('profile.index')}}">Login Here</a>
+                <a style="font-size: 16px; font-weight: bold;" href="{{route('login')}}">Login Here</a>
               </div>
 
               {{-- links frame end --}}

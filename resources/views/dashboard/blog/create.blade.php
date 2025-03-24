@@ -40,7 +40,7 @@
                     {{-- short description --}}
                     <div class="mb-3">
                         <label for="validationCustom01" class="form-label">Short description</label>
-                        <textarea type="text" class="form-control @error('title') is_invalid @enderror" value="" id="short_description" name="short_description"> </textarea>
+                        <textarea type="text" class="form-control @error('short_description') is_invalid @enderror" value="" id="short_description" name="short_description"> </textarea>
                         @error('short_description')
                             <p class="text-danger"> {{$message}} </p>
                         @enderror
@@ -48,7 +48,7 @@
                     {{-- description --}}
                     <div class="mb-3">
                         <label for="validationCustom01" class="form-label">Description</label>
-                        <textarea type="text" class="form-control @error('title') is_invalid @enderror" value="" id="description" name="description"> </textarea>
+                        <textarea type="text" class="form-control @error('description') is_invalid @enderror" value="" id="description" name="description"> </textarea>
                         @error('description')
                             <p class="text-danger"> {{$message}} </p>
                         @enderror

@@ -28,7 +28,7 @@
                     <p style="font-size: 30px" class="text bg-center">{!!$blog->description!!}</p>
                 </div>
                 <div class="mt-3 mb-5 px-4 ">
-                    <a style=""  class="bg-danger px-5 py-3  " href="{{route('home')}}">Back</i></a>
+                    <a style="font-weight: bold; background-color:#FF4646; border-radius: 5px; "  class=" px-5 py-3 text-white" href="{{route('home')}}">Back</i></a>
                 </div>
 
             </div>

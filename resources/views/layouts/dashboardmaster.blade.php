@@ -153,7 +153,7 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a class='menu-link' href='{{ route('blog.create') }}'>
+                                    <a class='menu-link' href='{{ route('service.create') }}'>
                                         <span class="menu-text">Create Services</span>
                                     </a>
                                 </li>
