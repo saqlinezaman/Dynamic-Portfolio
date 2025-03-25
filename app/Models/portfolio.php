@@ -9,4 +9,5 @@ class portfolio extends Model
 {
     /** @use HasFactory<\Database\Factories\PortfolioFactory> */
     use HasFactory;
+    protected $guarded = [''];
 }

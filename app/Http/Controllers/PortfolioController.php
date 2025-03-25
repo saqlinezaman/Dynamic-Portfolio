@@ -3,8 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\portfolio;
+use App\Models\Category;
 use App\Http\Requests\StoreportfolioRequest;
 use App\Http\Requests\UpdateportfolioRequest;
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\Gd\Driver;
+Use Illuminate\Support\Facades\Auth;
+Use Illuminate\Support\Str;
 
 class PortfolioController extends Controller
 {
@@ -21,7 +26,8 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::where('status','active')->latest()->get();
+        return view('dashboard.portfolio.create',compact('categories'));
     }
 
     /**
@@ -29,7 +35,42 @@ class PortfolioController extends Controller
      */
     public function store(StoreportfolioRequest $request)
     {
-        //
+        $request->validate([
+            "category_id" => 'required',
+            "title" => 'required',
+            "thumbnail" => 'required',
+        ]);
+
+        if($request->hasFile('thumbnail')){
+            $manager = new ImageManager(new Driver());
+            $newname = Auth::user()->id.'-'.Str::random(4).".".$request->file('thumbnail')->getClientOriginalExtension();
+            $image = $manager->read($request->file('thumbnail'));
+            $image->toPng()->save(base_path('public/uploads/portfolio/'.$newname));
+
+            if($request->slug){
+                portfolio::create([
+                    'user_id' => Auth::user()->id,
+                    "category_id" => $request->category_id,
+                    "title" => $request->title,
+                    "thumbnail" => $newname,
+                    'created_at' => now(),
+                ]);
+                return redirect()->route('portfolio.index')->with('success','Portfolio Insert Successfull');
+            }else{
+                portfolio::create([
+                    'user_id' => Auth::user()->id,
+                    "category_id" => $request->category_id,
+                    "title" => $request->title,
+                    "thumbnail" => $newname,
+                    'created_at' => now(),
+                ]);
+                return redirect()->route('portfolio.index')->with('success','Portfolio Insert Successfull');
+            }
+
+
+
+        }
+
     }
 
     /**
