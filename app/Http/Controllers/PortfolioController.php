@@ -102,4 +102,19 @@ class PortfolioController extends Controller
     {
         //
     }
+    public function portfolio_delete($id){
+        $portfolio = portfolio::where('id',$id)->first();
+        if($portfolio->thumbnail){
+            $oldpath = base_path('public/uploads/portfolio/'.$portfolio->thumbnail);
+
+            if(file_exists($oldpath)){
+                unlink($oldpath);
+            }
+        }
+        // if($blog->id == 'delete'){
+        //     unlink($blog);
+        // }
+        portfolio::find($portfolio->id)->delete();
+        return back();
+    }
 }

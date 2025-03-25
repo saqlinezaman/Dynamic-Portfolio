@@ -84,6 +84,9 @@ Route::resource('/service',ServiceController::class);
 Route::get('/service/delete/{id}',[ServiceController::class,'service_delete'])->name('service.delete');
 // portfolio
 Route::resource('/portfolio',PortfolioController::class);
+// delete
+Route::get('/portfolio/delete/{id}',[PortfolioController::class,'portfolio_delete'])->name('portfolio.delete');
+
 
 
 

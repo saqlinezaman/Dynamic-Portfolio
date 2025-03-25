@@ -47,7 +47,7 @@
                             <a href="{{route('service.edit',$portfolio->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-pen-to-square text-info"></i>
                             </a>
-                            <a href="{{route('service.delete',$portfolio->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
+                            <a href="{{route('portfolio.delete',$portfolio->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-trash-can text-danger"></i>
                             </a>
                             </td>
