@@ -17,21 +17,6 @@
                             <p class="text-danger"> {{$message}} </p>
                         @enderror
                     </div>
-                    {{-- categories --}}
-                    <div class="mb-3">
-                        <label for="validationCustom01" class="form-label">categories</label>
-                        <select name="category_id" class="form-select">
-                            <option value="">Select role</option>
-                            @foreach ($categories as $category)
-                                <option value=" {{$category->id}} "> {{$category->title}}</option>
-                            @endforeach
-
-
-                        </select>
-                        @error('category_id')
-                            <p class="text-danger"> {{$message}} </p>
-                        @enderror
-                    </div>
 
                     {{-- img --}}
                     <div class="row my-5 justify-content-center align-items-center d-flex">

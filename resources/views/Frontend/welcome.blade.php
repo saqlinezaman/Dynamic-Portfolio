@@ -882,22 +882,7 @@
                         <h4>Portfolios</h4>
                       </div>
                       {{-- title frame end --}}
-                      {{-- right frame --}}
-
-                      {{-- categories title --}}
                       <div class="art-right-frame">
-                        {{-- filter --}}
-                        <div class="art-filter">
-                            <a href="#" data-filter="*" class="art-link art-current">All Categories</a>
-                            @foreach ($categories as $category )
-                            <a href="{{$category->id}}" data-filter="*" class="art-link art-current">{{$category->title}}</a>
-                            @endforeach
-                          {{-- filter link --}}
-
-                          {{-- filter link --}}
-
-                        </div>
-                        {{-- filter end --}}
                       </div>
                       {{-- right frame end --}}
                     </div>
@@ -907,13 +892,14 @@
                   {{-- col end --}}
 
                   <div class="art-grid art-grid-3-col art-gallery">
+                    @foreach ($portfolios as $portfolio )
 
                     {{-- grid item --}}
                     <div class="art-grid-item webTemplates">
                       {{-- grid item frame --}}
-                      <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/1.jpg" class="art-a art-portfolio-item-frame art-horizontal">
+                      <a data-fancybox="gallery" data-no-swup href="{{asset('uploads/portfolio')}}/{{$portfolio->thumbnail}}" class="art-a art-portfolio-item-frame art-horizontal">
                         {{-- img --}}
-                        <img src="{{asset('website/asset')}}/img/works/thumbnail/1.jpg" alt="item">
+                        <img src="{{asset('uploads/portfolio')}}/{{$portfolio->thumbnail}}" alt="item">
                         {{-- zoom icon --}}
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
@@ -921,13 +907,13 @@
                       {{-- description --}}
                       <div class="art-item-description">
                         {{-- title --}}
-                        <h5 class="mb-15">Project title</h5>
-                        {{-- button --}}
-                        <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+                        <h5 class="mb-15">{{$portfolio->title}}</h5>
                       </div>
                       {{-- description end --}}
 
                     </div>
+                    {{-- grid item end --}}
+                    @endforeach
                     {{-- grid item end --}}
 
                   </div>

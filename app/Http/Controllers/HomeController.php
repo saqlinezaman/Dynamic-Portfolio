@@ -6,6 +6,7 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Blog;
 use App\Models\Service;
+use App\Models\portfolio;
 
 class HomeController extends Controller
 {
@@ -29,10 +30,13 @@ class HomeController extends Controller
         $categories = Category::where('status','active')->latest()->get();
         $blogs = Blog::where('status','active')->latest()->get();
         $services = Service::where('status','active')->latest()->get();
+        $portfolios = portfolio::where('status','active')->latest()->get();
+
         return view('Frontend.welcome',[
             'categories' => $categories,
             'blogs'=> $blogs,
-            'services' => $services,
+           'services' => $services,
+           'portfolios' => $portfolios,
         ]);
     }
     public function see_index($slug){

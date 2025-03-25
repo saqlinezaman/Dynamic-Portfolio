@@ -18,7 +18,8 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        return view('dashboard.portfolio.index');
+        $portfolios = portfolio::latest()->get();
+        return view('dashboard.portfolio.index',compact('portfolios'));
     }
 
     /**
@@ -36,7 +37,6 @@ class PortfolioController extends Controller
     public function store(StoreportfolioRequest $request)
     {
         $request->validate([
-            "category_id" => 'required',
             "title" => 'required',
             "thumbnail" => 'required',
         ]);
@@ -50,7 +50,6 @@ class PortfolioController extends Controller
             if($request->slug){
                 portfolio::create([
                     'user_id' => Auth::user()->id,
-                    "category_id" => $request->category_id,
                     "title" => $request->title,
                     "thumbnail" => $newname,
                     'created_at' => now(),
@@ -59,7 +58,6 @@ class PortfolioController extends Controller
             }else{
                 portfolio::create([
                     'user_id' => Auth::user()->id,
-                    "category_id" => $request->category_id,
                     "title" => $request->title,
                     "thumbnail" => $newname,
                     'created_at' => now(),
