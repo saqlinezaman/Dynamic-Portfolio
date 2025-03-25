@@ -6,13 +6,13 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ManagementController;
+use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[HomeController::class,'index'])->name('home');
+
 
 // front end website---------------------------------------------------------------------
 Route::get('/deshboard',[HomeController::class,'deshboard_index'])->name('deshboard.index');
@@ -22,7 +22,7 @@ Route::get('/blog/see/{slug}',[HomeController::class,'see_index'])->name('newspa
 
 Auth::routes(['register'=>false]);
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+// Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 
 // management------------------------------------------------------------------------------
@@ -82,6 +82,8 @@ Route::get('/Blog/delete/{id}',[BlogController::class,'blog_delete'])->name('blo
 Route::resource('/service',ServiceController::class);
 // delete
 Route::get('/service/delete/{id}',[ServiceController::class,'service_delete'])->name('service.delete');
+// portfolio
+Route::resource('/portfolio',PortfolioController::class);
 
 
 

@@ -425,6 +425,7 @@
 
               </div>
               {{-- container end --}}
+                {{-- Service --}}
 
               {{-- container --}}
               <div class="container-fluid">
@@ -863,7 +864,7 @@
 
               </div>
               {{-- container end --}}
-
+{{--portfolio---------------------------------------------------------------------------------}}
               {{-- container --}}
               <div class="container-fluid">
 
@@ -878,23 +879,23 @@
                       {{-- title frame --}}
                       <div class="art-title-frame">
                         {{-- title --}}
-                        <h4>Works</h4>
+                        <h4>Portfolios</h4>
                       </div>
                       {{-- title frame end --}}
                       {{-- right frame --}}
+
+                      {{-- categories title --}}
                       <div class="art-right-frame">
                         {{-- filter --}}
                         <div class="art-filter">
+                            <a href="#" data-filter="*" class="art-link art-current">All Categories</a>
+                            @foreach ($categories as $category )
+                            <a href="{{$category->id}}" data-filter="*" class="art-link art-current">{{$category->title}}</a>
+                            @endforeach
                           {{-- filter link --}}
-                          <a href="#" data-filter="*" class="art-link art-current">All Categories</a>
+
                           {{-- filter link --}}
-                          <a href="#" data-filter=".webTemplates" class="art-link">Web Templates</a>
-                          {{-- filter link --}}
-                          <a href="#" data-filter=".logos" class="art-link">Logos</a>
-                          {{-- filter link --}}
-                          <a href="#" data-filter=".drawings" class="art-link">Drawings</a>
-                          {{-- filter link --}}
-                          <a href="#" data-filter=".ui" class="art-link">UI Elements</a>
+
                         </div>
                         {{-- filter end --}}
                       </div>
@@ -929,166 +930,6 @@
                     </div>
                     {{-- grid item end --}}
 
-                    {{-- grid item --}}
-                    <div class="art-grid-item logos">
-                      {{-- grid item frame --}}
-                      <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/2.jpg" class="art-a art-portfolio-item-frame art-vertical">
-                        {{-- img --}}
-                        <img src="{{asset('website/asset')}}/img/works/thumbnail/2.jpg" alt="item">
-                        {{-- zoom icon --}}
-                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                      </a>
-                      {{-- grid item frame end --}}
-                      {{-- description --}}
-                      <div class="art-item-description">
-                        {{-- title --}}
-                        <h5 class="mb-15">Project title</h5>
-                        <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        {{-- button --}}
-                        <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                      </div>
-                      {{-- description end --}}
-
-                    </div>
-                    {{-- grid item end --}}
-
-                    {{-- grid item --}}
-                    <div class="art-grid-item drawings">
-                      {{-- grid item frame --}}
-                      <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/3.jpg" class="art-a art-portfolio-item-frame art-square">
-                        {{-- img --}}
-                        <img src="{{asset('website/asset')}}/img/works/thumbnail/3.jpg" alt="item">
-                        {{-- zoom icon --}}
-                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                      </a>
-                      {{-- grid item frame end --}}
-                      {{-- description --}}
-                      <div class="art-item-description">
-                        {{-- title --}}
-                        <h5 class="mb-15">Project title</h5>
-                        <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        {{-- button --}}
-                        <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                      </div>
-                      {{-- description end --}}
-
-                    </div>
-                    {{-- grid item end --}}
-
-                    {{-- grid item --}}
-                    <div class="art-grid-item ui">
-                      {{-- grid item frame --}}
-                      <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/4.jpg" class="art-a art-portfolio-item-frame art-vertical">
-                        {{-- img --}}
-                        <img src="{{asset('website/asset')}}/img/works/thumbnail/4.jpg" alt="item">
-                        {{-- zoom icon --}}
-                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                      </a>
-                      {{-- grid item frame end --}}
-                      {{-- description --}}
-                      <div class="art-item-description">
-                        {{-- title --}}
-                        <h5 class="mb-15">Project title</h5>
-                        <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        {{-- button --}}
-                        <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                      </div>
-                      {{-- description end --}}
-
-                    </div>
-                    {{-- grid item end --}}
-
-                    {{-- grid item --}}
-                    <div class="art-grid-item webTemplates">
-                      {{-- grid item frame --}}
-                      <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/5.jpg" class="art-a art-portfolio-item-frame art-square">
-                        {{-- img --}}
-                        <img src="{{asset('website/asset')}}/img/works/thumbnail/5.jpg" alt="item">
-                        {{-- zoom icon --}}
-                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                      </a>
-                      {{-- grid item frame end --}}
-                      {{-- description --}}
-                      <div class="art-item-description">
-                        {{-- title --}}
-                        <h5 class="mb-15">Project title</h5>
-                        <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        {{-- button --}}
-                        <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                      </div>
-                      {{-- description end --}}
-
-                    </div>
-                    {{-- grid item end --}}
-
-                    {{-- grid item --}}
-                    <div class="art-grid-item logos">
-                      {{-- grid item frame --}}
-                      <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/6.jpg" class="art-a art-portfolio-item-frame art-vertical">
-                        {{-- img --}}
-                        <img src="{{asset('website/asset')}}/img/works/thumbnail/6.jpg" alt="item">
-                        {{-- zoom icon --}}
-                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                      </a>
-                      {{-- grid item frame end --}}
-                      {{-- description --}}
-                      <div class="art-item-description">
-                        {{-- title --}}
-                        <h5 class="mb-15">Project title</h5>
-                        <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        {{-- button --}}
-                        <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                      </div>
-                      {{-- description end --}}
-
-                    </div>
-                    {{-- grid item end --}}
-
-                    {{-- grid item --}}
-                    <div class="art-grid-item drawings">
-                      {{-- grid item frame --}}
-                      <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/7.jpg" class="art-a art-portfolio-item-frame art-square">
-                        {{-- img --}}
-                        <img src="{{asset('website/asset')}}/img/works/thumbnail/7.jpg" alt="item">
-                        {{-- zoom icon --}}
-                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                      </a>
-                      {{-- grid item frame end --}}
-                      {{-- description --}}
-                      <div class="art-item-description">
-                        {{-- title --}}
-                        <h5 class="mb-15">Project title</h5>
-                        <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas, architecto.</div>
-                        {{-- button --}}
-                        <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                      </div>
-                      {{-- description end --}}
-
-                    </div>
-                    {{-- grid item end --}}
-
-                    {{-- grid item --}}
-                    <div class="art-grid-item ui">
-                      {{-- grid item frame --}}
-                      <a data-fancybox="gallery" data-no-swup href="{{asset('website/asset')}}/img/works/original-size/8.jpg" class="art-a art-portfolio-item-frame art-horizontal">
-                        {{-- img --}}
-                        <img src="{{asset('website/asset')}}/img/works/thumbnail/8.jpg" alt="item">
-                        {{-- zoom icon --}}
-                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                      </a>
-                      {{-- grid item frame end --}}
-                      {{-- description --}}
-                      <div class="art-item-description">
-                        {{-- title --}}
-                        <h5 class="mb-15">Project title</h5>
-                        {{-- button --}}
-                        <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                      </div>
-                      {{-- description end --}}
-
-                    </div>
-                    {{-- grid item end --}}
-
                   </div>
 
                 </div>
@@ -1096,7 +937,7 @@
 
               </div>
               {{-- container end --}}
-
+{{-- timeline education ar work history---------------------------------------------------- --}}
               {{-- container --}}
               <div class="container-fluid">
 
@@ -1224,7 +1065,7 @@
               </div>
               {{-- container end --}}
 
-              {{-- blogs --}}
+{{--blogs---------------------------------------------------------------------------------- --}}
               <!-- container -->
               <div class="container-fluid">
 
@@ -1337,34 +1178,8 @@
               </div>
               <!-- container end -->
 
-              {{-- container end --}}
 
-               {{-- category --}}
-
-              {{-- category container --}}
-              <div class="container-fluid">
-                {{-- category row --}}
-                <div class="row">
-                    @forelse ($categories as $category)
-                        {{-- col --}}
-                    <div class="col-6 col-lg-3">
-                      {{-- category image --}}
-                      <img class="art-brand" src="{{asset('uploads/category')}}/{{$category->image}}" alt="brand">
-                    </div>
-                    {{-- category end --}}
-                    @empty
-                    {{-- category image default --}}
-                    <img class="art-brand" src="{{asset('website/asset')}}/img/brands/1.png" alt="brand">
-
-                </div>
-                {{-- category end --}}
-                    @endforelse
-                </div>
-                {{-- row end --}}
-
-              </div>
-              {{-- category container end --}}
-
+              {{-- container start --}}
               {{-- email --}}
               <div class="container-fluid">
 
@@ -1453,6 +1268,7 @@
                   </div>
                   {{-- col end --}}
 
+
                   {{-- col --}}
                   <div class="col-lg-12">
 
@@ -1515,9 +1331,33 @@
                 {{-- row end --}}
 
               </div>
+              {{-- container end --}}
+{{-- category -------------------------------------------------------------------------------}}
 
+              {{-- category container --}}
+              <div class="container-fluid">
+                {{-- category row --}}
+                <div class="row">
+                    @forelse ($categories as $category)
+                        {{-- col --}}
+                    <div class="col-6 col-lg-3">
+                      {{-- category image --}}
+                      <img class="art-brand" src="{{asset('uploads/category')}}/{{$category->image}}" alt="brand">
+                    </div>
+                    {{-- category end --}}
+                    @empty
+                    {{-- category image default --}}
+                    <img class="art-brand" src="{{asset('website/asset')}}/img/brands/1.png" alt="brand">
 
+                </div>
+                {{-- category end --}}
+                    @endforelse
+                </div>
+                {{-- row end --}}
 
+              </div>
+
+                 {{-- category container end --}}
 
               {{-- container --}}
               <div class="container-fluid">
