@@ -8,6 +8,7 @@ use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ManagementController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\TestimonialController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -86,6 +87,8 @@ Route::get('/service/delete/{id}',[ServiceController::class,'service_delete'])->
 Route::resource('/portfolio',PortfolioController::class);
 // delete
 Route::get('/portfolio/delete/{id}',[PortfolioController::class,'portfolio_delete'])->name('portfolio.delete');
+// testimonials
+Route::resource('/testimonal',TestimonialController::class);
 
 
 

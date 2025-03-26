@@ -160,7 +160,7 @@
                             </ul>
                         </div>
                     </li>
-                    {{-- services --}}
+                    {{-- Portfolios --}}
                     <li class="menu-item">
                         <a href="#menuportfolio" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
                             <span class="menu-icon"><i class="fa-regular fa-folder-closed"></i>
@@ -178,6 +178,29 @@
                                 <li class="menu-item">
                                     <a class='menu-link' href='{{ route('portfolio.create') }}'>
                                         <span class="menu-text">Create portfolios</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    {{-- testimonials --}}
+                    <li class="menu-item">
+                        <a href="#menuportfolio" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
+                            <span class="menu-icon"><i class="fa-regular fa-folder-closed"></i>
+                            </span>
+                            <span class="menu-text"> Testimonials </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="menuportfolio">
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a class='menu-link' href='{{ route('testimonal.index') }}'>
+                                        <span class="menu-text">Show Testimonial</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class='menu-link' href='{{ route('testimonal.create') }}'>
+                                        <span class="menu-text">Create Testimonials</span>
                                     </a>
                                 </li>
                             </ul>

@@ -623,7 +623,7 @@
 
               {{-- container --}}
               <div class="container-fluid">
-
+{{-- testimonials----------------------------------------------------------------------- --}}
                 {{-- row --}}
                 <div class="row">
 
@@ -635,7 +635,7 @@
                       {{-- title frame --}}
                       <div class="art-title-frame">
                         {{-- title --}}
-                        <h4>Recommendations</h4>
+                        <h4>Testimonials</h4>
                       </div>
                       {{-- title frame end --}}
                     </div>
@@ -660,129 +660,6 @@
                             <div class="testimonial-body">
                               {{-- photo --}}
                               <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-1.jpg" alt="face">
-                              {{-- name --}}
-                              <h5>Paul Trueman</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                              {{-- text --}}
-                              <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
-                                This is easily a 5 star freelancer.</div>
-                            </div>
-                            {{-- testimonial body end --}}
-                            {{-- testimonial footer --}}
-                            <div class="art-testimonial-footer">
-                              <div class="art-left-side">
-                                {{-- star rate --}}
-                                <ul class="art-star-rate">
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                </ul>
-                                {{-- star rate end --}}
-                              </div>
-                              <div class="art-right-side">
-
-                              </div>
-                            </div>
-                            {{-- testimonial footer end --}}
-                          </div>
-                          {{-- testimonial end --}}
-
-                        </div>
-                        {{-- slide end --}}
-
-                        {{-- slide --}}
-                        <div class="swiper-slide">
-
-                          {{-- testimonial --}}
-                          <div class="art-a art-testimonial">
-                            {{-- testimonial body --}}
-                            <div class="testimonial-body">
-                              {{-- photo --}}
-                              <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-2.jpg" alt="face">
-                              {{-- name --}}
-                              <h5>Paul Trueman</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                              {{-- text --}}
-                              <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
-                                This is easily a 5 star freelancer.</div>
-                            </div>
-                            {{-- testimonial body end --}}
-                            {{-- testimonial footer --}}
-                            <div class="art-testimonial-footer">
-                              <div class="art-left-side">
-                                {{-- star rate --}}
-                                <ul class="art-star-rate">
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li class="art-empty-item"><i class="fas fa-star"></i></li>
-                                </ul>
-                                {{-- star rate end --}}
-                              </div>
-                              <div class="art-right-side">
-
-                              </div>
-                            </div>
-                            {{-- testimonial footer end --}}
-                          </div>
-                          {{-- testimonial end --}}
-
-                        </div>
-                        {{-- slide end --}}
-
-                        {{-- slide --}}
-                        <div class="swiper-slide">
-
-                          {{-- testimonial --}}
-                          <div class="art-a art-testimonial">
-                            {{-- testimonial body --}}
-                            <div class="testimonial-body">
-                              {{-- photo --}}
-                              <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-3.jpg" alt="face">
-                              {{-- name --}}
-                              <h5>Paul Trueman</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                              {{-- text --}}
-                              <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
-                                This is easily a 5 star freelancer.</div>
-                            </div>
-                            {{-- testimonial body end --}}
-                            {{-- testimonial footer --}}
-                            <div class="art-testimonial-footer">
-                              <div class="art-left-side">
-                                {{-- star rate --}}
-                                <ul class="art-star-rate">
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                </ul>
-                                {{-- star rate end --}}
-                              </div>
-                              <div class="art-right-side">
-
-                              </div>
-                            </div>
-                            {{-- testimonial footer end --}}
-                          </div>
-                          {{-- testimonial end --}}
-
-                        </div>
-                        {{-- slide end --}}
-
-                        {{-- slide --}}
-                        <div class="swiper-slide">
-
-                          {{-- testimonial --}}
-                          <div class="art-a art-testimonial">
-                            {{-- testimonial body --}}
-                            <div class="testimonial-body">
-                              {{-- photo --}}
-                              <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-4.jpg" alt="face">
                               {{-- name --}}
                               <h5>Paul Trueman</h5>
                               <div class="art-el-suptitle mb-15">Template author</div>
@@ -1192,17 +1069,14 @@
                   <div class="col-lg-4">
                     {{-- contact card --}}
                     <div class="art-a art-card">
-                      <div class="art-table p-15-15">
+                      <div style="align-items: center; justify-content: center; min-height: 100px;" class=" d-flex art-table ">
                         <ul>
                           <li>
-                            <h6>Country:</h6><span>Canada</span>
+                            <h6 class="pr-2">Country:</h6><span>Bangladesh</span>
                           </li>
-                          <li>
-                            <h6>City:</h6><span>Toronto</span>
-                          </li>
-
-                          <li>
-                            <h6>Streat:</h6><span>20 Dellbank Rd</span>
+                          <li class="justify-content-center">
+                            <h6 class="pr-4">City:</h6>
+                            <span>Kishoreganj</span>
                           </li>
                         </ul>
                       </div>
@@ -1214,16 +1088,10 @@
                   <div class="col-lg-4">
                     {{-- contact card --}}
                     <div class="art-a art-card">
-                      <div class="art-table p-15-15">
+                      <div style="align-items: center; justify-content: center; min-height: 100px;" class=" d-flex art-table ">
                         <ul>
                           <li>
-                            <h6>Email:</h6><span>carter.inbox@mail.com</span>
-                          </li>
-                          <li>
-                            <h6>Telegram:</h6><span>@arter</span>
-                          </li>
-                          <li>
-                            <h6>Skype:</h6><span>Arter</span>
+                            <h6 class="pr-2">Email:</h6><span>saqlinemoaj@gmail.com</span>
                           </li>
                         </ul>
                       </div>
@@ -1232,19 +1100,13 @@
                   </div>
                   {{-- col end --}}
                   {{-- col --}}
-                  <div class="col-lg-4">
+                  <div  class="col-lg-4">
                     {{-- contact card --}}
                     <div class="art-a art-card">
-                      <div class="art-table p-15-15">
+                      <div style="align-items: center; justify-content: center; min-height: 100px;" class=" d-flex art-table ">
                         <ul>
                           <li>
-                            <h6>Support service:</h6><span>+78 (098) 333 11 22</span>
-                          </li>
-                          <li>
-                            <h6>Office:</h6><span>+78 (098) 326 11 22</span>
-                          </li>
-                          <li>
-                            <h6>Personal:</h6><span>+78 (077) 114 26 53</span>
+                            <h6 class="pr-2">Personal:</h6><span>01728108888</span>
                           </li>
                         </ul>
                       </div>
