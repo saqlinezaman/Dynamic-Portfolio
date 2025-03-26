@@ -16,8 +16,10 @@ return new class extends Migration
             $table->string('name');
             $table->string('occupation');
             $table->string('thumbnail');
+            $table->string('status')->default('active');
             $table->longText('description');
             $table->integer('stars');
+
             $table->timestamps();
         });
     }

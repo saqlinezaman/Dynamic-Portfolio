@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Blog;
 use App\Models\Service;
 use App\Models\portfolio;
+use App\Models\testimonial;
 
 class HomeController extends Controller
 {
@@ -31,12 +32,15 @@ class HomeController extends Controller
         $blogs = Blog::where('status','active')->latest()->get();
         $services = Service::where('status','active')->latest()->get();
         $portfolios = portfolio::where('status','active')->latest()->get();
+        $testimonials = testimonial::where('status','active')->latest()->get();
+
 
         return view('Frontend.welcome',[
             'categories' => $categories,
             'blogs'=> $blogs,
            'services' => $services,
            'portfolios' => $portfolios,
+           'testimonials' => $testimonials,
         ]);
     }
     public function see_index($slug){

@@ -6,8 +6,10 @@ use App\Models\testimonial;
 use App\Http\Requests\StoretestimonialRequest;
 use App\Http\Requests\UpdatetestimonialRequest;
 use PhpParser\Node\Stmt\Return_;
+use Illuminate\Support\Facades\Auth;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
+use Illuminate\Support\Str;
 
 class TestimonialController extends Controller
 {
@@ -36,8 +38,37 @@ class TestimonialController extends Controller
             'name' => 'required|string|max:255',
             'occupation' => 'required|string',
             'stars' => 'required|integer|min:1|max:5',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            "thumbnail" => 'required',
         ]);
+        if($request->hasFile('thumbnail')){
+            $manager = new ImageManager(new Driver());
+            $newname = Auth::user()->id.'-'.Str::random(4) .".".$request->file('thumbnail')->getClientOriginalExtension();
+            $image = $manager->read($request->file('thumbnail'));
+            $image->toPng()->save(base_path('public/uploads/testimonial/'.$newname));
+         }
+             if($request->name){
+                testimonial::create([
+                    'user_id' => Auth::user()->id,
+                    "name" => $request->name,
+                    "occupation" => $request->occupation,
+                    'stars' => $request->stars,
+                    "thumbnail" => $newname,
+                    "description" => $request->description,
+                    'created_at' => now(),
+                ]);
+                return back();
+            }else{
+                testimonial::create([
+                    'user_id' => Auth::user()->id,
+                    "name" => $request->name,
+                    "occupation" => $request->occupation,
+                    'stars' => $request->stars,
+                    "thumbnail" => $newname,
+                    "description" => $request->description,
+                    'created_at' => now(),
+                ]);
+                return back();
+            }
     }
 
     /**

@@ -185,13 +185,13 @@
                     </li>
                     {{-- testimonials --}}
                     <li class="menu-item">
-                        <a href="#menuportfolio" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
+                        <a href="#menutestimonial" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
                             <span class="menu-icon"><i class="fa-regular fa-folder-closed"></i>
                             </span>
                             <span class="menu-text"> Testimonials </span>
                             <span class="menu-arrow"></span>
                         </a>
-                        <div class="collapse" id="menuportfolio">
+                        <div class="collapse" id="menutestimonial">
                             <ul class="sub-menu">
                                 <li class="menu-item">
                                     <a class='menu-link' href='{{ route('testimonal.index') }}'>

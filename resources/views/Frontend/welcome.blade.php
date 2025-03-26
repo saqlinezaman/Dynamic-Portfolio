@@ -651,45 +651,49 @@
                     <div class="swiper-container art-testimonial-slider" style="overflow: visible">
                       {{-- slider wrapper --}}
                       <div class="swiper-wrapper">
-                        {{-- slide --}}
+                          {{-- slide --}}
+                          @foreach ( $testimonials as $testimonial)
                         <div class="swiper-slide">
 
-                          {{-- testimonial --}}
-                          <div class="art-a art-testimonial">
-                            {{-- testimonial body --}}
-                            <div class="testimonial-body">
-                              {{-- photo --}}
-                              <img class="art-testimonial-face" src="{{asset('website/asset')}}/img/testimonials/face-1.jpg" alt="face">
-                              {{-- name --}}
-                              <h5>Paul Trueman</h5>
-                              <div class="art-el-suptitle mb-15">Template author</div>
-                              {{-- text --}}
-                              <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
-                                This is easily a 5 star freelancer.</div>
-                            </div>
-                            {{-- testimonial body end --}}
-                            {{-- testimonial footer --}}
-                            <div class="art-testimonial-footer">
-                              <div class="art-left-side">
-                                {{-- star rate --}}
-                                <ul class="art-star-rate">
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                  <li><i class="fas fa-star"></i></li>
-                                </ul>
-                                {{-- star rate end --}}
+                            {{-- testimonial --}}
+                            <div class="art-a art-testimonial">
+                              {{-- testimonial body --}}
+                              <div class="testimonial-body">
+                                {{-- photo --}}
+                                <img class="art-testimonial-face" src="{{asset('uploads/testimonial')}}/{{$testimonial->thumbnail}}" alt="face">
+                                {{-- name --}}
+                                <h5>{{$testimonial->name}}</h5>
+                                <div class="art-el-suptitle mb-15">{{$testimonial->occupation}}</div>
+                                {{-- text --}}
+                                <div class="mb-15">{{$testimonial->description}}</div>
                               </div>
-                              <div class="art-right-side">
+                              {{-- testimonial body end --}}
+                              {{-- testimonial footer --}}
+                              <div class="art-testimonial-footer">
+                                <div class="art-left-side">
+                                  {{-- star rate --}}
+                                  <ul class="art-star-rate">
+                                    @for ($i = 1; $i <= 5; $i++)
+                                  @if ($i <= $testimonial->stars)
+                                  <li><i class="fas fa-star"></i></li> {{-- ভরা স্টার --}}
+                                  @else
+                                  <li class="art-empty-item"><i class="fas fa-star"></i></li>
+                                  @endif
+                              @endfor
+                                  </ul>
 
+                                  {{-- star rate end --}}
+                                </div>
+                                <div class="art-right-side">
+
+                                </div>
                               </div>
+                              {{-- testimonial footer end --}}
                             </div>
-                            {{-- testimonial footer end --}}
-                          </div>
-                          {{-- testimonial end --}}
+                            {{-- testimonial end --}}
 
                         </div>
+                        @endforeach
                         {{-- slide end --}}
 
                       </div>
