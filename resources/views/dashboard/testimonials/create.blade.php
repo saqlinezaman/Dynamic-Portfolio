@@ -7,7 +7,7 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="header-title">Testimonials Create</h4>
-                <form action="{{route('testimonal.store')}}" method="POST" enctype="multipart/form-data" >
+                <form action="{{route('testimonial.store')}}" method="POST" enctype="multipart/form-data" >
                     @csrf
                     {{-- name --}}
                     <div class="mb-3">
@@ -26,23 +26,17 @@
                         @enderror
                     </div>
                     {{-- stars --}}
-                   <div class="row">
-                    <label for="stars">Give Rating:</label>
-                    <select name="stars" id="stars">
-                        <option value="5">⭐⭐⭐⭐⭐</option>
-                        <option value="4">⭐⭐⭐⭐</option>
-                        <option value="3">⭐⭐⭐</option>
-                        <option value="2">⭐⭐</option>
-                        <option value="1">⭐</option>
-                    </select>
-                   </div>
-
-
+                    <div class="row">
+                        <label for="validationCustom01" class="form-label">Give Rating</label>
+                        <select name="stars" id="stars" class="form-select">
+                            <option value="">Select Stars</option>
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
                         </select>
-                        @error('stars')
-                            <p class="text-danger"> {{$message}} </p>
-                        @enderror
-                    </div>
+                       </div>
                     {{-- description --}}
                     <div class="mb-3">
                         <label for="validationCustom01" class="form-label">Description</label>

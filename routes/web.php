@@ -88,7 +88,7 @@ Route::resource('/portfolio',PortfolioController::class);
 // delete
 Route::get('/portfolio/delete/{id}',[PortfolioController::class,'portfolio_delete'])->name('portfolio.delete');
 // testimonials
-Route::resource('/testimonal',TestimonialController::class);
+Route::resource('/testimonial',TestimonialController::class);
 
 
 

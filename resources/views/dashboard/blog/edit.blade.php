@@ -30,8 +30,6 @@
                             @foreach ($categories as $category)
                                <option {{$category->id == $blog->category_id ? 'selected' : ' '}} value=" {{$category->id}} "> {{$category->title}}</option>
                             @endforeach
-
-
                         </select>
                         @error('category_id')
                             <p class="text-danger"> {{$message}} </p>

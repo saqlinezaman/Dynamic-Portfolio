@@ -56,7 +56,7 @@
                           </td>
                           {{-- edit --}}
                           <td class="d-flex">
-                            <a href="{{route('testimonal.edit',$testimonial->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
+                            <a href="{{route('testimonial.edit',$testimonial->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-pen-to-square text-info"></i>
                             </a>
                             <a href="{{route('blog.delete',$testimonial->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">

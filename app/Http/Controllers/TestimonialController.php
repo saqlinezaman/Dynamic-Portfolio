@@ -93,7 +93,65 @@ class TestimonialController extends Controller
      */
     public function update(UpdatetestimonialRequest $request, testimonial $testimonial)
     {
-        //
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'occupation' => 'required|string',
+            'stars' => 'required|integer|min:1|max:5',
+        ]);
+        if($request->hasFile('thumbnail')){
+            $manager = new ImageManager(new Driver());
+            $newname = Auth::user()->id.'-'.Str::random(4) .".".$request->file('thumbnail')->getClientOriginalExtension();
+            $image = $manager->read($request->file('thumbnail'));
+            $image->toPng()->save(base_path('public/uploads/testimonial/'.$newname));
+             if($request->name){
+                testimonial::find($testimonial->id)->update([
+                    'user_id' => Auth::user()->id,
+                    "name" => $request->name,
+                    "occupation" => $request->occupation,
+                    'stars' => $request->stars,
+                    "thumbnail" => $newname,
+                    "description" => $request->description,
+                    'created_at' => now(),
+                ]);
+                return back();
+            }else{
+                testimonial::find($testimonial->id)->update([
+                    'user_id' => Auth::user()->id,
+                    "name" => $request->name,
+                    "occupation" => $request->occupation,
+                    'stars' => $request->stars,
+                    "thumbnail" => $newname,
+                    "description" => $request->description,
+                    'updated_at' => now(),
+                ]);
+                return back();
+            }
+
+         }else{
+
+            if($request->name){
+                testimonial::find($testimonial->id)->update([
+                    'user_id' => Auth::user()->id,
+                    "name" => $request->name,
+                    "occupation" => $request->occupation,
+                    'stars' => $request->stars,
+                    "description" => $request->description,
+                    'created_at' => now(),
+                ]);
+                return back();
+            }else{
+                testimonial::find($testimonial->id)->update([
+                    'user_id' => Auth::user()->id,
+                    "name" => $request->name,
+                    "occupation" => $request->occupation,
+                    'stars' => $request->stars,
+                    "description" => $request->description,
+                    'updated_at' => now(),
+                ]);
+                return back();
+            }
+
+          }
     }
 
     /**

@@ -194,12 +194,12 @@
                         <div class="collapse" id="menutestimonial">
                             <ul class="sub-menu">
                                 <li class="menu-item">
-                                    <a class='menu-link' href='{{ route('testimonal.index') }}'>
+                                    <a class='menu-link' href='{{ route('testimonial.index') }}'>
                                         <span class="menu-text">Show Testimonial</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a class='menu-link' href='{{ route('testimonal.create') }}'>
+                                    <a class='menu-link' href='{{ route('testimonial.create') }}'>
                                         <span class="menu-text">Create Testimonials</span>
                                     </a>
                                 </li>
@@ -508,18 +508,6 @@
 
              <!-- Footer Start -->
              <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div><script>document.write(new Date().getFullYear())</script> © Saqline</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="d-none d-md-flex gap-4 align-item-center justify-content-md-end">
-                                <p class="mb-0">Saqline Zaman<a href="" target="_blank">MyraStudio</a> </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </footer>
             <!-- end Footer -->
 
