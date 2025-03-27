@@ -18,7 +18,8 @@ class TestimonialController extends Controller
      */
     public function index()
     {
-        return view('dashboard.testimonials.index');
+        $testimonials = testimonial::latest()->paginate(5);
+        return view('dashboard.testimonials.index',compact('testimonials'));
     }
 
     /**
@@ -84,7 +85,7 @@ class TestimonialController extends Controller
      */
     public function edit(testimonial $testimonial)
     {
-        //
+        return view('dashboard.testimonials.edit',compact('testimonial'));
     }
 
     /**

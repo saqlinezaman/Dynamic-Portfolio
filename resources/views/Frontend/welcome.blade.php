@@ -622,8 +622,8 @@
               {{-- container end --}}
 
               {{-- container --}}
+ {{-- testimonials----------------------------------------------------------------------- --}}
               <div class="container-fluid">
-{{-- testimonials----------------------------------------------------------------------- --}}
                 {{-- row --}}
                 <div class="row">
 
@@ -906,18 +906,28 @@
                           <p>Placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
                         </div>
                         {{-- creative it --}}
-                        <div class="art-a art-timeline-content">
-                          <div class="art-card-header">
-                            <div class="art-left-side">
-                              <h5>Creative IT Institute</h5>
-                              <div class="art-el-suptitle mb-15">Intern PHP & Laravel Developer</div>
+                        <div class="art-timeline art-gallery" id="history">
+                            <div class="art-timeline-item">
+                              <div class="art-timeline-mark-light"></div>
+                              <div class="art-timeline-mark"></div>
+
+                              <div class="art-a art-timeline-content">
+                                <div class="art-card-header">
+                                  <div class="art-left-side">
+                                    <h5>Creative IT Institute</h5>
+                                    <div class="art-el-suptitle mb-15">Intern PHP & Laravel Developer</div>
+                                  </div>
+                                  <div class="art-right-side">
+                                    <span class="art-date">july 2024 - Oct 2024</span>
+                                  </div>
+                                </div>
+
+                                <p>Dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                              </div>
                             </div>
-                            <div class="art-right-side">
-                              <span class="art-date">july 2024 - Oct 2024</span>
-                            </div>
+
                           </div>
-                          <p>Placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                        </div>
+
                       </div>
 
                     </div>
@@ -1044,8 +1054,7 @@
 
               </div>
               <!-- container end -->
-
-
+{{-- contact information------------------------------------------------------------------- --}}
               {{-- container start --}}
               {{-- email --}}
               <div class="container-fluid">

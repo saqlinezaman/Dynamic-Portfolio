@@ -11,7 +11,7 @@ class Service extends Model
     use HasFactory;
     protected $guarded=[''];
     public function oneCatForservice(){
-        return $this -> hasOne(Blog::class,'service_id','id');
+        return $this -> hasOne(Service::class,'service_id','id');
     }
 
 }
