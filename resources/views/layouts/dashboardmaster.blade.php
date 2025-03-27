@@ -186,7 +186,7 @@
                     {{-- testimonials --}}
                     <li class="menu-item">
                         <a href="#menutestimonial" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
-                            <span class="menu-icon"><i class="fa-regular fa-folder-closed"></i>
+                            <span class="menu-icon"><i class="fa-solid fa-quote-right"></i>
                             </span>
                             <span class="menu-text"> Testimonials </span>
                             <span class="menu-arrow"></span>

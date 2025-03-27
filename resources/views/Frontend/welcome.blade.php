@@ -352,7 +352,7 @@
                       {{-- counter --}}
                       <div class="art-counter-box">
                         {{-- counter number --}}
-                        <span class="art-counter">10</span><span class="art-counter-plus">+</span>
+                        <span class="art-counter">3</span><span class="art-counter-plus">+</span>
                       </div>
                       {{-- counter end --}}
                       {{-- title --}}
@@ -371,7 +371,7 @@
                       {{-- counter --}}
                       <div class="art-counter-box">
                         {{-- counter number --}}
-                        <span class="art-counter">143</span>
+                        <span class="art-counter">40</span>
                       </div>
                       {{-- counter end --}}
                       {{-- title --}}
@@ -390,7 +390,7 @@
                       {{-- counter --}}
                       <div class="art-counter-box">
                         {{-- counter number --}}
-                        <span class="art-counter">114</span>
+                        <span class="art-counter">22</span>
                       </div>
                       {{-- counter end --}}
                       {{-- title --}}
@@ -409,11 +409,11 @@
                       {{-- counter --}}
                       <div class="art-counter-box">
                         {{-- counter number --}}
-                        <span class="art-counter">20</span><span class="art-counter-plus">+</span>
+                        <span class="art-counter">4</span><span class="art-counter-plus"></span>
                       </div>
                       {{-- counter end --}}
                       {{-- title --}}
-                      <h6>Honors and Awards</h6>
+                      <h6>Cirtificate gained</h6>
                     </div>
                     {{-- couner frame end --}}
 
