@@ -7,7 +7,7 @@
             <div class="card-body">
                 <table class="table align-middle mb-0 bg-white " >
                     <thead class="bg-light text-center">
-                      <tr>
+                      <tr class="">
                         <th>Image</th>
                         <th>Title</th>
                         <th>Status</th>
@@ -37,16 +37,13 @@
                           <td>
                             <form id="halamadrid{{ $portfolio->id }}" action="{{ route('category.status',$portfolio->id) }}" method="POST">
                                 @csrf
-                            <div class="form-check form-switch">
+                            <div class="form-check form-switch d-flex justify-content-center">
                                 <input onchange="document.querySelector('#halamadrid{{ $portfolio->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $portfolio->status == 'active' ? 'checked' : '' }}>
                               </div>
                             </form>
                           </td>
                           {{-- edit --}}
                           <td>
-                            <a href="{{route('service.edit',$portfolio->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
-                                <i class="fa-solid fa-pen-to-square text-info"></i>
-                            </a>
                             <a href="{{route('portfolio.delete',$portfolio->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-trash-can text-danger"></i>
                             </a>
@@ -61,6 +58,9 @@
                       @endforelse
                     </tbody>
                 </table>
+                <div class="pt-5 d-flex justify-content-center">
+                    {{$portfolios->links()}}
+                  </div>
             </div>
         </div>
     </div>

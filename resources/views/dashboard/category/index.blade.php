@@ -43,7 +43,7 @@
                             </form> --}}
                             <form id="halamadrid{{ $category->id }}" action="{{ route('category.status',$category->id) }}" method="POST">
                                 @csrf
-                            <div class="form-check form-switch">
+                            <div class="form-check form-switch d-flex justify-content-center">
                                 <input onchange="document.querySelector('#halamadrid{{ $category->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $category->status == 'active' ? 'checked' : '' }}>
                               </div>
                             </form>

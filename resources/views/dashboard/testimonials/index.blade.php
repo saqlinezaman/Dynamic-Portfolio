@@ -59,7 +59,7 @@
                             <a href="{{route('testimonial.edit',$testimonial->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-pen-to-square text-info"></i>
                             </a>
-                            <a href="{{route('blog.delete',$testimonial->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
+                            <a href="{{route('testimonial.delete',$testimonial->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-trash-can text-danger"></i>
                             </a>
                             </td>
@@ -75,6 +75,10 @@
                     @endforelse
                   </table>
                   {{-- pagination --}}
+                  <div class="pt-5 d-flex justify-content-center">
+                    {{$testimonials->links()}}
+                  </div>
+
             </div>
         </div>
     </div>

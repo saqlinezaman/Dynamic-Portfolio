@@ -44,6 +44,7 @@ route::middleware(['rolecheck'])->group(function(){
     // blogger grade down
     Route::post('/management/role/undo/user/{id}', [ ManagementController::class, 'user_down'])->name('management.role.user.down');
 
+
 });
 
 
@@ -89,6 +90,9 @@ Route::resource('/portfolio',PortfolioController::class);
 Route::get('/portfolio/delete/{id}',[PortfolioController::class,'portfolio_delete'])->name('portfolio.delete');
 // testimonials
 Route::resource('/testimonial',TestimonialController::class);
+// delete
+Route::get('/testimonial/delete/{id}',[TestimonialController::class,'testimonial_delete'])->name('testimonial.delete');
+
 
 
 

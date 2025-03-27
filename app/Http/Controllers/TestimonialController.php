@@ -57,7 +57,7 @@ class TestimonialController extends Controller
                     "description" => $request->description,
                     'created_at' => now(),
                 ]);
-                return back();
+                return redirect()->route('testimonial.index')->with('success','Testimonial created successfull');
             }else{
                 testimonial::create([
                     'user_id' => Auth::user()->id,
@@ -68,7 +68,7 @@ class TestimonialController extends Controller
                     "description" => $request->description,
                     'created_at' => now(),
                 ]);
-                return back();
+                return redirect()->route('testimonial.index')->with('success','Testimonial created successfull');
             }
     }
 
@@ -113,7 +113,7 @@ class TestimonialController extends Controller
                     "description" => $request->description,
                     'created_at' => now(),
                 ]);
-                return back();
+                return redirect()->route('testimonial.index')->with('success','Testimonial update successfull');
             }else{
                 testimonial::find($testimonial->id)->update([
                     'user_id' => Auth::user()->id,
@@ -124,7 +124,7 @@ class TestimonialController extends Controller
                     "description" => $request->description,
                     'updated_at' => now(),
                 ]);
-                return back();
+                return redirect()->route('testimonial.index')->with('success','Testimonial update successfull');
             }
 
          }else{
@@ -138,7 +138,7 @@ class TestimonialController extends Controller
                     "description" => $request->description,
                     'created_at' => now(),
                 ]);
-                return back();
+                return redirect()->route('testimonial.index')->with('success','Testimonial update successfull');
             }else{
                 testimonial::find($testimonial->id)->update([
                     'user_id' => Auth::user()->id,
@@ -148,7 +148,7 @@ class TestimonialController extends Controller
                     "description" => $request->description,
                     'updated_at' => now(),
                 ]);
-                return back();
+                return redirect()->route('testimonial.index')->with('success','Testimonial update successfull');
             }
 
           }
@@ -160,5 +160,17 @@ class TestimonialController extends Controller
     public function destroy(testimonial $testimonial)
     {
         //
+    }
+    public function testimonial_delete($id){
+        $testimonial = testimonial::where('id',$id)->first();
+        if($testimonial->thumbnail){
+            $oldpath = base_path('public/uploads/testimonial/'.$testimonial->thumbnail);
+
+            if(file_exists($oldpath)){
+                unlink($oldpath);
+            }
+        }
+        testimonial::find($testimonial->id)->delete();
+        return redirect()->route('testimonial.index')->with('success','Testimonial delete successfull');
     }
 }

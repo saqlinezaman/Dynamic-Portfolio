@@ -65,7 +65,6 @@
                     <th>Role</th>
                     @if (Auth::user()->role == 'admin')
                     <th>Status</th>
-                    <th>Actions</th>
                     @endif
                   </tr>
                 </thead>
@@ -93,14 +92,6 @@
                           </div>
                         </form>
                       </td>
-                      <td>
-                        <a href=""  type="button" class="btn btn-link btn-sm btn-rounded">
-                            <i class="fa-solid fa-pen-to-square text-info"></i>
-                        </a>
-                        <a href=""  type="button" class="btn btn-link btn-sm btn-rounded">
-                            <i class="fa-solid fa-trash-can text-danger"></i>
-                        </a>
-                        </td>
                         @endif
                     </tr>
                     @empty

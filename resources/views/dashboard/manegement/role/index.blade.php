@@ -62,7 +62,6 @@
                         <th>Role</th>
                         @if (Auth::user()->role == 'admin')
                         <th>Status</th>
-                        <th>Actions</th>
                         @endif
                       </tr>
                     </thead>
@@ -84,20 +83,12 @@
 
                                 <form id="madrid{{ $blogger->id }}" action="{{route('management.role.blogger.down' , $blogger->id)}}" method="POST">
                                 @csrf
-                            <div class="form-check form-switch">
+                            <div class="form-check form-switch ">
 
                                 <input onchange="document.querySelector('#madrid{{ $blogger->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $blogger->role == $blogger->role ? 'checked' : '' }}>
                               </div>
                             </form>
                           </td>
-                          <td>
-                            <a href=""  type="button" class="btn btn-link btn-sm btn-rounded">
-                                <i class="fa-solid fa-pen-to-square text-info"></i>
-                            </a>
-                            <a href=""  type="button" class="btn btn-link btn-sm btn-rounded">
-                                <i class="fa-solid fa-trash-can text-danger"></i>
-                            </a>
-                            </td>
                             @endif
                         </tr>
                         @empty
@@ -124,7 +115,6 @@
                         <th>Role</th>
                         @if (Auth::user()->role == 'admin')
                         <th>Status</th>
-                        <th>Actions</th>
                         @endif
                       </tr>
                     </thead>
@@ -146,20 +136,12 @@
 
                                 <form id="madrid{{ $users->id }}" action="{{route('management.role.user.down' , $users->id)}}" method="POST">
                                 @csrf
-                            <div class="form-check form-switch">
+                            <div class="form-check form-switch ">
 
                                 <input onchange="document.querySelector('#madrid{{ $users->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $users->role == $users->role ? 'checked' : '' }}>
                               </div>
                             </form>
                           </td>
-                          <td>
-                            <a href=""  type="button" class="btn btn-link btn-sm btn-rounded">
-                                <i class="fa-solid fa-pen-to-square text-info"></i>
-                            </a>
-                            <a href=""  type="button" class="btn btn-link btn-sm btn-rounded">
-                                <i class="fa-solid fa-trash-can text-danger"></i>
-                            </a>
-                            </td>
                             @endif
                         </tr>
                         @empty

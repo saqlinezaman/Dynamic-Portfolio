@@ -18,7 +18,7 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        $portfolios = portfolio::latest()->get();
+        $portfolios = portfolio::latest()->paginate(5);
         return view('dashboard.portfolio.index',compact('portfolios'));
     }
 
@@ -111,9 +111,6 @@ class PortfolioController extends Controller
                 unlink($oldpath);
             }
         }
-        // if($blog->id == 'delete'){
-        //     unlink($blog);
-        // }
         portfolio::find($portfolio->id)->delete();
         return back();
     }
