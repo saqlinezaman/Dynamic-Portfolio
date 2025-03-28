@@ -116,6 +116,28 @@
                             </ul>
                         </div>
                     </li>
+                    {{-- pricing --}}
+                    <li class="menu-item">
+                        <a href="#menupricing" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">
+                            <span class="menu-icon"><i class="fa-solid fa-sack-dollar"></i></span>
+                            <span class="menu-text"> Pricing </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="menupricing">
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a class='menu-link' href='{{ route('pricing.index') }}'>
+                                        <span class="menu-text">Show pricing</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class='menu-link' href='{{ route('pricing.create') }}'>
+                                        <span class="menu-text">Create pricing</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                     {{-- blogs --}}
                     <li class="menu-item">
                         <a href="#menublog" data-bs-toggle="collapse" class="menu-link waves-effect waves-light">

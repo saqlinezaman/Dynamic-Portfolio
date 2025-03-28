@@ -7,6 +7,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ManagementController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\PricingController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TestimonialController;
 use Illuminate\Support\Facades\Route;
@@ -92,6 +93,8 @@ Route::get('/portfolio/delete/{id}',[PortfolioController::class,'portfolio_delet
 Route::resource('/testimonial',TestimonialController::class);
 // delete
 Route::get('/testimonial/delete/{id}',[TestimonialController::class,'testimonial_delete'])->name('testimonial.delete');
+// pricing
+Route::resource('/pricing',PricingController::class);
 
 
 
