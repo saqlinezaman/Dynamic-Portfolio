@@ -38,7 +38,7 @@
                             <a href="{{route('service.edit',$pricing->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-pen-to-square text-info"></i>
                             </a>
-                            <a href="{{route('service.delete',$pricing->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
+                            <a href="{{route('pricing.delete',$pricing->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-trash-can text-danger"></i>
                             </a>
                             </td>

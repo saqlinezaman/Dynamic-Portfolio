@@ -92,4 +92,12 @@ class PricingController extends Controller
     {
         //
     }
+    public function pricing_delete($id){
+        $pricing = pricing::where('id',$id)->first();
+        if($pricing->id == 'delete'){
+            unlink($pricing);
+        }
+        pricing::find($pricing->id)->delete();
+        return redirect()->route('pricing.index')->with('service_create_success','Price Plan deleted Successfull');
+    }
 }

@@ -95,6 +95,8 @@ Route::resource('/testimonial',TestimonialController::class);
 Route::get('/testimonial/delete/{id}',[TestimonialController::class,'testimonial_delete'])->name('testimonial.delete');
 // pricing
 Route::resource('/pricing',PricingController::class);
+// delete
+Route::get('/pricing/delete/{id}',[PricingController::class,'pricing_delete'])->name('pricing.delete');
 
 
 

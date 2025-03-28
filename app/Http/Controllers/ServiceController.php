@@ -113,6 +113,7 @@ class ServiceController extends Controller
             unlink($service);
         }
         Service::find($service->id)->delete();
-        return back();
+        return redirect()->route('service.index')->with('service_create_success','Service deleted Successfull');
+
     }
 }
