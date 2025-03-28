@@ -26,7 +26,7 @@
                           </td>
 
                           <td>
-                            <form id="halamadrid{{ $pricing->id }}" action="{{ route('category.status',$pricing->id) }}" method="POST">
+                            <form id="halamadrid{{ $pricing->id }}" action="{{ route('pricing.status',$pricing->id) }}" method="POST">
                                 @csrf
                             <div class="form-check form-switch d-flex justify-content-center">
                                 <input onchange="document.querySelector('#halamadrid{{ $pricing->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $pricing->status == 'active' ? 'checked' : '' }}>
@@ -46,7 +46,7 @@
                         @empty
                         <tr>
                             <td class="text-danger text-center" colspan="4">
-                                You don't create any category
+                                You don't create any price plan
                             </td>
                         </tr>
                       @endforelse

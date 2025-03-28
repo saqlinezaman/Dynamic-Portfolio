@@ -35,7 +35,7 @@
 
 
                           <td>
-                            <form id="halamadrid{{ $portfolio->id }}" action="{{ route('category.status',$portfolio->id) }}" method="POST">
+                            <form id="halamadrid{{ $portfolio->id }}" action="{{ route('portfolio.status',$portfolio->id) }}" method="POST">
                                 @csrf
                             <div class="form-check form-switch d-flex justify-content-center">
                                 <input onchange="document.querySelector('#halamadrid{{ $portfolio->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $portfolio->status == 'active' ? 'checked' : '' }}>

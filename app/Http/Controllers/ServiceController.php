@@ -107,6 +107,7 @@ class ServiceController extends Controller
     {
         //
     }
+    // destroy
     public function service_delete($id){
         $service = Service::where('id',$id)->first();
         if($service->id == 'delete'){
@@ -115,5 +116,23 @@ class ServiceController extends Controller
         Service::find($service->id)->delete();
         return redirect()->route('service.index')->with('service_create_success','Service deleted Successfull');
 
+    }
+    // status
+    public function service_status($id){
+        $service = Service::where('id',$id)->first();
+        if($service->status =='active'){
+
+            Service::find($service->id)->update([
+                'status' => 'deactive',
+                'updated_at'=> now(),
+            ]);
+            return redirect()->route('service.index')->with('service_create_success','Service status deactive Successfull');
+        }else{
+            Service::find($service->id)->update([
+                'status' => 'active',
+                'updated_at'=> now(),
+            ]);
+            return redirect()->route('service.index')->with('service_create_success','Service status deactive Successfull');
+        }
     }
 }

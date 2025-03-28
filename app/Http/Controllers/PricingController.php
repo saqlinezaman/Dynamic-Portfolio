@@ -100,4 +100,24 @@ class PricingController extends Controller
         pricing::find($pricing->id)->delete();
         return redirect()->route('pricing.index')->with('service_create_success','Price Plan deleted Successfull');
     }
+    // status
+    public function pricing_status($id){
+        $pricing = pricing::where('id',$id)->first();
+        if($pricing->status =='active'){
+
+            pricing::find($pricing->id)->update([
+                'status' => 'deactive',
+                'updated_at'=> now(),
+            ]);
+            return redirect()->route('pricing.index')->with('service_create_success','Price Plan status deactive Successfull');
+
+        }else{
+            pricing::find($pricing->id)->update([
+                'status' => 'active',
+                'updated_at'=> now(),
+            ]);
+            return redirect()->route('pricing.index')->with('service_create_success','Price Plan status active Successfull');
+            ;
+        }
+    }
 }

@@ -112,6 +112,25 @@ class PortfolioController extends Controller
             }
         }
         portfolio::find($portfolio->id)->delete();
-        return back();
+        return redirect()->route('portfolio.index')->with('success','Portfolio delete Successfull');
+    }
+
+    // status
+    public function portfolio_status($id){
+        $portfolio = portfolio::where('id',$id)->first();
+        if($portfolio->status =='active'){
+
+            portfolio::find($portfolio->id)->update([
+                'status' => 'deactive',
+                'updated_at'=> now(),
+            ]);
+            return redirect()->route('portfolio.index')->with('success','Portfolio status deactive Successfull');
+        }else{
+            portfolio::find($portfolio->id)->update([
+                'status' => 'active',
+                'updated_at'=> now(),
+            ]);
+            return redirect()->route('portfolio.index')->with('success','Portfolio status active Successfull');
+        }
     }
 }

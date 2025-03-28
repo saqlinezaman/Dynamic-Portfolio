@@ -19,7 +19,7 @@
                     <tbody class="text-center">
                         <tr>
                           {{-- image --}}
-                          <td>
+                          <td class="d-flex justify-content-center">
                             <div class="d-flex align-items-center">
                               <img
                                   src="{{ asset('uploads/testimonial/') }}/{{$testimonial->thumbnail}}"
@@ -47,7 +47,7 @@
                                 <label class="form-check-label" for="flexSwitchCheckDefault"> {{$category->status}} </label>
                               </div>
                             </form> --}}
-                            <form id="halamadrid{{ $testimonial->id }}" action="{{ route('category.status',$testimonial->id) }}" method="POST">
+                            <form id="halamadrid{{ $testimonial->id }}" action="{{ route('testimonial.status',$testimonial->id) }}" method="POST">
                                 @csrf
                             <div class="form-check form-switch justify-item-center d-flex">
                                 <input onchange="document.querySelector('#halamadrid{{ $testimonial->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $testimonial->status == 'active' ? 'checked' : '' }}>
@@ -55,7 +55,7 @@
                             </form>
                           </td>
                           {{-- edit --}}
-                          <td class="d-flex">
+                          <td class="d-flex justify-content-center">
                             <a href="{{route('testimonial.edit',$testimonial->id)}}"  type="button" class="btn btn-link btn-sm btn-rounded">
                                 <i class="fa-solid fa-pen-to-square text-info"></i>
                             </a>

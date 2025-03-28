@@ -196,4 +196,23 @@ class BlogController extends Controller
         Blog::find($blog->id)->delete();
         return back();
     }
+    // status
+    public function blog_status($id){
+        $blog = Blog::where('id',$id)->first();
+        if($blog->status =='active'){
+
+            Blog::find($blog->id)->update([
+                'status' => 'deactive',
+                'updated_at'=> now(),
+            ]);
+         return redirect()->route('blog.index')->with('success','Blog status deactive Successfull');
+        }else{
+            Blog::find($blog->id)->update([
+                'status' => 'active',
+                'updated_at'=> now(),
+            ]);
+        return redirect()->route('blog.index')->with('success','Blog status active Successfull');
+
+        }
+    }
 }

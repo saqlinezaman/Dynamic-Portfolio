@@ -77,26 +77,42 @@ Route::get('/category/destroy/{slug}',[CategoryController::class,'destroy'])->na
 Route::post('/category/status/{id}',[CategoryController::class,'status'])->name('category.status');
 
 // blogs-----------------------------------------------------------------------------------
+
 Route::resource('/blog',BlogController::class);
 // delete
 Route::get('/Blog/delete/{id}',[BlogController::class,'blog_delete'])->name('blog.delete');
+// status
+Route::post('/Blog/status/{id}',[BlogController::class,'blog_status'])->name('Blog.status');
 
 // services--------------------------------------------------------------------------------------
+
 Route::resource('/service',ServiceController::class);
 // delete
 Route::get('/service/delete/{id}',[ServiceController::class,'service_delete'])->name('service.delete');
-// portfolio
+// status
+Route::post('/service/status/{id}',[ServiceController::class,'service_status'])->name('service.status');
+
+// portfolio--------------------------------------------------------------------------------
+
 Route::resource('/portfolio',PortfolioController::class);
 // delete
 Route::get('/portfolio/delete/{id}',[PortfolioController::class,'portfolio_delete'])->name('portfolio.delete');
-// testimonials
+// status
+Route::post('/portfolio/status/{id}',[PortfolioController::class,'portfolio_status'])->name('portfolio.status');
+
+// testimonials---------------------------------------------------------------------------------
+
 Route::resource('/testimonial',TestimonialController::class);
 // delete
 Route::get('/testimonial/delete/{id}',[TestimonialController::class,'testimonial_delete'])->name('testimonial.delete');
-// pricing
+// status
+Route::post('/testimonial/status/{id}',[TestimonialController::class,'testimonial_status'])->name('testimonial.status');
+
+// pricing-------------------------------------------------------------------------------------
 Route::resource('/pricing',PricingController::class);
 // delete
 Route::get('/pricing/delete/{id}',[PricingController::class,'pricing_delete'])->name('pricing.delete');
+Route::post('/pricing/status/{id}',[PricingController::class,'pricing_status'])->name('pricing.status');
 
 
 

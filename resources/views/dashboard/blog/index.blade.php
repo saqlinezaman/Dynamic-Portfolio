@@ -47,7 +47,7 @@
                                 <label class="form-check-label" for="flexSwitchCheckDefault"> {{$category->status}} </label>
                               </div>
                             </form> --}}
-                            <form id="halamadrid{{ $blog->id }}" action="{{ route('category.status',$blog->id) }}" method="POST">
+                            <form id="halamadrid{{ $blog->id }}" action="{{ route('Blog.status',$blog->id) }}" method="POST">
                                 @csrf
                             <div class="form-check form-switch d-flex justify-content-center">
                                 <input onchange="document.querySelector('#halamadrid{{ $blog->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $blog->status == 'active' ? 'checked' : '' }}>

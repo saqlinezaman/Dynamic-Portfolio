@@ -26,7 +26,7 @@
                           </td>
 
                           <td>
-                            <form id="halamadrid{{ $service->id }}" action="{{ route('category.status',$service->id) }}" method="POST">
+                            <form id="halamadrid{{ $service->id }}" action="{{ route('service.status',$service->id) }}" method="POST">
                                 @csrf
                             <div class="form-check form-switch">
                                 <input onchange="document.querySelector('#halamadrid{{ $service->id }}').submit()" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{ $service->status == 'active' ? 'checked' : '' }}>

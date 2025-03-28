@@ -173,4 +173,24 @@ class TestimonialController extends Controller
         testimonial::find($testimonial->id)->delete();
         return redirect()->route('testimonial.index')->with('success','Testimonial delete successfull');
     }
+    // status
+    public function testimonial_status($id){
+        $testimonial = testimonial::where('id',$id)->first();
+        if($testimonial->status =='active'){
+
+            testimonial::find($testimonial->id)->update([
+                'status' => 'deactive',
+                'updated_at'=> now(),
+            ]);
+            return redirect()->route('testimonial.index')->with('success','Testimonial status deactive successfull');
+
+        }else{
+            testimonial::find($testimonial->id)->update([
+                'status' => 'active',
+                'updated_at'=> now(),
+            ]);
+            return redirect()->route('testimonial.index')->with('success','Testimonial status deactive successfull');
+            ;
+        }
+    }
 }
