@@ -14,7 +14,8 @@ class PricingController extends Controller
      */
     public function index()
     {
-        return view('dashboard.pricing.index');
+        $pricings = pricing::latest()->paginate(5);
+        return view('dashboard.pricing.index',compact('pricings'));
     }
 
     /**
@@ -31,10 +32,10 @@ class PricingController extends Controller
     public function store(StorepricingRequest $request)
     {
         $request->validate([
-            'title' => 'required|string|max:255',
+            'title' => 'required|string',
             'price' => 'required|numeric',
             'features' => 'required|array',
-            'is_popular' => 'boolean',
+            'is_popular' => 'nullable|boolean',
         ]);
         if($request->title){
             pricing::create([
@@ -42,19 +43,21 @@ class PricingController extends Controller
                 "title" => $request->title,
                 "price" => $request->price,
                 'features' => json_encode($request->features),
-                'is_popular' => $request->has('is_popular'),
+                'is_popular' => $request->has('is_popular') ? true : false,
                 'created_at' => now(),
             ]);
-            return redirect()->route('pricing.index');
+            return redirect()->route('pricing.index')->with('service_create_success','Price plan Created Successfull');
+
         }else{
             pricing::create([
                 'user_id' => Auth::user()->id,
                 "title" => $request->title,
                 "price" => $request->price,
-                'features' => $request->features,
+               'is_popular' => $request->has('is_popular') ? true : false,
                 'features' => json_encode($request->features),
                 'created_at' => now(),
             ]);
+            return redirect()->route('pricing.index')->with('service_create_success','Price Plan Created Successfull');
         }
     }
 

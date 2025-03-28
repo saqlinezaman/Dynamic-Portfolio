@@ -17,7 +17,7 @@ return new class extends Migration
             $table->decimal('price', 8, 2)->nullable(); // Price
             $table->string('status')->default('active');
             $table->json('features'); // Features (JSON Format)
-            $table->boolean('is_popular')->default(false); // Popular Ba
+            $table->boolean('is_popular')->default(true); // Popular Ba
             $table->timestamps();
         });
     }

@@ -50,7 +50,7 @@
                     </div>
                     {{-- popular --}}
                     <div class="mb-3">
-                        <input type="checkbox" name="is_popular"> Make this plan popular
+                        <input type="checkbox"value="1" @if(old('is_popular'))checked @endif name="is_popular"> Make this plan popular
                     </div>
 
                     <button  style="background-color: #2D9596" class="btn btn-primary mt-4" type="submit">Upload</button>
