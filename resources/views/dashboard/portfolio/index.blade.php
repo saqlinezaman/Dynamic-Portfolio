@@ -19,7 +19,7 @@
                         <tr>
                             {{-- image --}}
                           <td>
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex justify-content-center">
                               <img
                                   src="{{ asset('uploads/portfolio/') }}/{{$portfolio->thumbnail}}"
                                   alt=""

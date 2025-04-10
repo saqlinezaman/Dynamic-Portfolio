@@ -10,6 +10,7 @@ use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\PricingController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\ToDoController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -113,8 +114,11 @@ Route::resource('/pricing',PricingController::class);
 // delete
 Route::get('/pricing/delete/{id}',[PricingController::class,'pricing_delete'])->name('pricing.delete');
 Route::post('/pricing/status/{id}',[PricingController::class,'pricing_status'])->name('pricing.status');
+// to do list
+Route::get('/todos',[ToDoController::class,'index'])->name('todo.index');
 
-
+Route::post('/todos/store', [ ToDoController::class, 'store'])->name('todo.store');
+Route::get('/todo/delete/{id}',[ToDoController::class,'todo_delete'])->name('todo.delete');
 
 
 

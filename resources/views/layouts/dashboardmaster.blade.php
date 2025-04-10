@@ -93,6 +93,14 @@
                     @endif
                     {{-- profile --}}
                     <li class="menu-item">
+                        <a class='menu-link waves-effect' href="{{route('todo.index')}}" >
+                            <span class="menu-icon"><i class="fa-regular fa-id-badge"></i></span>
+                            <span class="menu-text"> TP DO List </span>
+                            <span class="badge bg-info rounded-pill ms-auto">3</span>
+                        </a>
+                    </li>
+                    {{-- profile --}}
+                    <li class="menu-item">
                         <a class='menu-link waves-effect' href='{{route("profile.index")}}'>
                             <span class="menu-icon"><i class="fa-regular fa-id-badge"></i></span>
                             <span class="menu-text"> Profile </span>

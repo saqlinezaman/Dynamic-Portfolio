@@ -108,11 +108,8 @@
 </div>
 
 </div>
-</div>
 
 {{-- table --}}
-
-</div>
 
 @endsection
 
